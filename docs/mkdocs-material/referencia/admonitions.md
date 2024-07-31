@@ -1,7 +1,12 @@
 
 ## Admonitions
 
-Las cajas de advertencias (*admonitions*) son una prestación que se habilita desde el archivo de configuración:
+Las cajas de advertencias (*admonitions*) son una prestación de MkDocs que permite crear recuadros coloridos y con íconos predefinidos para resaltar advertencias, tips, etc.
+
+
+## Configuración
+
+Las admonitions se habilitan desde el archivo de configuración:
 
 ``` yml
 # "mkdocs.yml"

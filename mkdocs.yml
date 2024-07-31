@@ -5,13 +5,18 @@ theme:
   icon:
     logo: simple/markdown  # :simple-markdown:
 
+  # pestanñas sincronizadas
+  features:
+    - content.tabs.link
+
+
 markdown_extensions: 
+  # admonitions
   - admonition
   - pymdownx.details
   - pymdownx.superfences
 
-
-
+  # grids
   - attr_list
   - md_in_html
 
@@ -19,10 +24,29 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+  # pestañas de contenido
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # matematica
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
+  #katex
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
+
+extra_javascript:
+  # mathjax
+  # - javascripts/mathjax.js
+  # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  # katex
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
   - social:

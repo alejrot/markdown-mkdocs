@@ -1,0 +1,46 @@
+site_name: MarkDown & MkDocs
+
+theme: 
+  name: material
+  icon:
+    logo: simple/markdown  # :simple-markdown:
+
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
+
+  - attr_list
+  - md_in_html
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+extra_css:
+  - stylesheets/extra.css
+
+
+plugins:
+  - social:
+      cards_layout: default/purple
+      cards_layout_options:
+        # background_color: "#0FF1CE8F"
+        background_color: "#0FF1CEFF"
+
+      debug: true
+
+
+
+
+
+
+
+
+
+
+
+

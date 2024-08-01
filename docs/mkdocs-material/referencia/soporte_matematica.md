@@ -1,4 +1,4 @@
-# Matematicas
+# Soporte para Matematicas
 
 
 MkDocs es compatible con dos blibliotecas para renderizar contenido matemático, llamadas MathJax y KaTex.
@@ -43,7 +43,9 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
     ```
 
 
-Ambas bibliotecas requieren contenido JavaScript adicional:
+Nótese que ambas opciones requieren acceso a bibliotecas remotas, lo cual puede solventarse haciendo una copia local y adjhuntándola al proyecto.
+
+Además, ambas bibliotecas requieren contenido JavaScript adicional:
 
 
 === "MathJax"
@@ -77,6 +79,7 @@ Ambas bibliotecas requieren contenido JavaScript adicional:
 === "KaTex"
 
     ``` js
+    // archivo "docs/javascripts/katex.js"
     document$.subscribe(({ body }) =>{ 
         renderMathInElement(body, {
             delimiters: [
@@ -88,3 +91,40 @@ Ambas bibliotecas requieren contenido JavaScript adicional:
         })
     })
     ```
+
+??? info "Notaciones recomendadas"
+    Las dos notaciones recomendadas por MarkDown para crear bloques de fórmulas son el uso de `$$  $$` y de `\[  \]`. También pueden usarse delimitadores simples
+
+    ```md title="Delimitadores de fórmula rrecomendados"
+    $$  A = \pi*r^{2}  $$
+
+    \[ A = \pi*r^{2}  \]
+    ```
+
+
+
+!!! warning "Uso de espacios con delimitadores simples"
+    En caso de usar delimitadores `$` simples, MathJax es sensible a los espacios en blanco dentro de los bloques de fórmula.
+    ```md title="Renderizado correcto"
+    $A = \pi*r^{2}$    
+    ```
+
+    ```md title="Renderizado fallido"
+    $ A = \pi*r^{2} $   
+    ```
+
+
+## Comparativa
+
+
+### MathJax:
+
+- Soporta una gran variedad de comandos LaTeX.
+- Soporta MathML, que es legible por lectores de pantalla
+- Tiene mejor compatibilidad con navegadores antiguos. 
+- Es muy configurable.
+
+
+### KaTex:
+
+- Es muy rápido renderizando.

@@ -1,5 +1,5 @@
 
-## Admonitions
+## Advertencias (*admonitions*)
 
 Las cajas de advertencias (*admonitions*) son una prestación de MkDocs que permite crear recuadros coloridos y con íconos predefinidos para resaltar advertencias, tips, etc.
 

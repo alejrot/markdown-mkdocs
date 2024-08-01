@@ -16,10 +16,16 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+  # anotaciones
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
   # grids
   - attr_list
   - md_in_html
 
+  # emojis - iconos
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -32,6 +38,14 @@ markdown_extensions:
   # matematica
   - pymdownx.arithmatex:
       generic: true
+
+  # formato pestañas - 'slugify' (v9.6)
+  # - pymdownx.tabbed:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #       kwds:
+  #         case: lower
+
+
 
 extra_css:
   - stylesheets/extra.css
@@ -61,6 +75,20 @@ plugins:
 
 
 
+
+nav:
+  - Indice: index.md
+  - MarkDown:  
+    - Básico: markdown/markdown_basico.md
+    - Fórmulas matemáticas: markdown/markdown_matematica.md
+  - MkDocs-Material: 
+    - Referencia: 
+      - Advertencias: mkdocs-material/referencia/admonitions.md
+      - Grillas (grids): mkdocs-material/referencia/grids.md
+      - Soporte para matemáticas: mkdocs-material/referencia/soporte_matematica.md
+      - Pestañas (tabs): mkdocs-material/referencia/tabs.md
+      - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
+      - Anotaciones: mkdocs-material/referencia/anotaciones.md
 
 
 

@@ -1,2 +1,0 @@
-# Pestañas de contenido
-

@@ -3,7 +3,7 @@ https://programmerclick.com/article/9139292621/
 http://rusersgroup.com/blog/rmarkdown/
 
 
-# Simbolos
+<!-- # Simbolos -->
 
 
 # Fórmulas en MarkDown
@@ -12,6 +12,7 @@ Las fórmulas matemáticas se marcan entre simbolos de peso (**\$**) antes y des
 ```
 $A = \pi*r^{2}$ 
 ```
+
 $A = \pi*r^{2}$ 
 
 El contenido de la fórmula puede repartirse en varios renglones. Sin embargo no todos los intérpretes de MarkDown lo aceptan bien. Por ejemplo el visor online de GitHub no tolera bien el reparto en varias líneas del código y lo muestra incorrectamente. Por ello es mejor abrir y cerrar con '$' en cada renglón de fórmulas.
@@ -20,6 +21,7 @@ Con doble signo (\$\$) el contenido queda centrado en la página:
 ```
 $$A = \pi*r^{2}$$
 ```
+
 $$A = \pi*r^{2}$$
 
 A continuación se muestran varios ejemplos de fórmulas y su código generador
@@ -270,16 +272,19 @@ $\underline{c+d}$
 ## Ejemplo 1 : uso doble signo peso ( \$\$ )
 
 **The Cauchy-Schwarz Inequality**
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 
     **The Cauchy-Schwarz Inequality**
     $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
+
+
+<!-- 
 ## Ejemplo 2 : uso bloque 'math' (NO ANDA) REVISAR
 **The Cauchy-Schwarz Inequality**
 
 ```math
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
+``` -->

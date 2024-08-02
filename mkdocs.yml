@@ -5,10 +5,11 @@ theme:
   icon:
     logo: simple/markdown  # :simple-markdown:
 
-  # pestanñas sincronizadas
+  
   features:
-    - content.tabs.link
-
+    - content.tabs.link         # pestañas sincronizadas
+    - content.code.copy         # botón de copia 
+    - content.code.annotate     # botones de anotaciones emergentes
 
 markdown_extensions: 
   # admonitions
@@ -26,6 +27,7 @@ markdown_extensions:
   - md_in_html
 
   # emojis - iconos
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -39,11 +41,23 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-  # formato pestañas - 'slugify' (v9.6)
+  # formato pestañas - 'slugify' (v9.6 0 más reciente)
   # - pymdownx.tabbed:
   #     slugify: !!python/object/apply:pymdownx.slugs.slugify
   #       kwds:
   #         case: lower
+
+  #bloques codigo
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite   # habilita remarcado de renglones
+  - pymdownx.snippets       # habilita importar código de otros archivos
+  - pymdownx.superfences    # habilita anidado de otros contenidos
+
+
+
 
 
 
@@ -84,11 +98,12 @@ nav:
   - MkDocs-Material: 
     - Referencia: 
       - Advertencias: mkdocs-material/referencia/admonitions.md
+      - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
+      - Anotaciones: mkdocs-material/referencia/anotaciones.md
       - Grillas (grids): mkdocs-material/referencia/grids.md
       - Soporte para matemáticas: mkdocs-material/referencia/soporte_matematica.md
       - Pestañas (tabs): mkdocs-material/referencia/tabs.md
-      - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
-      - Anotaciones: mkdocs-material/referencia/anotaciones.md
+      - Íconos y Emojis: mkdocs-material/referencia/iconos_emojis.md
 
 
 

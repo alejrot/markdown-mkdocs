@@ -8,7 +8,7 @@ https://squidfunk.github.io/mkdocs-material/reference/grids/#grids
 
 Las grids deben habilitarse en el archivo de configuración:
 
-```yml
+```yaml
 markdown_extensions: 
   - attr_list
   - md_in_html

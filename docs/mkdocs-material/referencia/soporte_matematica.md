@@ -11,7 +11,7 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
 
 === "MathJax"
 
-    ``` yml
+    ``` yaml
     # "mkdocs.yml"
     markdown_extensions:
     - pymdownx.arithmatex:
@@ -27,7 +27,7 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
 
 === "KaTex"
 
-    ``` yml 
+    ``` yaml 
     # "mkdocs.yml"
     markdown_extensions:
     - pymdownx.arithmatex:

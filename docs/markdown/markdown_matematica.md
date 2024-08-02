@@ -288,3 +288,10 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 ```math
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ``` -->
+
+
+
+
+## Referencias
+
+[programador clic - Markdown fórmulas y símbolos matemático](https://programmerclick.com/article/9139292621/)

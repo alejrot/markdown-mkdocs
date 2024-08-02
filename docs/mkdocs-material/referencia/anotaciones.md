@@ -3,7 +3,7 @@
 # Anotaciones
 
 
-Las anotaciones (*annotations*) son iconos con contenido emergente (1) de diverso tipo.
+Las anotaciones emergentes (*annotations*) son iconos con contenido emergente (1) de diverso tipo.
 {.annotate}
 
 1. Este es un ejemplo :thumbsup:
@@ -13,7 +13,7 @@ Las anotaciones (*annotations*) son iconos con contenido emergente (1) de divers
 
 Las *annotations* deben habilitarse en el archivo de configuración:
 
-``` yml 
+``` yaml 
 # "mkdocs.yml"
 markdown_extensions:
   - attr_list
@@ -26,7 +26,7 @@ markdown_extensions:
 
 El ícono que muestra el documento se puede cambiar en el archivo de configuraciones:
 
-``` yml 
+``` yaml 
 # "mkdocs.yml"
 theme:
   icon:

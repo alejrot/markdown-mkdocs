@@ -8,7 +8,7 @@ MkDocs permite agrupar contenido alternativo en varias pestañas, de modo que el
 
 Las pestañas deben ser habilitadas desde el archivo de configuración:
 
-```yml
+```yaml
 # "mkdocs.yml"
 markdown_extensions:
   - pymdownx.superfences
@@ -19,7 +19,7 @@ markdown_extensions:
 Hay una opción implementada para que todo el contenido organizado en pestañas se mueva a la misma etiqueta en simultáneo al hacerle click a una de ellas.
 
 Esta opción se habilita en el archivo de configuración:
-```yml
+```yaml
 # "mkdocs.yml"
 theme:
   features:

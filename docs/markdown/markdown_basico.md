@@ -422,7 +422,10 @@ Las imágenes pueden traer integrado un enlace. Para ello, los corchetes del enl
 [Insertar Imágenes](https://denshub.com/es/hugo-post-insert-image/)
 
 
-[Fórmulas!!!](https://programmerclick.com/article/9139292621/)
+[Markdown Guide - Basic Syntax](https://www.markdownguide.org/basic-syntax/#line-breaks)
+
+
+
 
 
 

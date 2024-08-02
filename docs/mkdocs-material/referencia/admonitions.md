@@ -8,7 +8,7 @@ Las cajas de advertencias (*admonitions*) son una prestación de MkDocs que perm
 
 Las admonitions se habilitan desde el archivo de configuración:
 
-``` yml
+``` yaml
 # "mkdocs.yml"
 markdown_extensions:
   - admonition
@@ -21,7 +21,7 @@ markdown_extensions:
 El formato de las *admonitions* es:
 
 
-``` md
+``` md title="Formato de admonitions" hl_lines="1 4 7"
 !!! tip "caja fija"
     texto y mas texto.
 
@@ -72,7 +72,7 @@ Hay varias opciones con íconos y colores diferenciados:
 
 Los íconos se pueden cambiar en el archivo YML:
 
-``` yml
+``` yaml
 # "mkdocs.yml"
 theme:
   icon:
@@ -91,7 +91,7 @@ Las adminitions permiten varias alineaciones:
 - Si se indica `inline end` se acomoda a derecha;
 
 Ejemplo:
-```md
+``` md
 !!! note inline "note"
 !!! abstract inline end "abstract"
 !!! info inline  "info"  
@@ -121,7 +121,8 @@ Supóngase que se quiere crear una nueva caja de advertencia con un ícono como 
 
 En el archivo de configuración se agrega el archivo CSS que debe contener la información de la nueva advertencia:
 
-```yml
+```yaml
+# "mkdocs.yml"
 extra_css:
   - stylesheets/extra.css # ruta a archivo CSS
 ```

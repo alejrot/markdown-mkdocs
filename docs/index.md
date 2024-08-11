@@ -1,8 +1,8 @@
 # MarkDown & MkDocs
 
-Esta documentación explica el uso de Markdown y su sintaxis, 
+Esta documentación explora la sintaxis y uso de Markdown y de MkDocs.
 
-## MarkDown
+## :simple-markdown:{.gris} MarkDown
 
 Markdown es un formato de texto enriquecido simple, muy práctico para hacer documentación. Suele usarse como alternativa simplificada al lenguaje HTML.
 
@@ -14,10 +14,10 @@ Markdown es un formato de texto enriquecido simple, muy práctico para hacer doc
 
 
 
-## MkDocs
+## :simple-materialformkdocs:{.gris} MkDocs
 
 
-MkDocs es un framework que permite crear sitios web estáticos a partir de documentos Markdown.
+MkDocs es un framework implementado en Python que permite crear sitios web estáticos a partir de documentos Markdown.
 
 
 

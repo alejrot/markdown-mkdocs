@@ -3,8 +3,20 @@ site_name: MarkDown & MkDocs
 theme: 
   name: material
   icon:
-    logo: simple/markdown  # :simple-markdown:
 
+    # logo: simple/markdown  # icono -> :simple-markdown:
+    
+    #icono de pagina
+    logo: simple/markdown  
+    # logo: bootstrap/activity  # icono local 
+    
+    # iconos de avance y retroceso 
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    
+
+  # carpeta local con extras (opcional)
+  custom_dir: overrides
   
   features:
     - content.tabs.link         # pestañas sincronizadas
@@ -12,7 +24,7 @@ theme:
     - content.code.annotate     # botones de anotaciones emergentes
 
 markdown_extensions: 
-  # admonitions
+  # "advertencias"
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -31,6 +43,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # Iconos LOCALES
+      options:
+        custom_icons:
+          - overrides/.icons    # Carpeta local - ruta desde directorio raiz del proyecto
 
   # pestañas de contenido
   - pymdownx.superfences
@@ -40,6 +56,9 @@ markdown_extensions:
   # matematica
   - pymdownx.arithmatex:
       generic: true
+
+  # Tablas (activado por defecto)
+  - tables
 
   # formato pestañas - 'slugify' (v9.6 0 más reciente)
   # - pymdownx.tabbed:
@@ -56,6 +75,17 @@ markdown_extensions:
   - pymdownx.snippets       # habilita importar código de otros archivos
   - pymdownx.superfences    # habilita anidado de otros contenidos
 
+  # notas al pie
+  - footnotes
+  
+  # footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+
 
 
 
@@ -63,6 +93,7 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/iconos_demo.css
   #katex
   - https://unpkg.com/katex@0/dist/katex.min.css
 
@@ -76,6 +107,11 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
+  # Tablas ordenables - TableSort
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js        # archivo local
+
+
 plugins:
   - social:
       cards_layout: default/purple
@@ -85,7 +121,9 @@ plugins:
 
       debug: true
 
-
+  # lectura tablas desde archivo
+  # - search
+  # - table-reader
 
 
 
@@ -99,11 +137,14 @@ nav:
     - Referencia: 
       - Advertencias: mkdocs-material/referencia/admonitions.md
       - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
+      - Tablas: mkdocs-material/referencia/tablas.md
       - Anotaciones: mkdocs-material/referencia/anotaciones.md
       - Grillas (grids): mkdocs-material/referencia/grids.md
       - Soporte para matemáticas: mkdocs-material/referencia/soporte_matematica.md
       - Pestañas (tabs): mkdocs-material/referencia/tabs.md
       - Íconos y Emojis: mkdocs-material/referencia/iconos_emojis.md
+      - Notas al Pie (footnotes): mkdocs-material/referencia/footnotes.md
+      - Formateo: mkdocs-material/referencia/formateo.md
 
 
 

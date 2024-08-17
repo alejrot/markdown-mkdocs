@@ -26,6 +26,12 @@
     font-size: 2em;     
 }
 
+.normal{
+  /* dimensiones relativas al tamaño de fuente */
+  font-size: 1em;     
+}
+
+
 
 @keyframes corazon {
     0%, 40%, 80%, 100% {

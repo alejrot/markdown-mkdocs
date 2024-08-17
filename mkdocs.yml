@@ -3,17 +3,17 @@ site_name: MarkDown & MkDocs
 theme: 
   name: material
   icon:
-
-    # logo: simple/markdown  # icono -> :simple-markdown:
-    
     #icono de pagina
     logo: simple/markdown  
     # logo: bootstrap/activity  # icono local 
-    
     # iconos de avance y retroceso 
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
     
+  # # fuentes remotas
+  # font:
+  #   text: Matemasie
+  #   code: Grey Qo
 
   # carpeta local con extras (opcional)
   custom_dir: overrides
@@ -22,6 +22,65 @@ theme:
     - content.tabs.link         # pestañas sincronizadas
     - content.code.copy         # botón de copia 
     - content.code.annotate     # botones de anotaciones emergentes
+
+  # soporte de idiomas
+  language: es    # Idioma predefinido
+  # direction: ltr
+
+  # Opciones de temas y colores
+  # palette: 
+    # Cambio de paleta al modo claro
+    # - scheme: default
+    #   toggle:
+    #     icon: material/brightness-7 
+    #     name: Cambia al modo oscuro 
+    # # Cambio de paleta al modo oscuro
+    # - scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4     # icono
+    #     name: Cambia al modo claro      # mensaje
+
+  palette: 
+
+
+    # Cambio de paleta al modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Cambia al modo oscuro 
+      primary: indigo
+      accent: blue
+    # Cambio de paleta al modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4     # icono
+        name: Cambia al modo claro      # mensaje
+      primary: deep purple
+      accent: pink
+
+
+
+
+    # # Palette toggle for automatic mode
+    # - media: "(prefers-color-scheme)"
+    #   toggle:
+    #     icon: material/brightness-auto
+    #     name: Cambia al modo claro      # mensaje
+    # # Palette toggle for light mode
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default
+    #   toggle:
+    #     icon: material/brightness-7 
+    #     name: Cambia al modo oscuro     # mensaje
+    # # Cambio de paleta al modo oscuro
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4         # icono
+    #     name: Cambia al modo automatico     # mensaje
+
 
 markdown_extensions: 
   # "advertencias"
@@ -88,12 +147,33 @@ markdown_extensions:
 
 
 
+# extra:
+#   # Idiomas seleccionables
+#   alternate:
+#     - name: Change to English
+#       link: /en/    # ruta relativa al contenido en inglés
+#       lang: en
+#     - name: Cambiar a Español
+#       link: /       # ruta relativa al contenido en español
+#       lang: es
+# # menu de cookies
+# #  consent:
+#     title: Cookie consent
+#     description: 
+#       We use cookies to recognize your repeated visits and preferences, as well
+#       as to measure the effectiveness of our documentation and whether users
+#       find what they're searching for. With your consent, you're helping us to
+#       make our documentation better.
+#     actions:
+#       - accept
+#       - manage 
 
 
 
 extra_css:
   - stylesheets/extra.css
   - stylesheets/iconos_demo.css
+  # - stylesheets/colores_custom.css
   #katex
   - https://unpkg.com/katex@0/dist/katex.min.css
 
@@ -125,6 +205,8 @@ plugins:
   # - search
   # - table-reader
 
+  # privacidad - hace copia local de contenidos remotos
+  - privacy
 
 
 
@@ -134,6 +216,14 @@ nav:
     - Básico: markdown/markdown_basico.md
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
+
+    - Primeros pasos: mkdocs-material/basico.md
+    
+    - Configuración: 
+      - Lenguaje: mkdocs-material/setup/lenguaje.md
+      - Temas y colores: mkdocs-material/setup/colores_temas.md
+      - Fuentes: mkdocs-material/setup/fuentes.md
+
     - Referencia: 
       - Advertencias: mkdocs-material/referencia/admonitions.md
       - Bloques de código: mkdocs-material/referencia/bloques_codigo.md

@@ -6,7 +6,7 @@ Esta documentación explora la sintaxis y uso de Markdown y de MkDocs.
 
 Markdown es un formato de texto enriquecido simple, muy práctico para hacer documentación. Suele usarse como alternativa simplificada al lenguaje HTML.
 
-[Markdown - Básico](markdown_basico.md)
+<!-- [Markdown - Básico](markdown_basico.md) -->
 
 
 

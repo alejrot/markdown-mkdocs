@@ -12,11 +12,14 @@ MkDocs-Material incluye emojis e íconos ya integrados desde los sitios:
 - [Simple Icons](https://simpleicons.org/)
 
 
+También admite el uso de íconos locales.
+
+
 ## Configuración 
 
 ### Mínima
 
-Si sólo se requiere usar los íconos integrados alcanza con agregar
+Si sólo se requiere usar los íconos integrados alcanza con agregar estas líneas al archivo de configuración:
 
 ``` yaml title="Iconos - Habilitación"
 # "mkdocs.yml"
@@ -57,9 +60,9 @@ En este caso los íconos locales se guardan adentro de la carpeta `overrides/.ic
 
 
 
-## Uso en documentos MarkDown
+##  Uso en documentos MarkDown
 
-### Básico
+### Uso básico
 
 Los íconos y emojis integrados se llaman con su nombre clave rodeado de dos puntos `:`:
 
@@ -74,7 +77,8 @@ Los íconos y emojis integrados se llaman con su nombre clave rodeado de dos pun
 
 !!! hint "Buscador de iconos"
 
-    La [página oficial](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/) incluye un buscador de íconos y emojis disponibles.
+    La [página oficial](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/) incluye un buscador de íconos y emojis integrados disponibles.
+
 
 
 ### Estilos CSS
@@ -156,11 +160,42 @@ Por ejemplo:
 
 
 
-### Uso en archivo de configuración
+### Iconos locales
 
-El uso desde el archivo de configuración YAML obliga a cambiar la sintaxis de los íconos.Por ejemplo, para llamar el ícono :simple-markdown: se convierte su string de de `:simple-markdown:` a `simple/markdown` :
+Supóngase que se incorporan íconos de Bootstrap. Estos se ubican  manualmente en la carpeta `bootstrap` dentro de  `overrides/.icons`. Para llamarlo se coloca su ruta relativa desde la carpeta de íconos, reemplazando la barra por guion y sin indicar la extensión:
+
+``` md title="Icono local en MD - Activity de Bootstrap" hl_lines="2"
+<!-- ruta relativa: 'bootstrap/activity.svg'  -->
+:bootstrap-activity:{.gris .gigante} 
+```
+
+Resultado:
+
+:bootstrap-activity:{.gris .gigante}
+
+Si en cambio se busca usarlo en el archivo de configuración YML se asigna directamente su ruta relativa, sin extensión. Ejemplo: como logo de página 
+
+``` yaml title="Icono de logo - Activity de Bootstrap" hl_lines="4"
+# "mkdocs.yml"
+theme: 
+  icon:
+    logo: bootstrap/activity  # icono local 
+    # ruta relativa: 'bootstrap/activity.svg' 
+```
 
 
+!!! tip "Iconos de Bootstrap"
+
+    [Galería de iconos SVG online](https://icons.getbootstrap.com/)
+
+    Descarga del pack - via NPM: `#!bash npm i bootstrap-icons`     
+
+
+
+## Íconos de sitio
+
+
+Los íconos predefinidos del sitio se cambian desde el archivo de configuración YAML. Éste obliga a cambiar la sintaxis de los íconos. Por ejemplo, para llamar el ícono :simple-markdown: se convierte su string de de `:simple-markdown:` a `simple/markdown` :
 
 
 ``` yaml title="Uso en YAML - Icono de página" hl_lines="6  9 10"
@@ -174,39 +209,43 @@ theme:
     # iconos de avance y retroceso 
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
+```
 
+La lista de iconos modificables desde configuración es la siguiente:
+
+
+|Nombre de ícono| Uso|
+|:---:|:----|
+| `logo`|  logo de pagina |
+| `menu`| 	menú desplegable |
+| `alternate`| 	cambiar lenguaje |
+| `search`| busqueda |
+| `share`	| compartir búsqueda |
+| `close`	| borrar búsqueda |
+| `top`| botón de volver al comienzo |
+| `edit`	| editar página actual |
+| `view`	| View page source |
+| `repo`	| repositorio |
+| `admonition`	| "advertencias" |
+| `tag`	| etiquetas e identificadores de páginas |
+| `previous`	| página previa en footer |
+| `next`	| página siguiente en footer |
+
+
+
+## Favicon
+
+El *favicon* es el icono que aparece en la pestaña del navegador. Para cambiarlo hay que ubicarlo manualmente dentro del directorio del proyecto e importarlo. Debe tener **formato ICO**.
+
+
+``` yaml title="Favicon" hl_lines="3"
+# "mkdocs.yml"
+theme:
+  favicon: images/favicon.png
 ```
 
 
-## Iconos locales
 
-Supóngase que se incorporan íconos de Bootstrap. Estos se ubican  manualmente en la carpeta `bootstrap` dentro de  `overrides/.icons`. Para llamarlo se coloca su ruta relativa desde la carpeta de íconos, reemplazando la barra por guion y sin indicar la extensión:
-
-``` md title="Icono local en MD - Activity de Bootstrap" hl_lines="2"
-<!-- ruta relativa: bootstrap/activity.svg  -->
-:bootstrap-activity:{.gris .gigante} 
-```
-
-Resultado:
-
-:bootstrap-activity:{.gris .gigante}
-
-Si en cambio se busca usarlo en el archivo de configuración YML se asigna directamente su ruta relativa, sin extensión. Ejemplo: como logo de página 
-
-``` yaml title="Icono de logo - Activity de Bootstrap" hl_lines="3"
-theme: 
-  icon:
-    logo: bootstrap/activity  # icono local 
-    # ruta relativa: bootstrap/activity.svg 
-
-```
-
-
-!!! tip "Iconos de Bootstrap"
-
-    [Galería de iconos SVG online](https://icons.getbootstrap.com/)
-
-    Descarga del pack - via NPM: `#!bash npm i bootstrap-icons`     
 
 
 ## Referencias
@@ -214,7 +253,9 @@ theme:
 [Sitio oficial - Icons, Emojis](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)
 
 
+
 [Sitio oficial - Changing logo and icons](https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons)
+
 
 
 [Sitio oficial - Customization ](https://squidfunk.github.io/mkdocs-material/customization/#environment-setup-material-for-mkdocs)

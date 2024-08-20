@@ -27,18 +27,21 @@ theme:
 
 ## Self-Hosting
 
-
-
-
+Para guardar una réplica local de las fuentes remotas de manera automática habilitar el plugin `privacy`:
 
 ``` yaml title="Self-Hosting de fuentes"
 plugins:
   - privacy
 ```
 
+Esto ayuda a cumplir con la Regulacion General de Protección de Datos de la Unión Europea.
 
 
-## Fuentes adicionales
+
+
+
+
+## Fuentes adicionales (revisar)
 
 
 ``` yaml title="Fuentes adicionales  - Habilitación"

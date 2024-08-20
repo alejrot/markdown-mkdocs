@@ -23,6 +23,30 @@ theme:
     - content.code.copy         # botón de copia 
     - content.code.annotate     # botones de anotaciones emergentes
 
+    - search.suggest      # sugerencias en caja de búsqueda
+    - search.highlight  # remarcado en página
+    - search.share      # link 'compartir' en caja de búsqueda
+    # - search.exclude
+
+    - navigation.instant
+    - navigation.instant.progress   # progreso de carga (conexiones lentas)
+    - navigation.tracking
+    # pestañas de contenido
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+
+    - navigation.sections
+
+    - navigation.expand
+    # - navigation.prune 
+
+    # - navigation.indexes 
+
+    - toc.follow
+    - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)
+
+    - navigation.top  # boton emergente para volver al inicio  - aparece al intentar subir con el scroll
+
   # soporte de idiomas
   language: es    # Idioma predefinido
   # direction: ltr
@@ -63,23 +87,6 @@ theme:
 
 
 
-    # # Palette toggle for automatic mode
-    # - media: "(prefers-color-scheme)"
-    #   toggle:
-    #     icon: material/brightness-auto
-    #     name: Cambia al modo claro      # mensaje
-    # # Palette toggle for light mode
-    # - media: "(prefers-color-scheme: light)"
-    #   scheme: default
-    #   toggle:
-    #     icon: material/brightness-7 
-    #     name: Cambia al modo oscuro     # mensaje
-    # # Cambio de paleta al modo oscuro
-    # - media: "(prefers-color-scheme: dark)"
-    #   scheme: slate
-    #   toggle:
-    #     icon: material/brightness-4         # icono
-    #     name: Cambia al modo automatico     # mensaje
 
 
 markdown_extensions: 
@@ -208,6 +215,11 @@ plugins:
   # privacidad - hace copia local de contenidos remotos
   - privacy
 
+  # busqueda
+  - search
+
+
+
 
 
 nav:
@@ -223,8 +235,11 @@ nav:
       - Lenguaje: mkdocs-material/setup/lenguaje.md
       - Temas y colores: mkdocs-material/setup/colores_temas.md
       - Fuentes: mkdocs-material/setup/fuentes.md
+      - Búsqueda:  mkdocs-material/setup/busqueda.md
+      - Navegación:  mkdocs-material/setup/navegacion.md
 
     - Referencia: 
+      - Encabezamientos: mkdocs-material/referencia/headers.md
       - Advertencias: mkdocs-material/referencia/admonitions.md
       - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
       - Tablas: mkdocs-material/referencia/tablas.md

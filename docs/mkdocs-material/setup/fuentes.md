@@ -12,12 +12,14 @@ Las fuentes remotas de Google se asignan fácilmente invocándolas por su nombre
 
 
 ``` yaml title="Fuentes de Google - texto y enlaces"
+# "mkdocs.yml"
 theme:
   font:
     text: Roboto
 ```
 
 ``` yaml title="Fuentes de Google - bloques de código"
+# "mkdocs.yml"
 theme:
   font:
     code: Roboto Mono
@@ -30,6 +32,7 @@ theme:
 Para guardar una réplica local de las fuentes remotas de manera automática habilitar el plugin `privacy`:
 
 ``` yaml title="Self-Hosting de fuentes"
+# "mkdocs.yml"
 plugins:
   - privacy
 ```
@@ -45,12 +48,14 @@ Esto ayuda a cumplir con la Regulacion General de Protección de Datos de la Uni
 
 
 ``` yaml title="Fuentes adicionales  - Habilitación"
+# "mkdocs.yml"
 extra_css:
   - stylesheets/fuentes.css
 ```
 
 
 ```css  title="Fuentes adicionales- Agregado"
+/* "fuentes.css" */
 @font-face {
   font-family: "<font>";
   src: "...";
@@ -59,6 +64,7 @@ extra_css:
 
 
 ```css  title="Fuentes adicionales - Uso"
+  /* "fuentes.css" */
 :root {
     --md-text-font: "<font>"; 
     --md-code-font: "<font>";

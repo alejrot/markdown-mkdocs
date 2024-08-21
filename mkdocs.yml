@@ -2,6 +2,7 @@ site_name: MarkDown & MkDocs
 
 theme: 
   name: material
+  # favicon: images/favicon.png   # no anda
   icon:
     #icono de pagina
     logo: simple/markdown  
@@ -10,6 +11,7 @@ theme:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
     
+
   # # fuentes remotas
   # font:
   #   text: Matemasie
@@ -32,7 +34,7 @@ theme:
     - navigation.instant.progress   # progreso de carga (conexiones lentas)
     - navigation.tracking
     # pestañas de contenido
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.tabs.sticky
 
     - navigation.sections
@@ -43,7 +45,7 @@ theme:
     # - navigation.indexes 
 
     - toc.follow
-    - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)
+    # - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)
 
     - navigation.top  # boton emergente para volver al inicio  - aparece al intentar subir con el scroll
 
@@ -52,21 +54,7 @@ theme:
   # direction: ltr
 
   # Opciones de temas y colores
-  # palette: 
-    # Cambio de paleta al modo claro
-    # - scheme: default
-    #   toggle:
-    #     icon: material/brightness-7 
-    #     name: Cambia al modo oscuro 
-    # # Cambio de paleta al modo oscuro
-    # - scheme: slate
-    #   toggle:
-    #     icon: material/brightness-4     # icono
-    #     name: Cambia al modo claro      # mensaje
-
   palette: 
-
-
     # Cambio de paleta al modo claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -144,7 +132,7 @@ markdown_extensions:
   # notas al pie
   - footnotes
   
-  # footnotes
+  # formateo
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -181,6 +169,7 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/iconos_demo.css
   # - stylesheets/colores_custom.css
+  - stylesheets/ancho_maximo.css
   #katex
   - https://unpkg.com/katex@0/dist/katex.min.css
 
@@ -237,6 +226,7 @@ nav:
       - Fuentes: mkdocs-material/setup/fuentes.md
       - Búsqueda:  mkdocs-material/setup/busqueda.md
       - Navegación:  mkdocs-material/setup/navegacion.md
+      - Sobreescritura:  mkdocs-material/setup/sobreescritura.md
 
     - Referencia: 
       - Encabezamientos: mkdocs-material/referencia/headers.md

@@ -216,13 +216,14 @@ extra_javascript:
 
 
 plugins:
-  - social:
-      cards_layout: default/purple
-      cards_layout_options:
-        # background_color: "#0FF1CE8F"
-        background_color: "#0FF1CEFF"
+  # Tarjetas PNG automáticas 
+  # - social:
+  #     cards_layout: default/purple
+  #     cards_layout_options:
+  #       # background_color: "#0FF1CE8F"
+  #       background_color: "#0FF1CEFF"
 
-      debug: true
+  #     debug: true
 
   # lectura tablas desde archivo
   # - search
@@ -238,11 +239,11 @@ plugins:
   - git-revision-date-localized:
       enabled: true
       enable_creation_date: true
-      # type: date        # fecha
+      type: date        # fecha
       # type: datetime    # fecha y hora
       # type: iso_date    # fecha ISO (sólo numeros)
       # type: iso_datetime  # fecha ISO (sólo numeros)
-      type: timeago       # tiempo desde publicación
+      # type: timeago       # tiempo desde publicación
       fallback_to_build_date: true
 
 

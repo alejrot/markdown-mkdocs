@@ -190,9 +190,21 @@ plugins:
   - git-revision-date-localized:
       enabled: true               # fecha de modificación de página
       enable_creation_date: true  # fecha de creación de página
-      type: date                  
+      type: date                  # formato de presentación    
       fallback_to_build_date: true
 ```
+
+Las fechas se pueden mostrar en varios formatos:
+
+|Opción| Explicación|
+|:---:|:---|
+| `date`     |  fecha - meses por nombre|
+| `datetime`  |fecha y hora - meses por nombre|
+| `iso_date`  |fecha ISO (meses por número)|
+| `iso_datetime` | fecha ISO (meses por número)|
+| `timeago`      | tiempo desde publicación|
+
+
 
 ### Colaboradores
 

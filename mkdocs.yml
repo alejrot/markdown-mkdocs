@@ -2,6 +2,13 @@ site_name: MarkDown & MkDocs
 
 site_url: https://marcelomarot.github.io/markdown-mkdocs/
 
+# Repositorio
+repo_url: https://github.com/MarceloMarot/markdown-mkdocs
+repo_name: markdown-mkdocs
+edit_uri: edit/master/docs/
+
+copyright: Copyright &copy; 2024 Marcelo Marot Rosas
+
 theme: 
   name: material
   # favicon: images/favicon.png   # no anda
@@ -89,10 +96,7 @@ theme:
 
 
 
-# Repositorio
-repo_url: https://github.com/MarceloMarot/markdown-mkdocs
-repo_name: markdown-mkdocs
-edit_uri: edit/master/docs/
+
 
 
 

@@ -1,5 +1,6 @@
 site_name: MarkDown & MkDocs
 
+site_url: https://marcelomarot.github.io/markdown-mkdocs/
 
 theme: 
   name: material
@@ -57,7 +58,7 @@ theme:
     - announce.dismiss
 
     # acciones sobre repositorio
-    - content.action.edit
+    # - content.action.edit
     - content.action.view
 
 
@@ -73,8 +74,10 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Cambia al modo oscuro 
-      primary: indigo
-      accent: blue
+      # primary: indigo
+      # accent: blue
+      primary: deep purple
+      accent: pink
     # Cambio de paleta al modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -87,8 +90,8 @@ theme:
 
 
 # Repositorio
-repo_url: https://github.com/MarceloMarot/MarkDown_MKDocs/
-repo_name: MarkDown_MKDocs
+repo_url: https://marcelomarot.github.io/markdown-mkdocs/
+repo_name: markdown-mkdocs
 edit_uri: edit/master/docs/
 
 
@@ -159,6 +162,7 @@ markdown_extensions:
 
 
 extra:
+  homepage: https://marcelomarot.github.io/markdown-mkdocs/
 #   # Idiomas seleccionables
 #   alternate:
 #     - name: Change to English
@@ -179,16 +183,18 @@ extra:
 #       - accept
 #       - manage 
   # generator: false
-  social:
-    - icon: fontawesome/brands/mastodon 
-      link: https://fosstodon.org/
-      name: Ir a Mastodon
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<email-address>
-      name: Enviar correo
+
+  # Iconos de contacto cerca del footer
+  # social:
+  #   - icon: fontawesome/brands/mastodon 
+  #     link: https://fosstodon.org/
+  #     name: Ir a Mastodon
+  #   - icon: fontawesome/solid/paper-plane
+  #     link: mailto:<email-address>
+  #     name: Enviar correo
 
 
-# copyright: Copyright &copy; 2030 Aquiles Brinco
+
 
 
 extra_css:

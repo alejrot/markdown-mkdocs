@@ -1,27 +1,27 @@
 
-#Material for Mkdocs
+# Material for Mkdocs
 
 
-https://squidfunk.github.io/mkdocs-material/
+[Página oficial - GitHub Pages](https://squidfunk.github.io/mkdocs-material/)
 
 
 ## Instalación
 
 La forma más habitual de instalar este framework es via PIP, el gestor de paquetes de Python:
 
-```bash
+```bash title="Instalación con PIP"
 pip install mkdocs-material
 ```
 
-La alternativa es descargar el contenedor oficial, el cual se puede ejecutar con Docker o con Podman.
+La alternativa es descargar la imagen oficial, la cual permite crear un contenedor ejecutable con Docker o con Podman.
 
-```bash
+```bash title="Descarga de imagen"
 docker pull squidfunk/mkdocs-material
 ```
 
 La tercera opción es instalar desde el repositorio oficial en GitHub
 
-```bash
+```bash title="Instalación desde repositorio oficial"
 git clone https://github.com/squidfunk/mkdocs-material.git
 pip install -e mkdocs-material
 ```
@@ -31,44 +31,73 @@ pip install -e mkdocs-material
 
 Mkdocs implementa su propio ejecutable llamado `mkdocs`. Para crear el proyecto se usa el comando `new`:
 
-```bash
+```bash title="Crear proyecto"
 mkdocs new .            # ruta actual
 ```
 
 El proyecto creado es un demo muy simple con la siguiente estructura:
 
-```bash
+```bash title="Estructura de proyecto"
+# directorio raiz del proyecto
 ├─ docs/            # carpeta para documentos
 │  └─ index.md      # archivo demo
 └─ mkdocs.yml       # archivo configuración
 ```
 
-El archivo YML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío
+El directorio `docs/` es la ruta predefinida para colocar todos los documentos MD a publicar.
+
+El archivo YAML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío. Al configurarlo toma una estructura como la mostrada a continuación:
 
 
-```yml
-
+```yaml title="Archvivo de configuración - Sintaxis"
+# archivo "mkdocs.yml" 
 site_name: nombre_sitio
 
-site_url: https://url_dominio/nombre_sitio   #
+site_url: https://url_dominio/nombre_sitio   
 
+# Tema elegido
 theme: 
   name: material    # tema predefinido
-  # opciones de tema
+  ... # opciones de tema
+  
 
 
-
+# extensiones usadas
 markdown_extensions: 
-    # extensiones usadas
+  - extension_1
+  - extension_2
+  - ....
+    
+
+# hojas de estilo adicionales
+extra_css:
+
+# rutinas JS adicionales
+extra_javascript:
+
+#  componentes y opciones adicionales
+extra:
 
 
+# Plugins habilitados
 plugins:
-    # opciones de plugins
+    - plugin_1
+    - plugin_2
+    - ...
 
 
+#  navegación
 nav:
     # nombre y link de documentos internos
+    - Pagina 1: ruta_1
+    - Pagina 2: ruta_2
+    - ...
 ```
+
+La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino.
+
+Esta sección se puede omitir, en tal caso MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
+
 
 
 
@@ -91,7 +120,24 @@ mkdocs build
 Este comando crea la carpeta `site/` con el contenido listo para publicar en cualquier servidor web.
 
 !!! tip ".gitignore"
-    En caso de usar **git**, incorporar `site/` al archivo `.gitignore` para prevenir el seguimiento de estos archivos en el repositorio.
+    En caso de usar **git**, incorporar `site/` al archivo `.gitignore` para prevenir el seguimiento de estos archivos en el repositorio.  También guardar en él `.cache/` para prevenir el seguimiento de objetos creados por los plugins internos:
+
+    ```bash title="Archivo gitignore - ruta" hl_lines="2"
+    # directorio raiz del proyecto
+    ├─ .gitignore       # archivo de exclusión
+    ├─ docs/            # carpeta para documentos
+    │  └─ index.md      # archivo demo
+    └─ mkdocs.yml       # archivo configuración
+    ```
+
+    ```bash title="Archivo gitignore - contenido" 
+    site/       
+    .cache/     
+    ```
+
+
+
+
 
 
 
@@ -119,14 +165,19 @@ Se puede configurar al repositorio remoto para que reconstruya el sitio cada vez
 
 Crear un archivo `ci.yml` dentro de la carpeta oculta indicada:
 
-```bash 
+```bash hl_lines="2-4" title="GitHub Pages - Ruta de GitHub Actions"
 # directorio raiz del proyecto
-.github/workflows/ci.yml
+├─ .github/
+│  └─ workflows/
+│     └─ ci.yml     # archivo de GitHub Actions
+├─ docs/            # carpeta para documentos
+│  └─ index.md      # archivo demo
+└─ mkdocs.yml       # archivo configuración
 ```
 
 y cargar en él la rutina:
 
-```yml
+```yaml title="GitHub Pages - Rutina de deploy automático"
 name: ci 
 on:
   push:
@@ -159,20 +210,23 @@ jobs:
 ```
 
 
-### GitLabs Pages
+### GitLab Pages
 
 
 
 Crear un archivo oculto `.gitlab-ci.yml` dentro de la carpeta raíz del proyecto:
 
-```bash 
+```bash  hl_lines="2" title="GitLab Pages - Ruta de archivo"
 # directorio raiz del proyecto
-.gitlab-ci.yml
+├─ .gitlab-ci.yml
+├─ docs/            # carpeta para documentos
+│  └─ index.md      # archivo demo
+└─ mkdocs.yml       # archivo configuración
 ```
 
 y cargar en él la rutina:
 
-```yml
+```yaml title="GitLab Pages - Rutina de deploy automático"
 pages:
   stage: deploy
   image: python:latest

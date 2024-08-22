@@ -213,6 +213,45 @@ Este caso es muy similar al anterior. Se asigna a la propiedad `data-md-color-sc
 
 
 
+## Colores de código
+
+
+Los colores de los distintos componentes de código se pueden alterar agregando contenido CSS. En él se modifica el valor de las variables CSS predefinidas
+
+``` css title="Bloques código - Cambio de colores"
+/* archivo CSS */
+:root > * {
+    /* comentarios color verde oscuro */
+    --md-code-hl-comment-color      : #009000;
+  }
+``` 
+
+De esta forma el estilo se aplica a todos los bloques de código, de forma independiente del lenguaje que se indique a cada uno.
+
+Las variables CSS predefinidas son:
+
+|variable CSS| parametro |
+|:---|:---|
+| `--md-code-hl-number-color` |  numeros     |
+| `--md-code-hl-special-color` |      |
+| `--md-code-hl-function-color` |     |
+| `--md-code-hl-constant-color` |  constantes  |
+| `--md-code-hl-keyword-color` |    |
+| `--md-code-hl-string-color` | |
+| `--md-code-hl-name-color` | nombres de variables |
+| `--md-code-hl-operator-color` | operadores  |
+| `--md-code-hl-punctuation-color` | |
+| `--md-code-hl-comment-color` | comentarios |
+| `--md-code-hl-generic-color` |  |
+| `--md-code-hl-variable-color` | variables |
+
+|variable CSS| parametro |
+|:---|:---|
+| `--md-code-fg-color`| *foreground*|
+| `--md-code-bg-color`| *background*|
+| `--md-code-hl-color`| *higlight*|
+
+
 ## Referencias
 
 [Documentacion oficial - Changing the colors](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)

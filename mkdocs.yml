@@ -1,5 +1,6 @@
 site_name: MarkDown & MkDocs
 
+
 theme: 
   name: material
   # favicon: images/favicon.png   # no anda
@@ -10,7 +11,11 @@ theme:
     # iconos de avance y retroceso 
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
-    
+    # Icono de repositorio
+    repo: fontawesome/brands/github
+    # Icono de acciones de repositorio
+    edit: material/pencil 
+    view: material/eye
 
   # # fuentes remotas
   # font:
@@ -36,18 +41,25 @@ theme:
     # pestañas de contenido
     - navigation.tabs
     # - navigation.tabs.sticky
-
     - navigation.sections
-
     - navigation.expand
     # - navigation.prune 
-
     # - navigation.indexes 
-
     - toc.follow
     # - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)
-
     - navigation.top  # boton emergente para volver al inicio  - aparece al intentar subir con el scroll
+
+    # Pie de pagina
+    - navigation.footer
+
+    # header y anuncios
+    - header.autohide
+    - announce.dismiss
+
+    # acciones sobre repositorio
+    - content.action.edit
+    - content.action.view
+
 
   # soporte de idiomas
   language: es    # Idioma predefinido
@@ -74,6 +86,10 @@ theme:
 
 
 
+# Repositorio
+repo_url: https://github.com/MarceloMarot/MarkDown_MKDocs/
+repo_name: MarkDown_MKDocs
+edit_uri: edit/master/docs/
 
 
 
@@ -142,7 +158,7 @@ markdown_extensions:
 
 
 
-# extra:
+extra:
 #   # Idiomas seleccionables
 #   alternate:
 #     - name: Change to English
@@ -162,13 +178,24 @@ markdown_extensions:
 #     actions:
 #       - accept
 #       - manage 
+  # generator: false
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/
+      name: Ir a Mastodon
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<email-address>
+      name: Enviar correo
 
+
+# copyright: Copyright &copy; 2030 Aquiles Brinco
 
 
 extra_css:
   - stylesheets/extra.css
   - stylesheets/iconos_demo.css
   # - stylesheets/colores_custom.css
+  - stylesheets/colores_codigo.css
   - stylesheets/ancho_maximo.css
   #katex
   - https://unpkg.com/katex@0/dist/katex.min.css
@@ -207,8 +234,16 @@ plugins:
   # busqueda
   - search
 
-
-
+  # fechas de repositorio
+  - git-revision-date-localized:
+      enabled: true
+      enable_creation_date: true
+      # type: date        # fecha
+      # type: datetime    # fecha y hora
+      # type: iso_date    # fecha ISO (sólo numeros)
+      # type: iso_datetime  # fecha ISO (sólo numeros)
+      type: timeago       # tiempo desde publicación
+      fallback_to_build_date: true
 
 
 nav:
@@ -227,6 +262,8 @@ nav:
       - Búsqueda:  mkdocs-material/setup/busqueda.md
       - Navegación:  mkdocs-material/setup/navegacion.md
       - Sobreescritura:  mkdocs-material/setup/sobreescritura.md
+      - Componentes:  mkdocs-material/setup/componentes.md
+
 
     - Referencia: 
       - Encabezamientos: mkdocs-material/referencia/headers.md

@@ -167,6 +167,29 @@ markdown_extensions:
 
 extra:
   homepage: https://marcelomarot.github.io/markdown-mkdocs/
+  # homepage: /
+
+  # habilitar Google Analytics
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+  #   # encuesta agregada
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/emoticon-happy-outline
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback!
+  #       - icon: material/emoticon-sad-outline
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >- 
+  #           Thanks for your feedback! Help us improve this page by
+  #           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
 #   # Idiomas seleccionables
 #   alternate:
 #     - name: Change to English
@@ -274,6 +297,7 @@ nav:
       - Navegación:  mkdocs-material/setup/navegacion.md
       - Sobreescritura:  mkdocs-material/setup/sobreescritura.md
       - Componentes:  mkdocs-material/setup/componentes.md
+      - Analíticas:  mkdocs-material/setup/analiticas.md
 
 
     - Referencia: 

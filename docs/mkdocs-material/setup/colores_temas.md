@@ -76,7 +76,7 @@ Iconos recomendados:
  |:material-toggle-switch: + :material-toggle-switch-off-outline: |`material/toggle-switch` + `material/toggle-switch-off-outline`|
  |:material-weather-night: + :material-weather-sunny:  | `material/weather-night` + `material/weather-sunny`|
  |:material-eye: + :material-eye-outline: |`material/eye` + `material/eye-outline`|
- |:material-lightbulb: + :material-lightbulb-outline: |`material/lightbulb` + `material-lightbulb-outline`|
+ |:material-lightbulb: + :material-lightbulb-outline: |`material/lightbulb` + `material/lightbulb-outline`|
 
 
 !!! tip "Temas con colores personalizados"

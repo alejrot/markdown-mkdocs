@@ -123,7 +123,7 @@ Los bloques reescribibles de esta manera son:
 | `footer`	| Wraps the footer with navigation and copyright|
 | `header`	| Wraps the fixed header bar|
 | `hero`	| Wraps the hero teaser (if available)|
-| `htmltitle`	| Wraps the <title> tag|
+| `htmltitle`	| Wraps the `<title>` tag|
 | `libs`	| Wraps the JavaScript libraries (header)|
 | `outdated`	| Wraps the version warning|
 | `scripts`	| Wraps the JavaScript application (footer)|

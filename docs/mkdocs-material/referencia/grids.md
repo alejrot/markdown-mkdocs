@@ -2,7 +2,7 @@
 
 Las grillas o grids son conjuntos de bloques agrupados.
 
-https://squidfunk.github.io/mkdocs-material/reference/grids/#grids
+
 
 ## Configuración
 
@@ -15,207 +15,221 @@ markdown_extensions:
 ```
 
 
-## Card Grids
+## Grillas de tarjetas
 
 
-La forma más elemental del uso de card grids consiste en rodear una lista dentro de un objeto `div` especial, de esta manera cada item se convierte en un bloque al renderizarse:
+### Sintaxis de lista (elementos simples)
+
+La forma más elemental del uso de *card grids* consiste en rodear una lista dentro de un objeto `div` especial, de esta manera cada item se convierte en un bloque animado al renderizarse:
+
+
+```md hl_lines="1 6-7"
+<div class="grid cards" markdown>
+- :fontawesome-brands-html5: __HTML__ para contenido y estructura
+- :fontawesome-brands-js: __JavaScript__ para interactividad
+- :fontawesome-brands-css3: __CSS__ para estilos
+
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... para qué?
+</div>
+```
+
+Con el símbolo `>` se crean bloques con la animación anulada.
+
+El resultado es el mostrado a continuación:
+
+
+<div class="grid cards" markdown>
+- :fontawesome-brands-html5: __HTML__ para contenido y estructura
+- :fontawesome-brands-js: __JavaScript__ para interactividad
+- :fontawesome-brands-css3: __CSS__ para estilos
+
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... para qué?
+</div>
+
+### Sintaxis de lista (elementos compuestos)
+
+Los bloques admiten múltiple contenido el cual puede separarse con  la secuencia `---`:
 
 
 ```md
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+-   :material-clock-fast:{ .lg .middle } __Instala en 5 minutos__
+
+    ---
+
+    Instala [`mkdocs-material`](#) con [`pip`](#) y ejecuta en minutos
+
+    [:octicons-arrow-right-24: Comenzando](#)
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __Es sólo Markdown__
+
+    ---
+
+    Enfóquese en su contenido  y genere un sitio estático adaptable y consultable
+
+    [:octicons-arrow-right-24: Referencia](#)
+
+-   :material-format-font:{ .lg .middle } __Hecho a medida__
+
+    ---
+
+    Cambia los colores, fuentes, lenguaje, íconos, logo  y más con unas pocas líneas
+
+    [:octicons-arrow-right-24: Personalización](#)
+
+-   :material-scale-balance:{ .lg .middle } __Código abierto, MIT__
+
+    ---
+
+    Material for MkDocs se distribuye bajo licencia MIT y está disponible en [GitHub](https://github.com/squidfunk/mkdocs-material)
+
+    [:octicons-arrow-right-24: Licencia](#)
 
 </div>
 ```
 
+El resultado queda así:
+
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+-   :material-clock-fast:{ .lg .middle } __Instala en 5 minutos__
+
+    ---
+
+    Instala [`mkdocs-material`](#) con [`pip`](#) y ejecuta en minutos
+
+    [:octicons-arrow-right-24: Comenzando](#)
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __Es sólo Markdown__
+
+    ---
+
+    Enfóquese en su contenido  y genere un sitio estático adaptable y consultable
+
+    [:octicons-arrow-right-24: Referencia](#)
+
+-   :material-format-font:{ .lg .middle } __Hecho a medida__
+
+    ---
+
+    Cambia los colores, fuentes, lenguaje, íconos, logo  y más con unas pocas líneas
+
+    [:octicons-arrow-right-24: Personalización](#)
+
+-   :material-scale-balance:{ .lg .middle } __Código abierto, MIT__
+
+    ---
+
+    Material for MkDocs se distribuye bajo licencia MIT y está disponible en [GitHub](https://github.com/squidfunk/mkdocs-material)
+
+    [:octicons-arrow-right-24: Licencia](#)
 
 </div>
 
 
 
-```md
-<div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+### Sintaxis de bloques
 
-    ---
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+Con la clase CSS `card` se pueden crear bloques de contenido. De estas se puede anular la animación anteponiendo el símbolo `>`
 
-    [:octicons-arrow-right-24: Getting started](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
 
-    ---
+```md title="Tarjetas (cards)" hl_lines="1 12 14"
+<div class="grid" markdown>
 
-    Focus on your content and generate a responsive and searchable static site
+:fontawesome-brands-html5: __HTML__ para contenido y estructura
+{ .card }
 
-    [:octicons-arrow-right-24: Reference](#)
+:fontawesome-brands-js: __JavaScript__  para interactividad
+{ .card }
 
--   :material-format-font:{ .lg .middle } __Made to measure__
+:fontawesome-brands-css3: __CSS__ para configurar estilos
+{ .card }
 
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... para qué?
 
 </div>
 ```
-<div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+Así se ven las tarjetas creadas:
 
-    ---
+<div class="grid" markdown>
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+:fontawesome-brands-html5: __HTML__ para contenido y estructura
+{ .card }
 
-    [:octicons-arrow-right-24: Getting started](#)
+:fontawesome-brands-js: __JavaScript__  para interactividad
+{ .card }
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+:fontawesome-brands-css3: __CSS__ para configurar estilos 
+{ .card }
 
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... para qué?
+<!-- { .card } -->
 
 </div>
 
 
+## Grillas genéricas
 
+Las *grids* permiten englobar con facilidad contenidos distintos. En el ejemplo, se adjuntan dos bloques: uno se ubica a la izquierda y contiene pestañas con listas, mientras el otro contiene el código del bloque izquierdo y se ubica a la derecha.
 
-## Block syntax
-
-
-```md
+```md title="Grillas genéricas" hl_lines="1 3-4 9 14-15 25 27"
 <div class="grid" markdown>
 
-:fontawesome-brands-html5: __HTML__ for content and structure
-{ .card }
+    <!--  Bloque izquierdo: pestañas -->
+    === "Lista desordenada"
+            * Inciso A
+            * Inciso B
+            * Inciso C
 
-:fontawesome-brands-js: __JavaScript__ for interactivity
-{ .card }
+    === "Lista ordenada"
+        1. Primero
+        2. Segundo
+        3. Tercero
 
-:fontawesome-brands-css3: __CSS__ for text running out of boxes
-{ .card }
+    <!-- Bloque derecho: bloque de código -->
+    ``` title="Contenido de pestañas"
+    === "Lista desordenada"
+        * Inciso A
+        * Inciso B
+        * Inciso C
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
-
-</div>
-```
-<div class="grid" markdown>
-
-:fontawesome-brands-html5: __HTML__ for content and structure
-{ .card }
-
-:fontawesome-brands-js: __JavaScript__ for interactivity
-{ .card }
-
-:fontawesome-brands-css3: __CSS__ for text running out of boxes
-{ .card }
-
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
-
-</div>
-
-## Generic grids
-
-```md
-<div class="grid" markdown>
-
-    === "Unordered list"
-
-        * Sed sagittis eleifend rutrum
-        * Donec vitae suscipit est
-        * Nulla tempor lobortis orci
-
-    === "Ordered list"
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
-
-    ``` title="Content tabs"
-    === "Unordered list"
-
-        * Sed sagittis eleifend rutrum
-        * Donec vitae suscipit est
-        * Nulla tempor lobortis orci
-
-    === "Ordered list"
-
-        1. Sed sagittis eleifend rutrum
-        2. Donec vitae suscipit est
-        3. Nulla tempor lobortis orci
+    === "Lista ordenada"
+        1. Primero
+        2. Segundo
+        3. Tercero
     ```
 
 </div>
 ```
-
+El resultado es el siguiente:
  
 <div class="grid" markdown>
 
-=== "Unordered list"
+=== "Lista desordenada"
+    * Inciso A
+    * Inciso B
+    * Inciso C
 
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
+=== "Lista ordenada"
+    1. Primero
+    2. Segundo
+    3. Tercero
 
-=== "Ordered list"
+``` title="Contenido de pestañas"
+=== "Lista desordenada"
+    * Inciso A
+    * Inciso B
+    * Inciso C
 
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
-
-``` title="Content tabs"
-=== "Unordered list"
-
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
-
-=== "Ordered list"
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
+=== "Lista ordenada"
+    1. Primero
+    2. Segundo
+    3. Tercero
 ```
 
 </div>
@@ -223,7 +237,11 @@ La forma más elemental del uso de card grids consiste en rodear una lista dentr
 
 
 
+## Referencias
 
+
+
+[Sitio oficial - Grids](https://squidfunk.github.io/mkdocs-material/reference/grids/)
 
 
 

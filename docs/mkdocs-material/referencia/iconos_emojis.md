@@ -184,6 +184,7 @@ theme:
 ```
 
 
+
 !!! tip "Iconos de Bootstrap"
 
     [Galería de iconos SVG online](https://icons.getbootstrap.com/)
@@ -198,7 +199,7 @@ theme:
 Los íconos predefinidos del sitio se cambian desde el archivo de configuración YAML. Éste obliga a cambiar la sintaxis de los íconos. Por ejemplo, para llamar el ícono :simple-markdown: se convierte su string de de `:simple-markdown:` a `simple/markdown` :
 
 
-``` yaml title="Uso en YAML - Icono de página" hl_lines="6  9 10"
+``` yaml title="Logo de página - ícono" hl_lines="6  9 10"
 # "mkdocs.yml"
 theme: 
   icon:
@@ -231,6 +232,19 @@ La lista de iconos modificables desde configuración es la siguiente:
 | `previous`	| página previa en footer |
 | `next`	| página siguiente en footer |
 
+
+!!! tip "Enlace del logo"
+
+    El logo de la página es un link que por defecto apunta al indice. El enlace se modifica con el parámetro `homepage` en la seccion `extra`:
+
+
+    ``` yaml title="Logo de página - enlace"
+    # "mkdocs.yml"
+    extra: 
+      homepage: ruta_inicio
+    ```
+
+    El link puede ser una URL absoluta o una ruta relativa.
 
 
 ## Favicon

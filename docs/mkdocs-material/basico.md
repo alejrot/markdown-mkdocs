@@ -49,7 +49,7 @@ El directorio `docs/` es la ruta predefinida para colocar todos los documentos M
 El archivo YAML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío. Al configurarlo toma una estructura como la mostrada a continuación:
 
 
-```yaml title="Archvivo de configuración - Sintaxis"
+```yaml title="Archvivo de configuración - Sintaxis básica"
 # archivo "mkdocs.yml" 
 site_name: nombre_sitio
 
@@ -86,7 +86,7 @@ plugins:
     - ...
 
 
-#  navegación
+# navegación
 nav:
     # nombre y link de documentos internos
     - Pagina 1: ruta_1
@@ -94,9 +94,8 @@ nav:
     - ...
 ```
 
-La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino.
-
-Esta sección se puede omitir, en tal caso MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
+La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino. Combinando ambos MkDocs crea cada link y los muestra en el mismo orden de definición. 
+En caso de omitir la sección `nav` MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
 
 
 

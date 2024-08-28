@@ -162,6 +162,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
+  # opciones de imagenes
+  - attr_list
+  - md_in_html
 
 
 
@@ -262,6 +265,9 @@ plugins:
   # - search
   # - table-reader
 
+  # Imagenes
+  - glightbox
+
   # privacidad - hace copia local de contenidos remotos
   - privacy
 
@@ -278,6 +284,8 @@ plugins:
       # type: iso_datetime  # fecha ISO (sólo numeros)
       # type: timeago       # tiempo desde publicación
       fallback_to_build_date: true
+
+
 
 
 nav:
@@ -312,6 +320,7 @@ nav:
       - Íconos y Emojis: mkdocs-material/referencia/iconos_emojis.md
       - Notas al Pie (footnotes): mkdocs-material/referencia/footnotes.md
       - Formateo: mkdocs-material/referencia/formateo.md
+      - Imágenes: mkdocs-material/referencia/imagenes.md
 
 
 

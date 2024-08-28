@@ -158,7 +158,7 @@ Este comando actualiza una rama oculta del repositorio llamada `gh-pages` .
 
 ## Deploy automático
 
-Se puede configurar al repositorio remoto para que reconstruya el sitio cada vez que hay una actualuización de su rama principal.
+Se puede configurar al repositorio remoto para que reconstruya el sitio cada vez que hay una actualización de su rama principal.
 
 ### GitHub Pages
 
@@ -176,7 +176,7 @@ Crear un archivo `ci.yml` dentro de la carpeta oculta indicada:
 
 y cargar en él la rutina:
 
-```yaml title="GitHub Pages - Rutina de deploy automático"
+```yaml title="GitHub Pages - Rutina de deploy automático" hl_lines="28-31"
 name: ci 
 on:
   push:
@@ -204,10 +204,29 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      # instalación básica
       - run: pip install mkdocs-material 
+      # deploy
       - run: mkdocs gh-deploy --force
 ```
 
+El servidor de GitHub se encargará de descargar e instalar todos los paquetes Python requeridos y de ejecutar el framework.
+
+!!! tip "Paquetes adicionales"
+
+    En caso de requerirse plugins adicionales la instalación de éstos se agrega a la tarea de GitHub Pages:
+    
+    ```yaml title="GitHub Pages - Paquetes adicionales" hl_lines="2 3 8 9"
+    # ....
+      # instalación base
+      - run: pip install mkdocs-material 
+      # plugins agregados
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-glightbox
+      - run: pip install mkdocs-table-reader-plugin
+      # deploy
+      - run: mkdocs gh-deploy --force
+    ```
 
 ### GitLab Pages
 

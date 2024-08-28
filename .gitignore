@@ -1,2 +1,8 @@
 site/       
 .cache/     
+
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.bmp

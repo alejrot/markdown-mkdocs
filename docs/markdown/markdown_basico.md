@@ -370,7 +370,7 @@ Una gran ventaja de los links formateados es la posibilidad de acceder a rutas d
 
 ## Imágenes 
 
-MarkdDown permite mostrar imágenes tanto locales como remotas.
+MarkDown permite mostrar imágenes tanto locales como remotas.
 
 Para mostrar las imágenes hay dos opciones disponibles:
 ```md

@@ -206,10 +206,40 @@ Las fechas se pueden mostrar en varios formatos:
 
 
 
-### Colaboradores
+### Autores y Colaboradores
 
 
-Mkdocs es compatible con dos plugins externos llamados *git-committers*(`mkdocs-git-committers-plugin-2`) y *git-authors* (`mkdocs-git-authors-plugin`). [Ver más información.](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-contributors)
+Mkdocs es compatible con dos plugins externos llamados *git-committers*(`mkdocs-git-committers-plugin-2`) y *git-authors* (`mkdocs-git-authors-plugin`):
+
+ - *git-committers* agrega enlaces al perfil de GitHub de los contribuyentes del repositorio en el footer de la página;
+ - *git-authors* agrega enlaces al correo del autor del repositorio en el footer de la página.
+
+
+Ambos plugins son independientes uno del otro. Para usarlos deben ser instalados:
+
+```bash title="Instalar plugins de autores"
+pip install mkdocs-git-committers-plugin-2
+pip install mkdocs-git-authors-plugin
+```
+
+Para habilitarlos a ambos agregar al archivo de configuración:
+
+
+```yaml  title="Habilitar plugins de autores"
+# "mkdocs.yml"
+plugins:
+  # contribuyentes
+  - git-committers:
+      repository: nombre_usuario/nombre_repositorio
+      branch: master      # rama a seguir
+      enabled: true
+  #  autores
+  - git-authors
+```
+
+Debe tenerse en cuenta que *git-committers* ralentiza significativamente la puesta en marcha del sitio debido al seguimiento de contribuyentes que el plugin hace sobre cada página del proyecto.
+
+[Ver más información.](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-contributors)
 
 
 

@@ -49,7 +49,7 @@ theme:
     # pestañas de contenido
     - navigation.tabs
     # - navigation.tabs.sticky
-    - navigation.sections
+    # - navigation.sections
     - navigation.expand
     # - navigation.prune 
     # - navigation.indexes 
@@ -166,10 +166,15 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+  # listas especiales
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 
-extra:
-  homepage: https://marcelomarot.github.io/markdown-mkdocs/
+
+# extra:
+  # homepage: https://marcelomarot.github.io/markdown-mkdocs/
   # homepage: /
 
   # habilitar Google Analytics
@@ -285,7 +290,12 @@ plugins:
       # type: timeago       # tiempo desde publicación
       fallback_to_build_date: true
 
-
+  # autores y colaboradores
+  # - git-authors
+  # - git-committers:
+  #     repository: MarceloMarot/markdown-mkdocs
+  #     branch: master
+  #     enabled: true
 
 
 nav:
@@ -306,6 +316,7 @@ nav:
       - Sobreescritura:  mkdocs-material/setup/sobreescritura.md
       - Componentes:  mkdocs-material/setup/componentes.md
       - Analíticas:  mkdocs-material/setup/analiticas.md
+      - Privacidad de datos:  mkdocs-material/setup/privacidad_datos.md
 
 
     - Referencia: 
@@ -321,6 +332,7 @@ nav:
       - Notas al Pie (footnotes): mkdocs-material/referencia/footnotes.md
       - Formateo: mkdocs-material/referencia/formateo.md
       - Imágenes: mkdocs-material/referencia/imagenes.md
+      - Listas: mkdocs-material/referencia/listas.md
 
 
 

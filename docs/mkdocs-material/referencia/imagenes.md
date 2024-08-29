@@ -16,6 +16,19 @@ markdown_extensions:
   - md_in_html
 ```
 
+!!! tip "Imágenes externas"
+
+    Habilitando el plugin `privacy` se ordena al framework a guardar en el servidor una copia local de cada imagen remota a la que se haya asignado un enlace. De esta manera no es necesario agregar dichas imágenes al repositorio del proyecto, evitando desperdiciar almacenamiento al tiempo que las imágenes se pueden actualizar con mayor facilidad.
+
+    ``` yaml title="habilitar copia local de imágenes"        
+    # "mkdocs.yml"
+    plugins:
+      - privacy
+    ```
+
+    Más sobre el plugin privacy: [Privacidad de datos](../setup/privacidad_datos.md#plugin-privacy)  
+
+
 
 ## GLightBox
 

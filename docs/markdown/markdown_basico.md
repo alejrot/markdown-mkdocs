@@ -275,7 +275,7 @@ Resultado:
 
 
 
-### Tablas 
+## Tablas 
 
 El maquetado de las tablas se realiza con barras verticales (`|`) para delimitar las columnas, y al menos tres guiones (`---`)  para delimitar los encabezamientos de tabla
 

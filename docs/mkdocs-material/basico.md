@@ -49,7 +49,7 @@ El directorio `docs/` es la ruta predefinida para colocar todos los documentos M
 El archivo YAML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío. Al configurarlo toma una estructura como la mostrada a continuación:
 
 
-```yaml title="Archvivo de configuración - Sintaxis básica"
+```yaml title="Archivo de configuración - Sintaxis básica"
 # archivo "mkdocs.yml" 
 site_name: nombre_sitio
 
@@ -98,6 +98,20 @@ La sección `nav` describe la organización en secciones , subsecciones  y pági
 En caso de omitir la sección `nav` MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
 
 
+El tema elegido se reemplaza con el campo `name`. Las opciones instaladas son `material` (tema por defecto), `mkdocs` (tema original del plugin) y `readthedocs` (tema alternativo del plugin).
+
+
+```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 9"
+# archivo "mkdocs.yml" 
+
+# Tema elegido
+theme: 
+  # tema predefinido
+  # name: material    
+  # temas alternativos
+  # name: mkdocs   
+  name: readthedocs    
+```
 
 
 ## Live server

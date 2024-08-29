@@ -9,7 +9,7 @@ Markdown es un formato de texto enriquecido simple, muy práctico para hacer doc
 <!-- [Markdown - Básico](markdown_basico.md) -->
 
 
-
+[Comenzar con MarkDown](markdown/markdown_basico.md)
 
 
 
@@ -17,7 +17,8 @@ Markdown es un formato de texto enriquecido simple, muy práctico para hacer doc
 ## :simple-materialformkdocs:{.gris} MkDocs
 
 
-MkDocs es un framework implementado en Python que permite crear sitios web estáticos a partir de documentos Markdown.
+[MkDocs](https://www.mkdocs.org/) es un framework implementado en Python que permite crear sitios web estáticos a partir de documentos Markdown. Incorpora de forma predefinida dos temas, llamados 'Mkdocs' y *'ReadTheDocs'*
 
+Su variante más popular es [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/), que es la qque agrega el tema *'Material'* de Google, que es la usada como referencia para esta documentación. 
 
-
+[Comenzar con MkDocs](mkdocs-material/basico.md)

@@ -1,4 +1,6 @@
-from time import time
+from time import  time, sleep
 
-time.sleep(1)
+print(f"Tiempo actual: {time()}")
+sleep(3)
+print(f"Tiempo actual: {time()}")
 

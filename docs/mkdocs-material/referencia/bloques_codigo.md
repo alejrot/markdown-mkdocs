@@ -107,30 +107,73 @@ Ejemplo: la función `#!py range()` se usa para generar una secuencia de número
 Ejemplo: la función `#!py range()` se usa para generar una secuencia de números.
 
 
-### Archivos embebidos (REVISAR)
+### Archivos embebidos 
+
+Con ayuda del plugin ***snippets*** MkDocs es capaz de renderizar archivos de texto dentro de los bloques de código. Para ello se escribe la secuencia `--8<--` y  continuación la ruta del archivo a renderizar entre comillas:
+
+`--8<-- "ruta_archivo"`
 
 
+Al ubicar la secuencia adentro del bloque de códigos MkDocs lo incorpora completo:
 
-``` title="ejemplo.py"
--8<-- ".ejemplo.py"
--8<-- "ejemplo.py"
+
+```py title="Archivo embebido - ejemplo"
+--8<-- "docs/mkdocs-material/referencia/ejemplo.py"
 ```
 
+*snippets* soporta el renderizado selectivo de renglones, agregando los números de línea tras la ruta. Notaciones:
 
-<!-- 
---8<-- "ejemplo.py"
---8<-- ".ejemplo.py"
--->
+|Secuencia| Uso|
+|:---|:---|
+|`--8<-- "ruta_archivo:n "`| Sólo renglón `n`|
+|`--8<-- "ruta_archivo::n "`| Hasta renglón `n`|
+|`--8<-- "ruta_archivo:n:m "`| Renglones desde `n` hasta `m`|
 
 
-EJEMPLO 1
+Ejemplo: 
 
---8<-- 
-ejemplo.py
---8<-- 
+```py title="Archivo embebido - seleccion renglones"
+--8<-- "docs/mkdocs-material/referencia/ejemplo.py:3:5"
+```
 
-EJEMPLO 2
+Además se admite la selección de un bloque específico del archivo, el cual debe estar delimitado con las secuencias  `--8<-- [start:nombre_seccion]` y `--8<-- [end:nombre_seccion]`. Para invocar el segmento solamente debe agregarse el nombre de la sección a la secuencia:
 
---8<-- 
-.ejemplo.py
---8<--
+`--8<-- "ruta_archivo:nombre_seccion"`
+
+
+Ejemplo: renderizado de la sección `funcion`
+
+
+<div class="grid" markdown>
+```py title="Archivo embebido - marcado sección" hl_lines="2 5"
+# (archivo fuente)
+# --8<-- [start:funcion]
+def mi_funcion(x):
+    pass
+# --8<-- [end:funcion]
+```
+
+```py title="Archivo embebido - renderizado"
+--8<-- "docs/mkdocs-material/referencia/ejemplo_seccion.py:funcion"
+```
+</div>
+
+
+
+
+!!! warning "Ruta desde raíz"
+
+    La ruta de archivo debe ser relativa al directorio raiz del repositorio, de otra forma no lo encuentra. Por ejemplo, si el archivo a renderizar se llama `ejemplo.py` y está ubicado en la ruta `docs/mkdocs-material/referencia/` entonces la secuencia para el renderizado será:
+
+    `--8<-- "docs/mkdocs-material/referencia/ejemplo.py"`
+
+
+
+
+## Referencias
+
+[Sitio oficial - Code Blocks](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/)
+
+
+[PymDown Extensions - Snippets](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
+

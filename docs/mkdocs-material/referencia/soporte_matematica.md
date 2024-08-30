@@ -1,3 +1,18 @@
+---
+tags:
+#   - HTML5
+  - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+---
+
 # Soporte para Matematicas
 
 
@@ -11,7 +26,7 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
 
 === "MathJax"
 
-    ``` yaml
+    ``` yaml title="Habilitación"
     # "mkdocs.yml"
     markdown_extensions:
     - pymdownx.arithmatex:
@@ -27,7 +42,7 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
 
 === "KaTex"
 
-    ``` yaml 
+    ``` yaml title="Habilitación"
     # "mkdocs.yml"
     markdown_extensions:
     - pymdownx.arithmatex:
@@ -43,14 +58,21 @@ MkDocs es compatible con dos blibliotecas para renderizar contenido matemático,
     ```
 
 
-Nótese que ambas opciones requieren acceso a bibliotecas remotas, lo cual puede solventarse haciendo una copia local y adjhuntándola al proyecto.
+!!! info "Contenido remoto"
 
-Además, ambas bibliotecas requieren contenido JavaScript adicional:
+    Nótese que ambas opciones requieren acceso a bibliotecas remotas, lo cual puede solventarse haciendo una copia local y adjuntándola al proyecto.
+
+!!! tip "Plugin privacy"
+
+    El plugin `setup` permite hacer la copia local de los plugins automáticamente durante el deploy. [Más sobre este plugin](../setup/privacidad_datos.md)
+
+
+Ambas bibliotecas requieren archivos JavaScript adicionales para su uso:
 
 
 === "MathJax"
 
-    ``` js
+    ``` js title="Contenido JavaScript local"
     // archivo "docs/javascripts/mathjax.js"
     window.MathJax = {
         tex: {
@@ -76,9 +98,9 @@ Además, ambas bibliotecas requieren contenido JavaScript adicional:
 
 
 
-=== "KaTex"
+=== "KaTex" 
 
-    ``` js
+    ``` js title="Contenido JavaScript local"
     // archivo "docs/javascripts/katex.js"
     document$.subscribe(({ body }) =>{ 
         renderMathInElement(body, {

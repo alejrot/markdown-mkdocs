@@ -1,3 +1,19 @@
+---
+tags:
+#   - HTML5
+  # - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+  - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+  - Bash
+---
+
 
 # Componentes
 
@@ -45,6 +61,7 @@ theme:
 Agrega al *footer* enlaces a redes sociales. El formato es el siguiente:
 
 ``` yaml title="Footer - Enlaces a redes sociales"
+# "mkdocs.yml"
 extra:
   social:
     # enlace a Mastodon
@@ -201,7 +218,7 @@ Las fechas se pueden mostrar en varios formatos:
 | `date`     |  fecha - meses por nombre|
 | `datetime`  |fecha y hora - meses por nombre|
 | `iso_date`  |fecha ISO (meses por número)|
-| `iso_datetime` | fecha ISO (meses por número)|
+| `iso_datetime` | fecha ISO (meses por número) y hora|
 | `timeago`      | tiempo desde publicación|
 
 

@@ -1,3 +1,19 @@
+---
+tags:
+#   - HTML5
+#   - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+---
+
+
 # Grids
 
 Las grillas o grids son conjuntos de bloques agrupados.
@@ -8,7 +24,7 @@ Las grillas o grids son conjuntos de bloques agrupados.
 
 Las grids deben habilitarse en el archivo de configuración:
 
-```yaml
+```yaml title="Habilitacion de grillas"
 markdown_extensions: 
   - attr_list
   - md_in_html
@@ -23,7 +39,7 @@ markdown_extensions:
 La forma más elemental del uso de *card grids* consiste en rodear una lista dentro de un objeto `div` especial, de esta manera cada item se convierte en un bloque animado al renderizarse:
 
 
-```md hl_lines="1 6-7"
+```md hl_lines="1 6-7" title="Grilla - Elementos simples"
 <div class="grid cards" markdown>
 - :fontawesome-brands-html5: __HTML__ para contenido y estructura
 - :fontawesome-brands-js: __JavaScript__ para interactividad
@@ -51,7 +67,7 @@ El resultado es el mostrado a continuación:
 Los bloques admiten múltiple contenido el cual puede separarse con  la secuencia `---`:
 
 
-```md
+```md title="Grilla - Elementos compuestos"
 <div class="grid cards" markdown>
 
 -   :material-clock-fast:{ .lg .middle } __Instala en 5 minutos__

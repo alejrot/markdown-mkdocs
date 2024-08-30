@@ -1,15 +1,30 @@
-https://programmerclick.com/article/9139292621/
-
-http://rusersgroup.com/blog/rmarkdown/
-
-
-<!-- # Simbolos -->
+---
+tags:
+  # - HTML5
+  # - JavaScript
+  # - CSS
+#   - YAML
+#   - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+#   - Bash
+---
 
 
 # Fórmulas en MarkDown
 
-
 ## Introducción
+
+
+MarkDown **no soporta** de base el uso de fórmulas matemáticas. Sin embargo, existen plugins que permiten dar soporte a MarkDown de las fórmulas escritas en lenguaje TEX y sus derivados.
+
+A continuación se explora la sintaxis para escribir símbolos y fórmulas matemáticas.
+
+## Sintaxis
 
 Las fórmulas matemáticas se marcan entre simbolos de peso (`$`) antes y después de la fórmula:
 ```
@@ -306,4 +321,8 @@ $\underline{c+d}$
 
 ## Referencias
 
-[programador clic - Markdown fórmulas y símbolos matemático](https://programmerclick.com/article/9139292621/)
+[Programador Clic - Markdown fórmulas y símbolos matemático](https://programmerclick.com/article/9139292621/)
+
+
+
+[R Users Group - Ecuador - Guía completa markdown y su integración con R](http://rusersgroup.com/blog/rmarkdown/)

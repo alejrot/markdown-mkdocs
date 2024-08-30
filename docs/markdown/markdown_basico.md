@@ -1,3 +1,18 @@
+---
+tags:
+  - HTML5
+  # - JavaScript
+  - CSS
+#   - YAML
+#   - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+#   - Bash
+---
 
 # Markdown - Básico
 
@@ -330,10 +345,10 @@ MarkDown acepta el comentado de texto, el cual no será visible al renderizarlo.
 <!-- Comentario een Markdown -->
 ```
 
+## Enlaces
 
 
-
-## Links simples
+### Links simples
 
 Los intérpretes de MarkDown incluyen renderizado de links, de modo de poder clickearlos:
 
@@ -345,6 +360,8 @@ Los intérpretes de MarkDown incluyen renderizado de links, de modo de poder cli
 <yo@miserver.com>
 ```
 
+Resultado:
+
 <!-- URLs -->
 <https://www.mi_url.org>
 
@@ -353,13 +370,27 @@ Los intérpretes de MarkDown incluyen renderizado de links, de modo de poder cli
 
 
 
-## Links formateados
+### Links formateados
 
-Los links formateados consisten en un texto descriptivo rodeado pro corchetes seguido de un enlace con la ruta de destino
+Los links formateados consisten en un texto descriptivo rodeado por corchetes seguido de un enlace con la ruta de destino:
 
-```md
+```md title="Enlaces formateados"
 [Texto descriptivo](ruta_enlace)
 ```
+
+Una alternativa para crear links consiste en asignar un número como link y asignarle la ruta a posteriori:
+
+
+```md title="Enlaces formateados"
+[Texto descriptivo Nº1][1]
+[Texto descriptivo Nº2][2]
+
+[1]: ruta_enlace_1
+[2]: ruta_enlace_2
+```
+
+
+### Ir a secciones
 
 Una gran ventaja de los links formateados es la posibilidad de acceder a rutas de archivos internos, secciones del mismo documento, enlaces a otros documentos de MarkDown, etc.
 
@@ -367,6 +398,47 @@ Una gran ventaja de los links formateados es la posibilidad de acceder a rutas d
 [Ir a la sección](#heading_codificado)
 [Ir a otro archivo y sección](ruta_archivo#heading_codificado)
 ```
+
+Como ejemplo, se muestran un link al título de esta página y uno a la página principal del proyecto:
+
+```md title="Links a secciones - Ejemplos"
+ <!-- Enlace local -->
+[**Subir a 'Enlaces'**](#enlaces) 
+
+<!-- Enlace a otro documento -->
+[Volver al inicio](../index.md#markdown--mkdocs) 
+```
+
+Los enlaces obtenidos son los siguientes:
+
+[**Subir a 'Enlaces'**](#enlaces) 
+
+[**Volver al inicio**](../index.md#markdown--mkdocs) 
+
+
+
+### Ir a secciones - tags HTML
+
+Con etiquetas HTML se pueden marcar ubicaciones especificas e ir a ellas con un simple link escrito en MarkDown:
+
+
+```md title="Links a secciones - tags HTML"
+<a name="top"></a>      # Esta etiqueta va en el lugar de destino
+...
+
+[Subir al inicio](#top) # Enlace al destino
+```
+
+
+De esta forma, haciendo etiquetas con distintos nombres se pueden implementar saltos a lugares arbitrarios del documento.
+
+
+
+
+
+
+
+
 
 ## Imágenes 
 
@@ -388,7 +460,7 @@ Ejemplo: imagen remota aleatoria desde Picsum
 ![Imagen de Picsum](https://picsum.photos/256/256?0)
 
 
-# Imagenes con enlace
+<!-- # Imagenes con enlace -->
 
 Las imágenes pueden traer integrado un enlace. Para ello, los corchetes del enlace rodean el link completo de la imagen.
 
@@ -396,20 +468,14 @@ Las imágenes pueden traer integrado un enlace. Para ello, los corchetes del enl
 [![Descripción imagen](ruta_imagen)](ruta_enlace)
 ```
 
+Ejemplo: imagen remota aleatoria desde Picsum (con enlace)
 
 ```md 
-[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://www.mozilla.org/es-AR/firefox/new/)
+[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://picsum.photos/)
 ```
 
 
-[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://www.mozilla.org/es-AR/firefox/new/)
-
-
-
-
-
-
-
+[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://picsum.photos/)
 
 
 
@@ -428,36 +494,6 @@ Las imágenes pueden traer integrado un enlace. Para ello, los corchetes del enl
 
 
 
+[Microsoft Learn - How to write links](https://learn.microsoft.com/es-es/contribute/content/how-to-write-links)
 
 
-## Ir a secciones
-
-
-Con etiquetas HTML se pueden marcar ubicaciones especificas e ir a ellas con un simple click:
-
-    <a name="top"></a>      # Esta etiqueta va en el lugar de destino
-    ...
-
-    [Subir al inicio](#top) # Enlace al destino
-
-Haciendo etiquetas con distintos nombres se pueden implementar saltos a distintos lugares
-
-
-https://learn.microsoft.com/es-es/contribute/content/how-to-write-links
-
-
-    ## <a name="anchortext" />Header text
-
-
-    To go to a section on the same page:
-    [text](#anchortext)
-
-    To go to a section on another page.
-    [text](filename.md#anchortext)
-
-
-Markdown acepta links a los titulos del documento. Ejemplo:
-
-    [Notas al pie](#notas-al-pie)
-    
-    [Ir a secciones](#ir-a-secciones)

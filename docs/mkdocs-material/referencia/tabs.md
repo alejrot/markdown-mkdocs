@@ -1,3 +1,18 @@
+---
+tags:
+#   - HTML5
+  # - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+---
+
 # Pestañas de contenido
 
 MkDocs permite agrupar contenido alternativo en varias pestañas, de modo que el usuario pueda seleccionar una u otra.

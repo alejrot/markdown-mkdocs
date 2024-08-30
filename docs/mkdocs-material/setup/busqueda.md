@@ -1,3 +1,18 @@
+---
+tags:
+#   - HTML5
+  # - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+#   - Bash
+---
 
 
 # Búsqueda
@@ -76,7 +91,7 @@ search:
 # Titulo
 ```
 
-
+[Más información sobre los encabezamientos](../referencia/headers.md#uso-de-headers)
 
 
 

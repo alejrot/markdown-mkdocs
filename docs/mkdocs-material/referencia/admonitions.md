@@ -1,3 +1,16 @@
+---
+tags:
+#   - HTML5
+#   - JavaScript
+  - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+---
 
 ## Advertencias (*admonitions*)
 

@@ -1,3 +1,19 @@
+---
+tags:
+#   - HTML5
+  # - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+---
+
+
 # Formateo
 
 
@@ -6,7 +22,7 @@
 Se llaman a las extensiones  necesarias desde el archivo de configuración:
 
 
-```yaml
+```yaml title="habilitación de formatos"
 # 'mkdocs.yml'
 markdown_extensions:
   - pymdownx.critic

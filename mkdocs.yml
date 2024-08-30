@@ -24,6 +24,22 @@ theme:
     # Icono de acciones de repositorio
     edit: material/pencil 
     view: material/eye
+    #  iconos de etiquetas
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      yaml: simple/yaml
+      python: fontawesome/brands/python
+      docker: fontawesome/brands/docker
+      podman: simple/podman
+      markdown: fontawesome/brands/markdown
+      mkdocs: simple/materialformkdocs
+      ts: simple/typescript
+      csv: fontawesome/solid/file-csv
+      bash: simple/gnubash
+      # icono comodín
+      # default: material/cursor-default-click
 
   # # fuentes remotas
   # font:
@@ -173,9 +189,24 @@ markdown_extensions:
 
 
 
-# extra:
+extra:
   # homepage: https://marcelomarot.github.io/markdown-mkdocs/
   # homepage: /
+
+  # Etiquetas de contenidos
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    YAML: yaml
+    Python: python
+    Docker: docker 
+    Podman: podman 
+    MarkDown: markdown
+    MkDocs: mkdocs
+    TypeScript: ts
+    CSV: csv
+    Bash: bash 
 
   # habilitar Google Analytics
   # analytics:
@@ -279,6 +310,12 @@ plugins:
   # busqueda
   - search
 
+  # etiquetas
+  # - tags
+  - tags:
+      tags_file: tags.md
+  #     tags_file: mkdocs-material/referencia/tags.md
+
   # fechas de repositorio
   - git-revision-date-localized:
       enabled: true
@@ -313,14 +350,14 @@ nav:
       - Fuentes: mkdocs-material/setup/fuentes.md
       - Búsqueda:  mkdocs-material/setup/busqueda.md
       - Navegación:  mkdocs-material/setup/navegacion.md
-      - Sobreescritura:  mkdocs-material/setup/sobreescritura.md
+      - Sobreescritura y Personalización:  mkdocs-material/setup/sobreescritura.md
       - Componentes:  mkdocs-material/setup/componentes.md
       - Analíticas:  mkdocs-material/setup/analiticas.md
       - Privacidad de datos:  mkdocs-material/setup/privacidad_datos.md
 
 
     - Referencia: 
-      - Encabezamientos: mkdocs-material/referencia/headers.md
+      - Encabezamientos y Etiquetas: mkdocs-material/referencia/headers.md
       - Advertencias: mkdocs-material/referencia/admonitions.md
       - Bloques de código: mkdocs-material/referencia/bloques_codigo.md
       - Tablas: mkdocs-material/referencia/tablas.md
@@ -334,6 +371,10 @@ nav:
       - Imágenes: mkdocs-material/referencia/imagenes.md
       - Listas: mkdocs-material/referencia/listas.md
 
+
+
+
+  - Indice de tags: tags.md
 
 
 

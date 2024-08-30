@@ -1,3 +1,17 @@
+---
+tags:
+#   - HTML5
+#   - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - MarkDown
+#   - TypeScript
+  # - CSV
+---
 
 
 # Anotaciones
@@ -13,7 +27,7 @@ Las anotaciones emergentes (*annotations*) son iconos con contenido emergente (1
 
 Las *annotations* deben habilitarse en el archivo de configuración:
 
-``` yaml 
+``` yaml title="Habilitar anotaciones"
 # "mkdocs.yml"
 markdown_extensions:
   - attr_list
@@ -26,7 +40,7 @@ markdown_extensions:
 
 El ícono que muestra el documento se puede cambiar en el archivo de configuraciones:
 
-``` yaml 
+``` yaml title="Icono de anotaciones"
 # "mkdocs.yml"
 theme:
   icon:
@@ -53,7 +67,7 @@ Algunos iconos usados habitualmente en MkDocs para las anotaciones son los sigui
 Se asigna un numero de anotación entre paréntesis y al finalizar la oración se pone en el renglón inmediatamente inferior `{ .annotate }`
 
 
-``` md hl_lines="2"
+``` md hl_lines="2" title="Uso de anotaciones"
 En este texto coloco una anotación (1) desplegable. 
 { .annotate }  
 

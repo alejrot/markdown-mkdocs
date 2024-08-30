@@ -84,6 +84,9 @@ theme:
     # - content.action.edit
     - content.action.view
 
+    # tooltips
+    - content.tooltips
+
 
   # soporte de idiomas
   language: es    # Idioma predefinido
@@ -186,6 +189,14 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
+  # tooltips
+  - abbr
+  - attr_list
+  # - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+          - includes/glosario.md
 
 
 
@@ -335,6 +346,10 @@ plugins:
   #     enabled: true
 
 
+watch:
+  - includes
+
+
 nav:
   - Indice: index.md
   - MarkDown:  
@@ -370,6 +385,7 @@ nav:
       - Formateo: mkdocs-material/referencia/formateo.md
       - Imágenes: mkdocs-material/referencia/imagenes.md
       - Listas: mkdocs-material/referencia/listas.md
+      - Tooltips: mkdocs-material/referencia/tooltips.md
 
 
 

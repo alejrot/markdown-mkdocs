@@ -378,7 +378,7 @@ Los links formateados consisten en un texto descriptivo rodeado por corchetes se
 [Texto descriptivo](ruta_enlace)
 ```
 
-Una alternativa para crear links consiste en asignar un número como link y asignarle la ruta a posteriori:
+Una alternativa para crear links consiste en asignar un número o secuencia entre corchetes (`[]`)y asignarle la ruta a posteriori:
 
 
 ```md title="Enlaces formateados"

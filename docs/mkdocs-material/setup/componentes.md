@@ -94,7 +94,7 @@ Por supuesto, los creadores del framework piden dejarlo a modo de promoción del
 
 ### Copyright
 
-El copyright se asigna con la propeidad `copyright`: 
+El copyright se asigna con la propiedad `copyright`: 
 
 ``` yaml title="Footer - Copyright"
 # "mkdocs.yml"
@@ -188,14 +188,11 @@ Se hace uso de un plugin extra llmamado `mkdocs-git-revision-date-localized-plug
 
 
 
-!!! warning "Instalación"
+Este plugin no está incorporado en el paquete PIP ni en la imagen de Docker, por ello debe ser instalado para su uso:
 
-
-    Este plugin **no está incorporado** en el paquete PIP ni en la imagen de Docker, por ello debe ser instalado para su uso:
-
-    ```bash title="git-revision - Instalacion"
-    pip install mkdocs-git-revision-date-localized-plugin
-    ```
+```bash title="git-revision - Instalacion"
+pip install mkdocs-git-revision-date-localized-plugin
+```
 
     
 Este plugin se habilita desde la sección `plugins` del archivo YAML:

@@ -369,7 +369,7 @@ nav:
       - Componentes:  mkdocs-material/setup/componentes.md
       - Analíticas:  mkdocs-material/setup/analiticas.md
       - Privacidad de datos:  mkdocs-material/setup/privacidad_datos.md
-
+      - Versionado: mkdocs-material/setup/versionado.md
 
     - Referencia: 
       - Encabezamientos y Etiquetas: mkdocs-material/referencia/headers.md

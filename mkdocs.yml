@@ -300,11 +300,16 @@ extra_javascript:
 
 plugins:
   # Tarjetas PNG automáticas 
-  # - social:
+  - social:
   #     cards_layout: default/purple
-  #     cards_layout_options:
+      cards_layout_options:
   #       # background_color: "#0FF1CE8F"
-  #       background_color: "#0FF1CEFF"
+        # background_color: "#0FF1CEFF"
+        background_color: "#9966CC"
+        # background_color: "#9A5FCE"
+        # background_color: "#9033FF"
+        # background_color: "#B266FF"
+        # background_color: "#CC99FF"
 
   #     debug: true
 
@@ -370,6 +375,7 @@ nav:
       - Analíticas:  mkdocs-material/setup/analiticas.md
       - Privacidad de datos:  mkdocs-material/setup/privacidad_datos.md
       - Versionado: mkdocs-material/setup/versionado.md
+      - Blog: mkdocs-material/setup/blog.md
 
     - Referencia: 
       - Encabezamientos y Etiquetas: mkdocs-material/referencia/headers.md

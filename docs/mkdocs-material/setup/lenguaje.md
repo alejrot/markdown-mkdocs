@@ -21,11 +21,16 @@ tags:
 
 ## Idioma predefinido
 
+La configuración del lenguaje afecta tanto a la visualización de los datos del sitio web como al SEO al ser publicado. 
+Se asigna con la propiedad `language` en el archivo de configuración:
+
 ``` yaml title="Idioma predefinido"
 # "mkdocs.yml"
 theme:
-  language: es    # Idioma predefinido
+  language: es    # Idioma elegido: español
 ```
+
+El lenguaje de configuración por defecto es el inglés (`en`) salvo indicación contraria.
 
 
 ## Opciones de idioma

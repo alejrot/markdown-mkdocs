@@ -1,5 +1,7 @@
-site/       
-.cache/     
+site      
+.cache    
+.venv
+venv
 
 *.webp
 *.png

@@ -6,8 +6,6 @@ Esta documentación explora la sintaxis y uso de Markdown y de MkDocs.
 
 Markdown es un formato de texto enriquecido simple, muy práctico para hacer documentación. Suele usarse como alternativa simplificada al lenguaje HTML.
 
-<!-- [Markdown - Básico](markdown_basico.md) -->
-
 
 [Comenzar con MarkDown](markdown/markdown_basico.md)
 
@@ -21,4 +19,4 @@ Markdown es un formato de texto enriquecido simple, muy práctico para hacer doc
 
 Su variante más popular es [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/), que es la que agrega el tema *'Material'* de Google y es la usada como referencia para esta documentación. 
 
-[Comenzar con MkDocs-Material](mkdocs-material/basico.md)
+[Comenzar con MkDocs-Material](mkdocs-material/instalacion/comenzando.md)

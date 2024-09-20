@@ -362,7 +362,10 @@ nav:
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
 
-    - Primeros pasos: mkdocs-material/basico.md
+    - Instalacion:
+      - Primeros pasos: mkdocs-material/instalacion/comenzando.md
+      - Publicacion: mkdocs-material/instalacion/deploy.md
+      - Usando contenedores: mkdocs-material/instalacion/contenedores.md
     
     - Configuración: 
       - Lenguaje: mkdocs-material/setup/lenguaje.md

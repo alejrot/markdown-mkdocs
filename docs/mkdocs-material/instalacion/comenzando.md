@@ -6,8 +6,8 @@ tags:
   - YAML
   - MkDocs
   - Python
-  - Docker
-  - Podman
+  # - Docker
+  # - Podman
   # - MarkDown
 #   - TypeScript
   # - CSV
@@ -80,57 +80,24 @@ El archivo YAML es el que require incorporar todas las configuraciones: plugins,
 
 ```yaml title="Archivo de configuración - Sintaxis básica"
 # archivo "mkdocs.yml" 
-site_name: nombre_sitio
 
+# informacion del sitio
+site_name: nombre_sitio
+site_description: Una breve descripcion del sitio
 site_url: https://url_dominio/nombre_sitio   
+
+# carpeta del sitio
+docs_dir: docs/     # valor prefefinido: docs    
 
 # Tema elegido
 theme: 
   name: material    # tema predefinido
   ... # opciones de tema
-  
-
-# extensiones usadas
-markdown_extensions: 
-  - extension_1
-  - extension_2
-  - ....
-    
-
-# hojas de estilo adicionales
-extra_css:
-
-# rutinas JS adicionales
-extra_javascript:
-
-#  componentes y opciones adicionales
-extra:
-
-
-# Plugins habilitados
-plugins:
-    - plugin_1
-    - plugin_2
-    - ...
-
-
-# navegación
-nav:
-    # nombre y link de documentos internos
-    - Pagina 1: ruta_1
-    - Pagina 2: ruta_2
-    - ...
 ```
-
-La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. 
-Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino. Combinando ambos MkDocs crea cada link y los muestra en el mismo orden de definición. 
-En caso de omitir la sección `nav` MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
 
 
 El tema elegido se reemplaza con el campo `name`. Las opciones instaladas son `material` (tema por defecto), `mkdocs` (tema original del plugin) y `readthedocs` (tema alternativo del plugin).
-
-
-```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 9"
+```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 6"
 # archivo "mkdocs.yml" 
 
 # Tema elegido
@@ -140,6 +107,61 @@ theme:
   # temas alternativos
   # name: mkdocs   
   # name: readthedocs    
+```
+
+
+La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. 
+Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino. 
+Combinando ambos MkDocs crea cada link y los muestra en el mismo orden de definición.
+
+```yaml title="Archivo de configuración - Configuracion de navegacion"
+# archivo "mkdocs.yml" 
+
+# navegación
+nav:
+  # nombre y link de documentos internos
+  - Pagina 1: ruta_1
+  - Pagina 2: ruta_2
+  - ...
+```
+
+
+En caso de omitir la sección `nav` MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
+
+Por último, en el archivo de configuración se agregan y configuran extensiones de MarkDown, plugins de Python, hojas de estilo CSS, etc:
+
+```yaml title="Archivo de configuración - Extensiones y plugins"
+# archivo "mkdocs.yml" 
+
+# extensiones de markdown usadas 
+markdown_extensions: 
+  - extension-1
+  - extension-2
+  - ....
+    
+# hojas de estilo adicionales
+extra_css:
+  - ruta-css-1
+  - ruta-css-2
+  - ...
+
+# rutinas JS adicionales
+extra_javascript:
+  - ruta-js-1
+  - ruta-js-2
+  - ...
+
+#  componentes y opciones adicionales
+extra:
+  - extra-1
+  - extra-2
+  - ...
+
+# Plugins de Python habilitados
+plugins:
+  - plugin_1
+  - plugin_2
+  - ...
 ```
 
 

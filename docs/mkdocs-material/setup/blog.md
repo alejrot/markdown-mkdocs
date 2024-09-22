@@ -215,7 +215,7 @@ plugins:
 
 El tiempo estimado de lectura se indica en la parte superior del post. Éste es visible de forma predeterminada y se estima automáticamente:
 
-```yaml
+```yaml 
 # archivo "mkdocs.yml"
 plugins:
   - blog:
@@ -290,6 +290,7 @@ Los autores se registran en un archivo YAML oculto llamamdo `.authors.yml` al la
 ```
 
 Dentro del archivo de autores se enumeran todos los autores autorizados mediante un apodo o diminutivo y cada uno de ellos debe de disponer de tres datos: 
+
 - nombre, sea éste real o seudónimo;
 - descripción (típicamente su rol en el proyecto);
 - avatar, el cual puuede ser una imagen local o remota.

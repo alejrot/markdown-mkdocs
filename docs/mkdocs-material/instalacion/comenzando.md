@@ -64,6 +64,8 @@ Mkdocs implementa su propio ejecutable llamado `mkdocs`. Para crear el proyecto 
 mkdocs new .            # ruta actual
 ```
 
+### Estructura de archivos
+
 El proyecto creado es un demo muy simple con la siguiente estructura:
 
 ```bash title="Estructura de proyecto"
@@ -74,6 +76,8 @@ El proyecto creado es un demo muy simple con la siguiente estructura:
 ```
 
 El directorio `docs/` es la ruta predefinida para colocar todos los documentos MD a publicar.
+
+### Archivo de configuracion
 
 El archivo YAML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío. Al configurarlo toma una estructura como la mostrada a continuación:
 
@@ -95,6 +99,7 @@ theme:
   ... # opciones de tema
 ```
 
+### Tema
 
 El tema elegido se reemplaza con el campo `name`. Las opciones instaladas son `material` (tema por defecto), `mkdocs` (tema original del plugin) y `readthedocs` (tema alternativo del plugin).
 ```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 6"
@@ -109,6 +114,7 @@ theme:
   # name: readthedocs    
 ```
 
+### Menú de navegacion
 
 La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. 
 Cada clave será el texto del índice y cada valor será la ruta relativa del documento destino. 
@@ -125,8 +131,9 @@ nav:
   - ...
 ```
 
-
 En caso de omitir la sección `nav` MkDocs creará un indexado automático donde leerá los títulos de los documentos internos.
+
+### Extensiones y plugins
 
 Por último, en el archivo de configuración se agregan y configuran extensiones de MarkDown, plugins de Python, hojas de estilo CSS, etc:
 
@@ -185,7 +192,7 @@ http://localhost:8000/
 
 La conversión a sitio estático se realiza con el comando `build`:
 
-```bash
+```bash title="Construcción de sitio"
 mkdocs build    
 ```
 

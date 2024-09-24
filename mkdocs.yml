@@ -350,6 +350,20 @@ plugins:
   #     branch: master
   #     enabled: true
 
+  # video
+  # - mkdocs-video
+  # - mkdocs-video:
+  #     # is_video: true
+  #     # is_video: false
+  #     video_muted: true
+  #     video_autoplay: true
+  #     video_controls: true
+  #     video_loop: true
+  #     # css_style:
+  #         # width: "100%"
+  #         # height: "44vw"
+  #         # height: "22.172vw"
+
 
 watch:
   - includes
@@ -393,6 +407,7 @@ nav:
       - Notas al Pie (footnotes): mkdocs-material/referencia/footnotes.md
       - Formateo: mkdocs-material/referencia/formateo.md
       - Imágenes: mkdocs-material/referencia/imagenes.md
+      - Videos: mkdocs-material/referencia/videos.md
       - Listas: mkdocs-material/referencia/listas.md
       - Tooltips: mkdocs-material/referencia/tooltips.md
 

@@ -50,15 +50,25 @@ markdown_extensions:
 
 Es usa la propiedad `title`  para asignar titulos a los bloques:
 
-```md title="Formato de título" 
-  ``` title="Formato de título"
-  contenido
-  ```
+```txt title="Formato de título" 
+    ```txt title="Título de bloque"
+    contenido
+    ```
 ```
 
-``` title="Formato de título"
+
+
+```txt title="Título de bloque"
 contenido
 ```
+
+
+!!! warning "Formato de datos"
+
+    MkDocs obliga a asignar un formato para el bloque (`txt`, `md`, `py`, `js`, etc) para poder usar las propiedades del bloque , incluyendo `title`.
+
+
+
 
 ### Remarcado y numeración de líneas
 
@@ -88,6 +98,11 @@ Observaciones:
 
 - `linenums` permite elegir el Nº de renglón inicial;
 - `hl_lines` permite remarcar tanto rangos de renglones mediane guiones como renglones aislados separados por espacios.
+
+
+!!! warning "Numeración requerida"
+
+    Tanto `hl_lines` como `linenums` exigen especificar al menos un numero
 
 
 ### Anotaciones

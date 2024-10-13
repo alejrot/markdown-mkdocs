@@ -23,7 +23,7 @@ MkDocs soporta de forma predefinida el uso de bloques de código. Sin embargo, M
 
 Hay prestaciones adicionales que se pueden habilitar, para ello se agrega al archivo de configuración:
 
-```  yaml
+```  yaml title="Bloques de código - Configuración"
 # "mkdocs.yml"
 theme:
   features:

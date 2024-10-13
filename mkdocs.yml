@@ -406,6 +406,7 @@ nav:
       - Íconos y Emojis: mkdocs-material/referencia/iconos_emojis.md
       - Notas al Pie (footnotes): mkdocs-material/referencia/footnotes.md
       - Formateo: mkdocs-material/referencia/formateo.md
+      - Botones: mkdocs-material/referencia/botones.md
       - Imágenes: mkdocs-material/referencia/imagenes.md
       - Videos: mkdocs-material/referencia/videos.md
       - Listas: mkdocs-material/referencia/listas.md

@@ -5,7 +5,7 @@ tags:
   # - CSS
   - YAML
   - MkDocs
-  - Python
+  # - Python
 #   - Docker
 #   - Podman
   - MarkDown

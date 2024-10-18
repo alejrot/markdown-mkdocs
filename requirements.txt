@@ -4,4 +4,4 @@ mkdocs-material
 # paquetes agregados
 mkdocs-git-revision-date-localized-plugin
 mkdocs-glightbox
-mkdocs-material[imaging]
+# mkdocs-material[imaging]

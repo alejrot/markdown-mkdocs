@@ -198,6 +198,12 @@ markdown_extensions:
       auto_append:
           - includes/glosario.md
 
+  #  soporte para diagramas Mermaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 
 extra:
@@ -299,6 +305,9 @@ extra_javascript:
 
 
 plugins:
+
+  # - info
+
   # Tarjetas PNG automáticas 
   - social:
   #     cards_layout: default/purple
@@ -411,7 +420,7 @@ nav:
       - Videos: mkdocs-material/referencia/videos.md
       - Listas: mkdocs-material/referencia/listas.md
       - Tooltips: mkdocs-material/referencia/tooltips.md
-
+      - Diagramas: mkdocs-material/referencia/diagramas.md
 
 
 

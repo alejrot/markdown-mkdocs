@@ -306,15 +306,15 @@ plugins:
   # - info
 
   # Tarjetas PNG automáticas 
-  # - social:
-  #     cards_layout_options:
-  #       # background_color: "#0FF1CE8F"
-  #       # background_color: "#0FF1CEFF"
-  #       background_color: "#9966CC"
-  #       # background_color: "#9A5FCE"
-  #       # background_color: "#9033FF"
-  #       # background_color: "#B266FF"
-  #       # background_color: "#CC99FF"
+  - social:
+      cards_layout_options:
+        # background_color: "#0FF1CE8F"
+        # background_color: "#0FF1CEFF"
+        background_color: "#9966CC"
+        # background_color: "#9A5FCE"
+        # background_color: "#9033FF"
+        # background_color: "#B266FF"
+        # background_color: "#CC99FF"
 
   #     debug: true
 
@@ -361,7 +361,7 @@ plugins:
       # pagination_if_single_page: true
       # borradores 
       draft: true                   # habilita ver borradores  
-      # draft: false                   # habilita ver borradores  
+      # draft: false                   # deshabilita ver borradores  
       draft_on_serve: true           # borradores disponibles en preview
       draft_if_future_date: true      # si la fecha es futura se considera borrador
       # archive_pagination_per_page: 2
@@ -399,7 +399,12 @@ plugins:
         as_creation: date.created
         # as_update: date.updated
 
-
+  # creacion de documento PDF del sitio
+  - pdf-export:
+      verbose: true                      # reporte largo por terminal 
+      media_type: print                  # estilo CSS para impresión
+      enabled_if_env: ENABLE_PDF_EXPORT  # sólo ejecutar si la variabel de entorno existe y es 'true'
+      combined: true                     # renderizar todas las paginas del  proyecto
 
   # autores y colaboradores
   # - git-authors
@@ -437,6 +442,7 @@ nav:
       - Primeros pasos: mkdocs-material/instalacion/comenzando.md
       - Publicacion: mkdocs-material/instalacion/deploy.md
       - Usando contenedores: mkdocs-material/instalacion/contenedores.md
+      - Exportación a PDF: mkdocs-material/instalacion/guardado_pdf.md
     - Configuración: 
       - Lenguaje: mkdocs-material/setup/lenguaje.md
       - Temas y colores: mkdocs-material/setup/colores_temas.md

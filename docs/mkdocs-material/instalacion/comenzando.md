@@ -114,6 +114,9 @@ theme:
   # name: readthedocs    
 ```
 
+
+
+
 ### Menú de navegacion
 
 La sección `nav` describe la organización en secciones , subsecciones  y páginas del proyecto recurriendo a pares clave-valor. 
@@ -172,6 +175,13 @@ plugins:
 ```
 
 
+
+!!! warning "Temas y compatibilidad de plugins"
+
+    Algunos plugins y extensiones no son compatibles con todos los temas. 
+    Por ello el cambio de tema de MkDocs puede producir errores de publicación sobre proyectos con plugins agregados. 
+
+
 ## Live server
 
 Con fines de desarrollo se dispone de un servidor local disponible con el comando `serve`:
@@ -185,6 +195,21 @@ Por defecto el sitio está disponible en el puerto 8000:
 ``` http title="Ruta local"
 http://127.0.0.1:8000/
 http://localhost:8000/
+```
+
+El número de puerto se puede cambiar usando la opción `-a`:
+
+```bash title="Live Server - puerto custom"
+mkdocs serve -a    0.0.0.0:numero:_puerto   
+mkdocs serve -a  localhost:numero:_puerto   
+```
+
+Por otra parte, la publicación del sitio de pruebas puede requerir mucho tiempo en caso de que el proyecto sea muy grande. 
+En este caso es útil usar la opción `--dirtyreload` la cual renderiza primero la página actual:
+
+
+```bash title="Live Server - dirty reload"   
+mkdocs serve --dirtyreload
 ```
 
 
@@ -230,3 +255,6 @@ Este comando crea la carpeta `site/` con el contenido listo para publicar en cua
 
 
 [Página oficial - Create your site](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
+
+
+[NullSafe Architect - Crea documentación y sitios web estáticos como un PRO con MkDocs](https://www.youtube.com/watch?v=YGg39_zG1fk&t=105s)

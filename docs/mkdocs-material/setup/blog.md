@@ -94,7 +94,8 @@ nav:
   - Mi Blog:            # agregado del blog al menu de navegacion
     - blog/index.md     # ubicacion del indice
 ```
-Este enlace aparecerá también en la barra de menú xomo una pestaña, si es que ésta está habilitada. [Más sobre las pestañas](navegacion.md#pestañas-de-contenido).
+Este enlace aparecerá también en la barra de menú como una pestaña, si es que ésta está habilitada. 
+[Más sobre las pestañas](navegacion.md#pestañas-de-contenido).
 
 ### Fechas
 

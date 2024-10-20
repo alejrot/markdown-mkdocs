@@ -85,7 +85,7 @@ theme:
     - toc.integrate   # integra barra derecha (tabla contenidos) adentro de la izquierda (secciones)
 ```
 
-La opción de anclado hace que el sidebar siempre muestre el ancla actual.
+La opción de anclado hace que el *sidebar* siempre muestre el ancla actual.
 
 
 

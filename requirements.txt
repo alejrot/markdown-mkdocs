@@ -6,3 +6,5 @@ mkdocs-material[imaging]
 # paquetes agregados
 mkdocs-git-revision-date-localized-plugin
 mkdocs-glightbox
+
+mkdocs-rss-plugin

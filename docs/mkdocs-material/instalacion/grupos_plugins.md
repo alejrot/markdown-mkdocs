@@ -164,10 +164,8 @@ Estos métodos sirven también para la construcción del sitio (comando `build`)
     ```
     Más información de los plugins usados:
 
-    [`rss`](../setup/rss.md)
-
-    [`git-revision-date-localized`](../setup/componentes.md)
-
+    [`rss`](../setup/rss.md) 
+    [`git-revision-date-localized`](../setup/componentes.md) 
     [`pdf-export`](./guardado_pdf.md)
 
 

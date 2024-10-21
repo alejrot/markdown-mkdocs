@@ -432,4 +432,4 @@ Las tarjetas deben ser habilitadas previamente para su uso.
 
 ## Referencias
 
-[Sitio oficial - Blogs](https://squidfunk.github.io/mkdocs-material/plugins/blogs)
+[Sitio oficial - Blogs](https://squidfunk.github.io/mkdocs-material/plugins/blog/)

@@ -383,8 +383,12 @@ plugins:
             fallback_to_build_date: true
         # Tarjetas PNG automáticas 
         - social:
-            cards_layout_options:
-              background_color: "#9966CC"
+            cards_layout: default/accent
+            # cards_layout_options:
+            # #   background_color: "#9966CC"
+            #   background_color: "#AA0000"
+            #   color: "#AAAA00"
+            #   font_family: Ubuntu
   # grupo Nº2: entorno local , conversion a PDF
   - group:  
       # creacion de documento PDF del sitio
@@ -433,8 +437,9 @@ nav:
       - Primeros pasos: mkdocs-material/instalacion/comenzando.md
       - Publicacion: mkdocs-material/instalacion/deploy.md
       - Usando contenedores: mkdocs-material/instalacion/contenedores.md
-      - Exportación a PDF: mkdocs-material/instalacion/guardado_pdf.md
       - Grupos de Plugins: mkdocs-material/instalacion/grupos_plugins.md
+      - Tarjetas Sociales: mkdocs-material/instalacion/tarjetas.md
+      - Exportación a PDF: mkdocs-material/instalacion/guardado_pdf.md
     - Configuración: 
       - Lenguaje: mkdocs-material/setup/lenguaje.md
       - Temas y colores: mkdocs-material/setup/colores_temas.md

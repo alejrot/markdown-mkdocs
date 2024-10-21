@@ -105,6 +105,27 @@ graph LR
 ```
 
 
+## Tipos de diagramas 
+
+MkDocs da soporte a los siguientes tipos de diagramas:
+
+- Diagrama de flujo;
+- Diagrama de estado;
+- Diagrama de secuencias;
+- Diagrama de entidad-relación.
+
+En cambio, hay otros tipos de diagramas implementados por Mermaid.js 
+que no tienen una buena visualizacion en dispositivos móviles,
+los cuales son:
+
+- Gráfico circular (*pie charts*);
+- Diagramas de tareas(*gantt charts*); 
+- Mapa de viaje (*user journeys*);
+- Graficas de Git (*git graphs*), 
+- Diagramas de requisitos(*requirement diagrams*).
+
+
+
 ## Referencias
 
 [Sitio oficial de Material for MkDocs - Diagramas](https://squidfunk.github.io/mkdocs-material/reference/diagrams/)

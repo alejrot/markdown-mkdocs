@@ -13,6 +13,7 @@ tags:
   # - MarkDown
 #   - TypeScript
   # - CSV
+  - Bash
 ---
 
 

@@ -11,6 +11,7 @@ tags:
   # - MarkDown
 #   - TypeScript
   # - CSV
+  - Bash
 ---
 
 # Exportar a PDF
@@ -37,10 +38,10 @@ plugins:
   # ... 
   # Exportación a PDF
   - pdf-export:
-    verbose: true                      # reporte largo por terminal 
-    media_type: print                  # estilo CSS para impresión
-    enabled_if_env: ENABLE_PDF_EXPORT  # habilitación condicional por variable de entorno
-    combined: true                     # renderizar todas las paginas del  proyecto
+      verbose: true                      # reporte largo por terminal 
+      media_type: print                  # estilo CSS para impresión
+      enabled_if_env: ENABLE_PDF_EXPORT  # habilitación condicional por variable de entorno
+      combined: true                     # renderizar todas las paginas del  proyecto
 ```
 
 En esta configuración se especifican varias opciones:

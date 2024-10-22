@@ -118,7 +118,6 @@ FROM squidfunk/mkdocs-material
 # instalación de paquetes adicionales - uno a uno
 RUN pip install mkdocs-glightbox
 RUN pip install mkdocs-git-revision-date-localized-plugin
-RUN pip install mkdocs-material[imaging]
 # actualizacion de PIP (opcional)
 RUN pip install --upgrade pip
 ```

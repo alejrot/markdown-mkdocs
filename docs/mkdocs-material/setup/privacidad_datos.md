@@ -27,3 +27,15 @@ plugins:
 ```
 
 Esto ayuda a cumplir con la Regulacion General de Protección de Datos de la Unión Europea.
+
+
+
+
+
+
+
+## Referencias
+
+[Material for MkDocs - Built-in privacy plugin](https://squidfunk.github.io/mkdocs-material/plugins/privacy/)
+
+[Material for MkDocs - Ensuring data privacy](https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/)

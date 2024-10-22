@@ -87,4 +87,4 @@ hide:
 
 ## Referencias
 
-[Sitio oficial - Setting analytics](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/)
+[Material for MkDocs - Setting up site analytics](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/)

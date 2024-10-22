@@ -1,12 +1,12 @@
 # site_name: MarkDown & MkDocs
 site_name: MarkDown - MkDocs
 
-site_description: Mi documentacion y apuntes del uso de Markdown y MkDocs
+site_description: Documentación y tutoriales sobre Markdown y MkDocs
 
-site_url: https://marcelomarot.github.io/markdown-mkdocs/
+site_url: https://alejrot.github.io/markdown-mkdocs/
 
 # Repositorio
-repo_url: https://github.com/MarceloMarot/markdown-mkdocs
+repo_url: https://github.com/alejrot/markdown-mkdocs
 repo_name: markdown-mkdocs
 edit_uri: edit/master/docs/
 
@@ -204,7 +204,7 @@ markdown_extensions:
 
 
 extra:
-  # homepage: https://marcelomarot.github.io/markdown-mkdocs/
+  # homepage: https://alejrot.github.io/markdown-mkdocs/
   # homepage: /
 
   # Etiquetas de contenidos
@@ -303,7 +303,11 @@ extra_javascript:
 
 plugins:
 
+  # reporte de errores
   # - info
+
+  # optimizacion para uso offline
+  - offline 
 
   # lectura tablas desde archivo
   # - search
@@ -389,6 +393,16 @@ plugins:
             #   background_color: "#AA0000"
             #   color: "#AAAA00"
             #   font_family: Ubuntu
+        # autores y colaboradores
+        # correos
+        # - git-authors       
+        # perfiles de GitHub/GitLab
+        - git-committers:     
+            repository: alejrot/markdown-mkdocs
+            branch: master
+            enabled: true
+
+
   # grupo Nº2: entorno local , conversion a PDF
   - group:  
       # creacion de documento PDF del sitio
@@ -400,13 +414,6 @@ plugins:
             combined: true                     # renderizar todas las paginas del  proyecto
 
 
-
-  # autores y colaboradores
-  # - git-authors
-  # - git-committers:
-  #     repository: MarceloMarot/markdown-mkdocs
-  #     branch: master
-  #     enabled: true
 
   # video
   # - mkdocs-video

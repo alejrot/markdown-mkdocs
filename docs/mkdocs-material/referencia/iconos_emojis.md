@@ -262,7 +262,7 @@ La lista de iconos modificables desde configuración es la siguiente:
 
 ## Favicon
 
-El *favicon* es el icono que aparece en la pestaña del navegador. Para cambiarlo hay que ubicarlo manualmente dentro del directorio del proyecto e importarlo. Debe tener **formato ICO**.
+El *favicon* es el icono que aparece en la pestaña del navegador. Para cambiarlo hay que ubicarlo manualmente dentro del directorio del proyecto (`docs/`) e importarlo: 
 
 
 ``` yaml title="Favicon" hl_lines="3"
@@ -270,6 +270,8 @@ El *favicon* es el icono que aparece en la pestaña del navegador. Para cambiarl
 theme:
   favicon: images/favicon.png
 ```
+
+Nótese que no es necesario que el favicon tenga formato ICO ni que sea una miniatura. De hecho se soportan otros formatos y la miniatura se crea automáticamente.
 
 
 

@@ -14,7 +14,7 @@ copyright: Copyright &copy; 2024 Marcelo Marot Rosas
 
 theme: 
   name: material
-  # favicon: images/favicon.png   # no anda
+  # favicon: images/favicon.png   
   icon:
     #icono de pagina
     logo: simple/markdown  

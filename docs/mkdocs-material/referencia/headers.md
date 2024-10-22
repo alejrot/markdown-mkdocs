@@ -245,7 +245,7 @@ SOLO PARA CLIENTES PREMIUM
 
 ## Referencias
 
-[Pagina oficial - Tags](https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/)
+[Material for MkDocs - Setting up tags](https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/)
 
 
-[Pagina oficial - Referencia](https://squidfunk.github.io/mkdocs-material/reference/)
+[Material for MkDocs - Reference](https://squidfunk.github.io/mkdocs-material/reference/)

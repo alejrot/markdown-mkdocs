@@ -22,7 +22,7 @@ MkDocs trae incorporado el soporte para Mermaid.js, una herramienta que sirve pa
 Esta herramienta es externa y MkDocs lo carga vía CDN.
 
 
-Más sobre Mermaid.js: [página oficial.](https://mermaid.js.org/)
+Más sobre Mermaid.js: [mermaid.js.org](https://mermaid.js.org/)
 
 ## Habilitación
 

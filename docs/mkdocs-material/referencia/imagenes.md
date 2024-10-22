@@ -152,6 +152,6 @@ Para probarlo, cambiar de tema para ver la imagen alternativa:
 
 ## Referencias
 
-[Página oficial de Material for MkDocs- Imágenes](https://squidfunk.github.io/mkdocs-material/reference/images/)
+[Material for MkDocs - Imágenes](https://squidfunk.github.io/mkdocs-material/reference/images/)
 
 [Página oficial de GLightBox](https://blueswen.github.io/mkdocs-glightbox/)

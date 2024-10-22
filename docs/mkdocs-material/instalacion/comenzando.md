@@ -251,10 +251,10 @@ Este comando crea la carpeta `site/` con el contenido listo para publicar en cua
 ## Referencias
 
 
-[Página oficial - Getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
+[Material for MkDocs - Getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
 
 
-[Página oficial - Create your site](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
+[Material for MkDocs - Create your site](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
 
 
 [NullSafe Architect - Crea documentación y sitios web estáticos como un PRO con MkDocs](https://www.youtube.com/watch?v=YGg39_zG1fk&t=105s)

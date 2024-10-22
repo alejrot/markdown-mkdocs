@@ -289,9 +289,9 @@ hide:
 ## Referencias
 
 
-[Página oficial - Header](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/)
+[Material for MkDocs - Setting up the header](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/)
 
-[Página oficial - Footer](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/)
+[Material for MkDocs - Setting up the footer](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/)
 
 
-[Página oficial - Repositorio Git](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/)
+[Material for MkDocs - Adding a git repository](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/)

@@ -14,13 +14,15 @@ tags:
 #   - Bash
 ---
 
-# Texto
+# Texto y Maquetado
 
 <!-- 
 ##
 
 Los archivos de Markdown usan la extensión `.md`. 
 -->
+Aquí se describen los mecanismos más básicos de la escritura y el maquetado en Markdown.
+
 
 ## Párrafos de texto
 

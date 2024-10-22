@@ -307,7 +307,7 @@ plugins:
   # - info
 
   # optimizacion para uso offline
-  - offline 
+  # - offline 
 
   # lectura tablas desde archivo
   # - search
@@ -438,7 +438,7 @@ nav:
   - Indice: index.md
   - MarkDown:  
     # - Introducción: markdown/intro.md
-    - Texto: markdown/texto.md
+    - Texto y Maquetado: markdown/texto.md
     - Bloques de Código: markdown/codigo.md
     - Estilos de texto: markdown/estilos.md
     - Listas y Viñetas: markdown/listas.md

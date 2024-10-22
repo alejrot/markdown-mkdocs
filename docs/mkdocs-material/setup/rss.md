@@ -10,7 +10,7 @@ tags:
   - Python
 #   - Docker
 #   - Podman
-  # - MarkDown
+  # - Markdown
 #   - TypeScript
   # - CSV
   - Bash

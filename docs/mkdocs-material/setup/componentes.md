@@ -8,7 +8,7 @@ tags:
   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
   - Bash
@@ -114,10 +114,14 @@ copyright: Copyright &copy; 2030 Aquiles Brinco
 ### Ruta y nombre
 
 
+El repositorio se habilita configurando su URL y su nombre.
+
+En el caso de este proyecto, el repositorio usado es:
+
 ``` yaml title="Repositorio - Ruta y nombre"
 # "mkdocs.yml"
-repo_url: https://github.com/MarceloMarot/MarkDown_MKDocs
-repo_name: MarkDown_MKDocs
+repo_url: https://alejrot.github.io/markdown-mkdocs/
+repo_name: markdown-mkdocs
 ```
 
 

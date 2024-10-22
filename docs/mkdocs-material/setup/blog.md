@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  # - MarkDown
+  # - Markdown
 #   - TypeScript
   # - CSV
 ---
@@ -17,7 +17,7 @@ tags:
 # Blog
 
 
-MkDocs da soporte a la creación de un blog interno por cada proyecto. Las entradas o *posts* se escriben en formato MarkDown.
+MkDocs da soporte a la creación de un blog interno por cada proyecto. Las entradas o *posts* se escriben en formato Markdown.
 
 
 ## Configuracion
@@ -344,7 +344,7 @@ A los posts se los puede clasificar por categorías, las cuales se agregan en la
 ---
 categories:
   - YAML
-  - MarkDown
+  - Markdown
   - MkDocs
 ---
 ```

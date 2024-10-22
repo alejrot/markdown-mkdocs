@@ -2,7 +2,7 @@
 # social:
 #   cards: true
 tags:
-#   - HTML5
+#   - HTML
 #   - JavaScript
   # - CSS
   - YAML

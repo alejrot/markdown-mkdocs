@@ -209,7 +209,7 @@ extra:
 
   # Etiquetas de contenidos
   tags:
-    HTML5: html
+    HTML: html
     JavaScript: js
     CSS: css
     YAML: yaml

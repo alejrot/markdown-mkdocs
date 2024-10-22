@@ -12,7 +12,7 @@ description: Mas de etiquetas, metadata, etc.
 
 
 tags:
-#   - HTML5
+#   - HTML
 #   - JavaScript
 #   - CSS
   - YAML
@@ -68,7 +68,7 @@ Si la etiqueta especificada en el documento no tiene un icono especificado se le
 
 !!! example "Ejemplo: asignación de iconos"
 
-    En este ejemplo, las etiquetas que se usan en los documentos son 'HTML5', 'CSS' y 'JS', y a cada uno se le asigna un ícono representativo.
+    En este ejemplo, las etiquetas que se usan en los documentos son **HTML**, **CSS** y **JS**, y a cada uno se le asigna un ícono representativo.
 
     ``` yaml title="Iconos HTML, CSS, JS" hl_lines="4-6  11-13"
     theme:
@@ -81,7 +81,7 @@ Si la etiqueta especificada en el documento no tiene un icono especificado se le
 
     extra:
       tags:
-        HTML5: html
+        HTML: html
         JavaScript: js
         CSS: css
     ``` 
@@ -129,7 +129,7 @@ Las etiquetas se asignan en el *header* bajo el campo `tags`:
 ```yaml title="Tags de contenido"
 ---
 tags:
-  - HTML5
+  - HTML
   - JavaScript
   - CSS
 ---
@@ -233,7 +233,7 @@ Creando un archivo `.meta.yml` (archivo oculto) dentro de un directorio se confi
 ``` yaml title="archivo de metadata"
 # archivo ".meta.yml"
 tags:
-  - HTML5
+  - HTML
   - JavaScript
   - CSS
 ```

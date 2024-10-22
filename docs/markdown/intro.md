@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  # - MarkDown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -25,8 +25,8 @@ Los archivos de Markdown usan la extensión `.md`.
 
 
 
-[BASICO]()
+[Sintaxis básica]()
 
 
 
-[EXTENDIDO]()
+[Sintaxis extendida]()

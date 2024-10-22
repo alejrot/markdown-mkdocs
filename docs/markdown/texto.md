@@ -16,6 +16,11 @@ tags:
 
 # Texto
 
+<!-- 
+##
+
+Los archivos de Markdown usan la extensión `.md`. 
+-->
 
 ## Párrafos de texto
 
@@ -93,5 +98,50 @@ Titulo
 Subtitulo
 ---
 ```
-Sin embargo, este método permite menos jerarquías que los numerales 
+sin embargo, este método permite menos jerarquías que los numerales 
 y es menos intuitivo en la escritura.
+
+
+
+
+## Comentarios
+
+Markdown acepta el comentado de contenido,
+el cual no será visible al renderizarlo. 
+El formato del comentario es idéntico al que usa HTML:
+
+```md title="Comentarios en MD"
+<!-- Comentario en Markdown -->
+```
+
+Este sistema de comentarios permite anular renglones enteros de contenido de forma sencilla. 
+Para ello sólo hay que separar la secuencia de apertura (`<!--`) de la de cierre (`-->`):
+
+
+
+```md title="Contenido anulado en MD"
+<!-- 
+Bloque 
+de 
+texto 
+anulado.
+-->
+```
+
+
+
+
+## Líneas de División
+
+Se pueden crear lineas de división rápidamente mediante una serie de asteriscos, guiones o  guiones bajos:
+
+```md
+---     # triple guion
+***     # triple asterisco
+___     # triple guion bajo
+```
+
+Todas estas opciones dan como resultado una línea horizontal que va de lado a lado de la pantalla:
+
+---     
+  

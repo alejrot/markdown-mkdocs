@@ -1,14 +1,14 @@
 ---
 tags:
-  - HTML5
+  # - HTML5
   # - JavaScript
-  - CSS
+  # - CSS
 #   - YAML
 #   - MkDocs
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  # - MarkDown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -17,7 +17,7 @@ tags:
 
 
 
-
+<!-- 
 
 ## Líneas de División
 
@@ -32,7 +32,7 @@ ___     # triple guion bajo
 Todas estas opciones dan como resultado una línea horizontal que va de lado a lado de la pantalla:
 
 ---     
-  
+   -->
 
 
 
@@ -231,7 +231,7 @@ El uso de los dos puntos (**:**) en los lados de los guiones bajos en la segunda
 
  -->
 
-
+<!-- 
 ## Citas
 
 Se hacen con el corchete triangular (`>`) al comienzo del texto.
@@ -248,102 +248,8 @@ Se admiten citas anidadas usando múltiples corchetes triangulares:
 >> Texto de subcita
 ```
 > Texto de cita
->> Texto de subcita
-
-## Comentarios
-
-MarkDown acepta el comentado de texto, el cual no será visible al renderizarlo. El formato del comentario es idéntico al que usa HTML:
-
-```md
-<!-- Comentario een Markdown -->
-```
-
-## Enlaces
-
-
-### Links simples
-
-Los intérpretes de MarkDown incluyen renderizado de links, de modo de poder clickearlos:
-
-```md
-<!-- URLs -->
-<https://www.mi_url.org>
-
-<!-- correo -->
-<yo@miserver.com>
-```
-
-Resultado:
-
-<!-- URLs -->
-<https://www.mi_url.org>
-
-<!-- correo -->
-<yo@miserver.com>
-
-
-
-### Links formateados
-
-Los links formateados consisten en un texto descriptivo rodeado por corchetes seguido de un enlace con la ruta de destino:
-
-```md title="Enlaces formateados"
-[Texto descriptivo](ruta_enlace)
-```
-
-Una alternativa para crear links consiste en asignar un número o secuencia entre corchetes (`[]`)y asignarle la ruta a posteriori:
-
-
-```md title="Enlaces formateados"
-[Texto descriptivo Nº1][1]
-[Texto descriptivo Nº2][2]
-
-[1]: ruta_enlace_1
-[2]: ruta_enlace_2
-```
-
-
-### Ir a secciones
-
-Una gran ventaja de los links formateados es la posibilidad de acceder a rutas de archivos internos, secciones del mismo documento, enlaces a otros documentos de MarkDown, etc.
-
-```md title="enlaces relativos"
-[Ir a la sección](#heading_codificado)
-[Ir a otro archivo y sección](ruta_archivo#heading_codificado)
-```
-
-Como ejemplo, se muestran un link al título de esta página y uno a la página principal del proyecto:
-
-```md title="Links a secciones - Ejemplos"
- <!-- Enlace local -->
-[**Subir a 'Enlaces'**](#enlaces) 
-
-<!-- Enlace a otro documento -->
-[Volver al inicio](../index.md#markdown--mkdocs) 
-```
-
-Los enlaces obtenidos son los siguientes:
-
-[**Subir a 'Enlaces'**](#enlaces) 
-
-[**Volver al inicio**](../index.md#markdown--mkdocs) 
-
-
-
-### Ir a secciones - tags HTML
-
-Con etiquetas HTML se pueden marcar ubicaciones especificas e ir a ellas con un simple link escrito en MarkDown:
-
-
-```md title="Links a secciones - tags HTML"
-<a name="top"></a>      # Esta etiqueta va en el lugar de destino
-...
-
-[Subir al inicio](#top) # Enlace al destino
-```
-
-
-De esta forma, haciendo etiquetas con distintos nombres se pueden implementar saltos a lugares arbitrarios del documento.
+>> Texto de subcita 
+-->
 
 
 
@@ -353,42 +259,7 @@ De esta forma, haciendo etiquetas con distintos nombres se pueden implementar sa
 
 
 
-## Imágenes 
 
-MarkDown permite mostrar imágenes tanto locales como remotas.
-
-Para mostrar las imágenes hay dos opciones disponibles:
-```md
-<!-- Formato MD -->
-![Descripción de la imagen](ruta_imagen)
-
-<!-- Formato HTML -->
-<image src='ruta_imagen' alt="Descripción de la imagen">
-```
-
-Ejemplo: imagen remota aleatoria desde Picsum
-```md
-![Imagen de Picsum](https://picsum.photos/256/256?0)
-```
-![Imagen de Picsum](https://picsum.photos/256/256?0)
-
-
-<!-- # Imagenes con enlace -->
-
-Las imágenes pueden traer integrado un enlace. Para ello, los corchetes del enlace rodean el link completo de la imagen.
-
-```md 
-[![Descripción imagen](ruta_imagen)](ruta_enlace)
-```
-
-Ejemplo: imagen remota aleatoria desde Picsum (con enlace)
-
-```md 
-[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://picsum.photos/)
-```
-
-
-[![Imagen de Picsum](https://picsum.photos/256/256?1)](https://picsum.photos/)
 
 
 

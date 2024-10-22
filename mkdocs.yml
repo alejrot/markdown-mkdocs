@@ -198,9 +198,9 @@ markdown_extensions:
   #  soporte para diagramas Mermaid
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
 
 
 extra:
@@ -437,12 +437,15 @@ watch:
 nav:
   - Indice: index.md
   - MarkDown:  
-    - Introducción: markdown/intro.md
+    # - Introducción: markdown/intro.md
     - Texto: markdown/texto.md
     - Bloques de Código: markdown/codigo.md
     - Estilos de texto: markdown/estilos.md
     - Listas y Viñetas: markdown/listas.md
     - Tablas: markdown/tablas.md
+    - Enlaces y Navegación: markdown/enlaces.md
+    - Imágenes: markdown/imagenes.md
+    - Citas: markdown/citas.md
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
     - Instalacion:

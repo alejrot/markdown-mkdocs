@@ -194,7 +194,7 @@ Así se ven las tarjetas creadas:
 Las *grids* permiten englobar con facilidad contenidos distintos. En el ejemplo, se adjuntan dos bloques: uno se ubica a la izquierda y contiene pestañas con listas, mientras el otro contiene el código del bloque izquierdo y se ubica a la derecha.
 
 ```md title="Grillas genéricas" hl_lines="1 3-4 9 14-15 25 27"
-<div class="grid" markdown>
+    <div class="grid" markdown>
 
     <!--  Bloque izquierdo: pestañas -->
     === "Lista desordenada"
@@ -208,7 +208,7 @@ Las *grids* permiten englobar con facilidad contenidos distintos. En el ejemplo,
         3. Tercero
 
     <!-- Bloque derecho: bloque de código -->
-    ``` title="Contenido de pestañas"
+    ```md title="Contenido de pestañas"
     === "Lista desordenada"
         * Inciso A
         * Inciso B
@@ -220,7 +220,7 @@ Las *grids* permiten englobar con facilidad contenidos distintos. En el ejemplo,
         3. Tercero
     ```
 
-</div>
+    </div>
 ```
 El resultado es el siguiente:
  
@@ -236,7 +236,7 @@ El resultado es el siguiente:
     2. Segundo
     3. Tercero
 
-``` title="Contenido de pestañas"
+```md title="Contenido de pestañas"
 === "Lista desordenada"
     * Inciso A
     * Inciso B

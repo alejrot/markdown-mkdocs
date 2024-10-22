@@ -437,7 +437,12 @@ watch:
 nav:
   - Indice: index.md
   - MarkDown:  
-    - Básico: markdown/markdown_basico.md
+    - Introducción: markdown/intro.md
+    - Texto: markdown/texto.md
+    - Bloques de Código: markdown/codigo.md
+    - Estilos de texto: markdown/estilos.md
+    - Listas y Viñetas: markdown/listas.md
+    - Tablas: markdown/tablas.md
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
     - Instalacion:

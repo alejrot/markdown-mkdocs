@@ -14,51 +14,9 @@ tags:
 #   - Bash
 ---
 
-# Markdown - Básico
-
-Markdown es un formato de texto enriquecido simple, muy práctico para hacer documentación. Suele usarse como alternativa simplificada al lenguaje HTML.
-
-
-## Formato de archivo
-
-Los archivos de Markdown usan la extensión `.md`.
 
 
 
-
-## Headings
-
-Los encabezamientos (*headings*) se marcan con **numerales** (`#`) al comienzo del texto. Cuantos más numerales, menos prioridad. 
-Ejemplo:
-
-```md
-# Titulo
-## Subtitulo 1
-## Subtitulo 2
-```
-
-Se reconocen hasta 6 jerarquías.
-
-
-|Markdown| Jerarquía |
-|:---|:---|
-|`# texto heading`| 1  (máxima)|
-|`## texto heading`| 2|
-|`### texto heading`| 3|
-|`#### texto heading`| 4|
-|`##### texto heading`| 5|
-|`###### texto heading`| 6  (mínima)|
-
-
-Una forma alternativa de crear tiulos y subtitulos es poner triple guion o triple signo igual justo debajo del texto de encabezamiento:
-
-```md
-Titulo
-===
-
-Subtitulo
----
-```
 
 
 ## Líneas de División
@@ -78,61 +36,9 @@ Todas estas opciones dan como resultado una línea horizontal que va de lado a l
 
 
 
-## Párrafos 
 
+<!-- 
 
-Los párrafos deben comenzar sin tabulación ni espacios.
-
-Para terminar un párrafo y comenzar otro hay dos opciones:
-- Dos espacios vacios o más al terminar el párrafo y cambiar de linea;
-- Intercalar una línea vacía entre un párrafo y el otro. 
-
-
-
-
-## Bloques de Código
-
-Hay varias maneras de crear bloques de código en MarkDown. Una de ellas es la **tabulación** del bloque de código:
-
-```
-    <!--Mi HTML-->
-    <h1> este es mi codigo</h1>
-```
-Dando coomo resultado el siguiente bloque:
-
-    <!--Mi HTML-->
-    <h1> este es mi codigo</h1>
-
-
-La otra opción es el uso del **triple acento invertido** antes y después del bloque de código
-
-    ```
-    <!--Mi HTML-->
-    <h1> este es mi codigo</h1>
-    ```
-
-Este método permite agregar estilos al código, asignando el nombre del lenguaje de código justo después de la apoertura del bloque. 
-
-Por ejemplo, al indicar que el código es HTML tras los acentos:
-
-    ```html
-    <!--Mi HTML-->
-    <h1> este es mi codigo</h1>
-    ```
-
-Da como resultado que el intérprete de Markdown le de color a los comentarios, palabras reservadas, etc:
-
-```html
-<!--Mi HTML-->
-<h1> este es mi codigo</h1>
-```
-
-El nombre del lenguaje se indica con minúsculas. También pueden usarse diminutivos para indicar el lenguaje: `py` para Python, `js` para JavaScript, `md` para MarkDown, etc.
-
-Si se require marcar como código un `segmento de texto` dentro de un párrafo se usan comillas invertidas simples para rodearlo:
-```
-Hay un poco de `código` en mi párrafo.
-```
 
 ## Remarcado de texto
 
@@ -234,6 +140,11 @@ Y { background: Yellow }
 <g>NARANJA</g> 
 <Y><r>remarcado</r></Y>   
 
+ -->
+
+
+
+<!-- 
 
 
 ## Listas ordenadas
@@ -286,10 +197,10 @@ Resultado:
     - Subitem 2
         - extra 1 
         - extra 2
-- Tercero
+- Tercero -->
 
 
-
+<!-- 
 ## Tablas 
 
 El maquetado de las tablas se realiza con barras verticales (`|`) para delimitar las columnas, y al menos tres guiones (`---`)  para delimitar los encabezamientos de tabla
@@ -317,6 +228,8 @@ El uso de los dos puntos (**:**) en los lados de los guiones bajos en la segunda
 |`:---` |Izquierda  |
 |`---:` |Derecha    |
 |`:---:`|Centrado   |
+
+ -->
 
 
 ## Citas

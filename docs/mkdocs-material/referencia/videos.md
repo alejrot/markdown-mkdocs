@@ -1,3 +1,19 @@
+---
+tags:
+#   - HTML5
+  # - JavaScript
+  # - CSS
+  - YAML
+  - MkDocs
+#   - Python
+#   - Docker
+#   - Podman
+  - Markdown
+#   - TypeScript
+  # - CSV
+    # - CSV
+  - Bash
+---
 
 # Videos
 

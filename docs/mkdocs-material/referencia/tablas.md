@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   - CSV
 ---
@@ -17,7 +17,7 @@ tags:
 # Tablas
 
 
-MkDocs habilita el uso de tablas por defecto y usa la notación estandar de MarkDown.
+MkDocs habilita el uso de tablas por defecto y usa la notación estandar de Markdown.
 
 
 ## Configuración
@@ -75,7 +75,7 @@ plugins:
   - search
   - table-reader
 ```
-Por último, el formato de lectura desde MarkDown es el siguiente:
+Por último, el formato de lectura desde Markdown es el siguiente:
 
 ```md title="Tabla en archivo - Lectura"
 {{ read_csv('archivo_datos.csv ') }}

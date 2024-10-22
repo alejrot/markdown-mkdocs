@@ -8,7 +8,7 @@ tags:
   - Python
   # - Docker
   # - Podman
-  # - MarkDown
+  # - Markdown
 #   - TypeScript
   # - CSV
 ---
@@ -138,7 +138,7 @@ En caso de omitir la sección `nav` MkDocs creará un indexado automático donde
 
 ### Extensiones y plugins
 
-Por último, en el archivo de configuración se agregan y configuran extensiones de MarkDown, plugins de Python, hojas de estilo CSS, etc:
+Por último, en el archivo de configuración se agregan y configuran extensiones de Markdown, plugins de Python, hojas de estilo CSS, etc:
 
 ```yaml title="Archivo de configuración - Extensiones y plugins"
 # archivo "mkdocs.yml" 

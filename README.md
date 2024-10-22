@@ -1,7 +1,15 @@
-# MarkDown_MKDocs
-
-Tutoriales de Markdown y de MKDocs
+# Markdown & MKDocs
 
 
-## [Versión online: GitHub Pages](https://marcelomarot.github.io/markdown-mkdocs/)
+
+
+Tutorials about Markdown and MkDocs. 
+Made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+
+(Only in Spanish)
+
+Switch to Spanish: [LEEME.md](LEEME.md)
+
+
+## Online version in GitHub Pages: [alejrot.github.io/markdown-mkdocs/](https://alejrot.github.io/markdown-mkdocs/)
 

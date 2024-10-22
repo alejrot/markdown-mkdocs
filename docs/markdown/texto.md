@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -24,7 +24,7 @@ Los archivos de Markdown usan la extensión `.md`.
 
 ## Párrafos de texto
 
-MarkDown reconoce todo el texto escrito como texto simple
+Markdown reconoce todo el texto escrito como texto simple
 salvo indicacion contraria. 
 
 El texto debe comenzar siempre **sin tabulación ni espacios**,

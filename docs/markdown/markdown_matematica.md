@@ -8,19 +8,19 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
 ---
 
 
-# Fórmulas en MarkDown
+# Fórmulas en Markdown
 
 ## Introducción
 
 
-MarkDown **no soporta** de base el uso de fórmulas matemáticas. Sin embargo, existen plugins que permiten dar soporte a MarkDown de las fórmulas escritas en lenguaje TEX y sus derivados.
+Markdown **no soporta** de base el uso de fórmulas matemáticas. Sin embargo, existen plugins que permiten dar soporte a Markdown de las fórmulas escritas en lenguaje TEX y sus derivados.
 
 A continuación se explora la sintaxis para escribir símbolos y fórmulas matemáticas.
 
@@ -33,7 +33,7 @@ $A = \pi*r^{2}$
 
 $A = \pi*r^{2}$ 
 
-El contenido de la fórmula puede repartirse en varios renglones. Sin embargo no todos los intérpretes de MarkDown lo aceptan bien. Por ejemplo el visor online de GitHub no tolera bien el reparto en varias líneas del código y lo muestra incorrectamente. Por ello es mejor abrir y cerrar con '$' en cada renglón de fórmulas.
+El contenido de la fórmula puede repartirse en varios renglones. Sin embargo no todos los intérpretes de Markdown lo aceptan bien. Por ejemplo el visor online de GitHub no tolera bien el reparto en varias líneas del código y lo muestra incorrectamente. Por ello es mejor abrir y cerrar con '$' en cada renglón de fórmulas.
 
 Con doble signo (`$$`) el contenido queda centrado en la página:
 ```

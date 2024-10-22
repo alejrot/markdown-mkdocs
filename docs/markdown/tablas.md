@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -17,7 +17,7 @@ tags:
 
 # Tablas
 
-MarkDown permite trazar tablas de una manera relativamente rápida y sencilla.
+Markdown permite trazar tablas de una manera relativamente rápida y sencilla.
 
 ## Sintaxis
 

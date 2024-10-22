@@ -216,7 +216,7 @@ extra:
     Python: python
     Docker: docker 
     Podman: podman 
-    MarkDown: markdown
+    Markdown: markdown
     MkDocs: mkdocs
     TypeScript: ts
     CSV: csv

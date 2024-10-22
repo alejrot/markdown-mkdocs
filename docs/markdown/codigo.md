@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -68,7 +68,7 @@ El nombre del lenguaje se indica con minúsculas.
 También pueden usarse diminutivos para indicar el lenguaje: 
 `py` para Python, 
 `js` para JavaScript, 
-`md` para MarkDown, etc.
+`md` para Markdown, etc.
 
 
 

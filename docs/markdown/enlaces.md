@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -23,7 +23,6 @@ de modo de poder clickearlos.
 
 ## Links simples
 
-<!-- Los intérpretes de MarkDown incluyen renderizado de links, de modo de poder clickearlos: -->
 
 Los enlaces simples muestran la ruta destino en forma de texto. 
 Se escriben así:

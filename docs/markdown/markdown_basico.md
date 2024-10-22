@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  # - MarkDown
+  # - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -94,7 +94,7 @@ Para tachar rodear con dos virguillas seguidas (~):
 
 ## Texto en color
 
-MarkDown **no incluye por sí mismo** opciones de color, sin embargo algunos lectores de MarkDown aceptan el coloreo de texto insertando código HTML o propiedades CSS. Algunas opciones posibles:
+Markdown **no incluye por sí mismo** opciones de color, sin embargo algunos lectores de MarkDown aceptan el coloreo de texto insertando código HTML o propiedades CSS. Algunas opciones posibles:
 
 ### Insertando código HTML y CSS:
 

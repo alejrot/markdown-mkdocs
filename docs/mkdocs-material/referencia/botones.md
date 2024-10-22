@@ -8,13 +8,13 @@ tags:
   # - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
 ---
 
 # Botones
 
-Los enlaces de MarkDown se pueden convertir en botones gráficos agregando unas pocas propiedades CSS predefinidas.
+Los enlaces de Markdown se pueden convertir en botones gráficos agregando unas pocas propiedades CSS predefinidas.
 
 
 

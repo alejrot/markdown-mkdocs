@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 ---
@@ -115,7 +115,9 @@ Ambas bibliotecas requieren archivos JavaScript adicionales para su uso:
     ```
 
 ??? info "Notaciones recomendadas"
-    Las dos notaciones recomendadas por MarkDown para crear bloques de fórmulas son el uso de `$$  $$` y de `\[  \]`. También pueden usarse delimitadores simples
+    Las dos notaciones recomendadas por Markdown para crear bloques de fórmulas 
+    son el uso de `$$  $$` y de `\[  \]`. 
+    También pueden usarse delimitadores simples
 
     ```md title="Delimitadores de fórmula rrecomendados"
     $$  A = \pi*r^{2}  $$

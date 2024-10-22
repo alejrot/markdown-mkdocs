@@ -8,7 +8,7 @@ tags:
 #   - Python
 #   - Docker
 #   - Podman
-  - MarkDown
+  - Markdown
 #   - TypeScript
   # - CSV
 #   - Bash
@@ -18,7 +18,7 @@ tags:
 # Estilos
 
 
-MarkDown permite algunas formas básicas de remarcado de texto y de asignación de estilos.
+Markdown permite algunas formas básicas de remarcado de texto y de asignación de estilos.
 
 
 ## Marcado de texto
@@ -96,11 +96,11 @@ Para tachar rodear con dos virguillas seguidas (~):
 
 ## Texto en color
 
-MarkDown **no incluye por sí mismo** opciones de color, sin embargo algunos lectores de MarkDown aceptan el coloreo de texto insertando código HTML o propiedades CSS. Algunas opciones posibles:
+Markdown **no incluye por sí mismo** opciones de color, sin embargo algunos lectores de Markdown aceptan el coloreo de texto insertando código HTML o propiedades CSS. Algunas opciones posibles:
 
 ### Insertar código HTML y CSS:
 
-MarkDown admite la inclusión de **etiquetas HTML**
+Markdown admite la inclusión de **etiquetas HTML**
 para delimitar partes del texto 
 y en ellas incorporar **propiedades de CSS**.
 

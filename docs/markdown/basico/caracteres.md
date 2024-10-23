@@ -21,8 +21,15 @@ Los caracteres de escape son aquellos caracteres cuyo uso está reservado por Ma
 
 Para mostrarlos de todas maneras se les antepone la **barra invertida** (\\).
 
+Ejemplos:
 
-
+|Caracter| Secuencia|
+|---|---|
+|\\|`\\`|
+|\*|`\*`|
+|< \>|`< \>`|
+|\[ \]|`\[ \]`|
+|\{ \}|`\{ \}`|
 
 
 

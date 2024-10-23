@@ -147,3 +147,12 @@ Todas estas opciones dan como resultado una línea horizontal que va de lado a l
 
 ---     
   
+
+
+## Referencias
+
+[Markdown Guide.org - Headings](https://www.markdownguide.org/basic-syntax/#headings)
+
+
+
+[Markdown Guide.org - Horizontal rules](https://www.markdownguide.org/basic-syntax/#horizontal-rules)

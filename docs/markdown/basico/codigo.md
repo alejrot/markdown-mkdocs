@@ -38,7 +38,9 @@ Dando como resultado el siguiente bloque:
 
 ## Triple acento invertido
 
-La otra opción es el uso del triple acento invertido \`\`\` antes y después del bloque de código:
+La sintaxis extendida de Markdown agrega la opción de usar 
+el triple acento invertido (\`\`\`) 
+antes y después del bloque de código:
 
 ```md  title="uso de triple acento invertido"
     ```
@@ -50,7 +52,7 @@ La otra opción es el uso del triple acento invertido \`\`\` antes y después de
 Este método permite agregar **estilos** al código, asignando el nombre del lenguaje de código justo después de la apertura del bloque. 
 
 Por ejemplo, al indicar que el código es HTML tras los acentos:
-``` md title="Bloque HTML" hl_lines="1"
+``` md title="uso de triple acento invertido - con estilo" hl_lines="1"
     ```html
     <!--Mi HTML-->
     <h1> este es mi codigo</h1>
@@ -82,3 +84,14 @@ Hay un poco de `código` en mi párrafo.
 ```
 
 **Resultado:** Hay un poco de `código` en mi párrafo.
+
+
+## Referencias
+
+[Markdown Guide.org - Code](https://www.markdownguide.org/basic-syntax/#code)
+
+
+[Markdown Guide.org - Fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks)
+
+
+

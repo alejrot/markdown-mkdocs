@@ -22,11 +22,16 @@ Suele usarse como alternativa simplificada al lenguaje HTML.
 
 Los archivos de Markdown usan la extensión `.md`.
 
+La sintaxis básica abarca aquellos elementos que son soportados correctamente por casi todos los intérpretes de Markdown.
 
 
+[Sintaxis básica](basico/texto.md)
 
-[Sintaxis básica]()
+<!-- docs/markdown/basico/citas.md -->
+
+La sintaxis extendida comprende en cambio aquellos agregados de Markdown que requieren plugins adicionales o herrmaientas específicas para su uso.
+
+[Sintaxis extendida](extendido/tablas.md)
 
 
-
-[Sintaxis extendida]()
+[Formulas matematicas](markdown_matematica.md)

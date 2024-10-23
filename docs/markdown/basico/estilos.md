@@ -148,3 +148,7 @@ Y { background: Yellow }
 <Y><r>remarcado</r></Y>   
 
 
+
+## Referencias
+
+[Markdown Guide.org - Emphasis](https://www.markdownguide.org/basic-syntax/#emphasis)

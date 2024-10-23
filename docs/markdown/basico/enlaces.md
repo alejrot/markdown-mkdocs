@@ -117,3 +117,8 @@ Con etiquetas HTML se pueden marcar ubicaciones especificas e ir a ellas con un 
 
 De esta forma, haciendo etiquetas con distintos nombres se pueden implementar saltos a lugares arbitrarios del documento.
 
+
+
+## Referencias
+
+[Markdown Guide.org - Links](https://www.markdownguide.org/basic-syntax/#links)

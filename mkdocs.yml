@@ -436,16 +436,19 @@ watch:
 
 nav:
   - Indice: index.md
-  - MarkDown:  
-    # - Introducción: markdown/intro.md
-    - Texto y Maquetado: markdown/texto.md
-    - Bloques de Código: markdown/codigo.md
-    - Estilos de texto: markdown/estilos.md
-    - Listas y Viñetas: markdown/listas.md
-    - Tablas: markdown/tablas.md
-    - Enlaces y Navegación: markdown/enlaces.md
-    - Imágenes: markdown/imagenes.md
-    - Citas: markdown/citas.md
+  - Markdown: 
+    - Introducción: markdown/intro.md
+    - Básico: 
+      - Texto y Maquetado: markdown/basico/texto.md
+      - Bloques de Código: markdown/basico/codigo.md
+      - Estilos de texto: markdown/basico/estilos.md
+      - Listas y Viñetas: markdown/basico/listas.md
+      - Enlaces y Navegación: markdown/basico/enlaces.md
+      - Imágenes: markdown/basico/imagenes.md
+      - Citas: markdown/basico/citas.md
+      - Caracteres de Escape: markdown/basico/caracteres.md
+    - Extendido:
+      - Tablas: markdown/extendido/tablas.md
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
     - Instalacion:

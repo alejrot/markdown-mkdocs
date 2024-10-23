@@ -67,3 +67,7 @@ Ejemplo: imagen remota aleatoria desde [Lorem Picsum](https://picsum.photos/) , 
 
 
 
+
+## Referencias
+
+[Markdown Guide.org - Images](https://www.markdownguide.org/basic-syntax/#images-1)

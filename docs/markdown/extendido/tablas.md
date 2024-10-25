@@ -76,3 +76,8 @@ En el ejemplo se muestra la alineación a izquierda (columna 1), centro (columna
 | C      | $\gamma$ |  3     |
 
 </div>
+
+
+## Referencias
+
+[Markdown Guide.org - Tables](https://www.markdownguide.org/extended-syntax/#tables)

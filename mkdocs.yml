@@ -449,6 +449,10 @@ nav:
       - Caracteres de Escape: markdown/basico/caracteres.md
     - Extendido:
       - Tablas: markdown/extendido/tablas.md
+      - Notas al pie: markdown/extendido/notas_pie.md
+      - Listas de definiciones: markdown/extendido/definiciones.md
+      - Listas de tareas: markdown/extendido/tareas.md
+      - Subíndices y Superíndices: markdown/extendido/indices.md
     - Fórmulas matemáticas: markdown/markdown_matematica.md
   - MkDocs-Material: 
     - Instalacion:

@@ -29,7 +29,8 @@ La sintaxis básica abarca aquellos elementos que son soportados correctamente p
 
 <!-- docs/markdown/basico/citas.md -->
 
-La sintaxis extendida comprende en cambio aquellos agregados de Markdown que requieren plugins adicionales o herrmaientas específicas para su uso.
+La sintaxis extendida comprende en cambio aquellos agregados de Markdown que requieren plugins adicionales
+o herramientas específicas para su uso.
 
 [Sintaxis extendida](extendido/tablas.md)
 

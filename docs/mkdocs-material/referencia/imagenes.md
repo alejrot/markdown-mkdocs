@@ -49,7 +49,7 @@ markdown_extensions:
 
 ## GLightBox
 
-Este plugin permite abrir las imágenes en un carrousel y hacer zoom sobre ellas. No viene isntalado ni en el paquete de MkDocs ni en su imagen de contenedor, por ello requiere ser instalado:
+Este plugin opcional permite abrir las imágenes en un carrousel y hacer zoom sobre ellas. No viene instalado ni en el paquete de MkDocs ni en su imagen de contenedor, por ello requiere ser instalado:
 
 ```bash title="GLightBox - Instalación "
 pip install mkdocs-glightbox
@@ -109,9 +109,9 @@ Hay dos opciones implementadas: izquierda (`left`) y  derecha (`right`). Ambas a
 
 Con ayuda de la etiqueta `<figure>` de HTML se puede centrar la imagen en la página y agregando la etiqueta `<figcaption>` se le puede agregar el pie de página o *caption*
 
-```md title="Imágenes con alineación" hl_lines="3 4"
+```md title="Imágenes con alineación" 
 <figure markdown="span">
-    ![Imagen de Picsum Nº5](https://picsum.photos/256/256?4){width=256}
+    ![Imagen de Picsum Nº5](https://picsum.photos/512/512?4){width=256}
   <figcaption>Pie de foto</figcaption>
 </figure>
 ```
@@ -119,9 +119,11 @@ Con ayuda de la etiqueta `<figure>` de HTML se puede centrar la imagen en la pá
 El resultado es el siguiente:
 
 <figure markdown="span">
-    ![Imagen de Picsum Nº5](https://picsum.photos/256/256?4){width=256}
+    ![Imagen de Picsum Nº5](https://picsum.photos/512/512?4){width=256}
   <figcaption>Pie de foto</figcaption>
 </figure>
+
+
 
 
 ### Lazy-Loading
@@ -148,6 +150,16 @@ Para probarlo, cambiar de tema para ver la imagen alternativa:
 ![Imagen de Picsum Nº3](https://picsum.photos/256/256?2#only-light)
 ![Imagen de Picsum Nº4](https://picsum.photos/256/256?3#only-dark)
 
+
+
+!!! tip "TIP: Concatenar opciones"
+
+    Para configurar varias propiedades CSS juntas se pueden separar conpunto y coma (`;`):
+    ```md title="Propiedades mútiples" 
+    ![Imagen de Picsum Nº5](https://picsum.photos/512/512?4){width=256 ; align=right ; loading=lazy}
+    ``` 
+
+    ![Imagen de Picsum Nº5](https://picsum.photos/512/512?4){width=256 ; align=right ; loading=lazy}
 
 
 ## Referencias

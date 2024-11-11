@@ -284,7 +284,8 @@ extra_css:
   - stylesheets/colores_codigo.css
   - stylesheets/ancho_maximo.css
   #katex
-  - https://unpkg.com/katex@0/dist/katex.min.css
+  # - https://unpkg.com/katex@0/dist/katex.min.css
+  - https://unpkg.com/katex@0.16.11/dist/katex.css
 
 
 extra_javascript:
@@ -293,8 +294,12 @@ extra_javascript:
   # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   # katex
   - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  # - https://unpkg.com/katex@0/dist/katex.min.js
+  # - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  # - https://unpkg.com/katex@0/dist/katex.js
+  # - https://unpkg.com/katex@0/dist/contrib/auto-render.js
+  - https://unpkg.com/katex@0.16.11/dist/katex.js 
+  - https://unpkg.com/katex@0.16.11/dist/contrib/auto-render.js
 
   # Tablas ordenables - TableSort
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -459,9 +464,9 @@ nav:
       - Primeros pasos: mkdocs-material/instalacion/comenzando.md
       - Publicacion: mkdocs-material/instalacion/deploy.md
       - Usando contenedores: mkdocs-material/instalacion/contenedores.md
-      - Grupos de Plugins: mkdocs-material/instalacion/grupos_plugins.md
       - Tarjetas Sociales: mkdocs-material/instalacion/tarjetas.md
       - Exportación a PDF: mkdocs-material/instalacion/guardado_pdf.md
+      - Grupos de Plugins: mkdocs-material/instalacion/grupos_plugins.md
     - Configuración: 
       - Lenguaje: mkdocs-material/setup/lenguaje.md
       - Temas y colores: mkdocs-material/setup/colores_temas.md

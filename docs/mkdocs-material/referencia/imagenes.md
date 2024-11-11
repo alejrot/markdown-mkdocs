@@ -162,6 +162,15 @@ Para probarlo, cambiar de tema para ver la imagen alternativa:
     ![Imagen de Picsum Nº5](https://picsum.photos/512/512?4){width=256 ; align=right ; loading=lazy}
 
 
+    En este ejemplo la imagen:
+
+    - se muestra como miniatura ;
+    - se alinea a derecha
+    - se habilita la carga perezosa.
+    
+    Haciendo click sobre ella se despliega a tamaño completo con ayuda del plugin GLightBox.
+
+
 ## Referencias
 
 [Material for MkDocs - Imágenes](https://squidfunk.github.io/mkdocs-material/reference/images/)

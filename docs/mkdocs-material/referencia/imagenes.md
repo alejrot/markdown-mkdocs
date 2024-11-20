@@ -164,8 +164,8 @@ Para probarlo, cambiar de tema para ver la imagen alternativa:
 
     En este ejemplo la imagen:
 
-    - se muestra como miniatura ;
-    - se alinea a derecha
+    - se muestra como miniatura;
+    - se alinea a derecha;
     - se habilita la carga perezosa.
     
     Haciendo click sobre ella se despliega a tamaño completo con ayuda del plugin GLightBox.

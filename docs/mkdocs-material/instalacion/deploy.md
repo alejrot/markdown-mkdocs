@@ -11,6 +11,8 @@ tags:
   # - Markdown
 #   - TypeScript
   # - CSV
+  # - Bash
+  - Plugins
 ---
 
 
@@ -45,15 +47,16 @@ Se puede configurar al repositorio remoto para que reconstruya el sitio cada vez
 
 Crear un archivo `ci.yml` dentro de la carpeta oculta indicada:
 
+
 ```bash hl_lines="2-4" title="GitHub Pages - Ruta de GitHub Actions"
-.  # directorio raiz del proyecto
-├─ .github/
-│  └─ workflows/
-│     └─ ci.yml     # archivo de GitHub Actions
-├─ docs/            # carpeta para documentos
-│  └─ index.md      # archivo demo
-└─ mkdocs.yml       # archivo configuración
-```
+📂 .                    # directorio raiz del proyecto
+┣━━ 📂 .github
+┃   ┗━━ 📂 workflows
+┃       ┗━━ ⚙️ ci.yml   # archivo de GitHub Actions
+┣━━ 📂 docs             # carpeta para documentos
+┃   ┗━━ 📄 index.md     # archivo indice
+┗━━ ⚙️ mkdocs.yml       # archivo configuración
+``` 
 
 y cargar en él la rutina:
 
@@ -138,12 +141,13 @@ El servidor de GitHub se encargará de descargar e instalar todos los paquetes P
 
 Crear un archivo oculto `.gitlab-ci.yml` dentro de la carpeta raíz del proyecto:
 
-```bash  hl_lines="2" title="GitLab Pages - Ruta de archivo"
-# directorio raiz del proyecto
-├─ .gitlab-ci.yml
-├─ docs/            # carpeta para documentos
-│  └─ index.md      # archivo demo
-└─ mkdocs.yml       # archivo configuración
+
+```bash  hl_lines="4" title="GitLab Pages - Ruta de archivo"
+📂 .                    # directorio raiz del proyecto
+┣━━ 📂 docs             # carpeta para documentos
+┃   ┗━━ 📄 index.md     # archivo indice
+┣━━ ⚙️ .gitlab-ci.yml
+┗━━ ⚙️ mkdocs.yml       # archivo configuración
 ```
 
 y cargar en él la rutina:

@@ -12,6 +12,7 @@ tags:
 #   - TypeScript
   # - CSV
   - Bash
+  - Plugins
 ---
 
 # Exportar a PDF
@@ -80,8 +81,18 @@ mkdocs build
 
 El documento PDF (o los documentos PDF) se crea dentro de la carpeta `site/pdf/`.
 
-
-
+```bash hl_lines="6 7"
+📂 .
+┣━━ 📂 docs
+┃   ┗━━ 📄 index.md
+┣━━ 📂 site
+┃   ┣━━ 📂 (...)
+┃   ┣━━ 📂 pdf
+┃   ┃   ┗━━ 📚 combined.pdf
+┃   ┣━━ 📄 (...)
+┃   ┗━━ 📄 index.html
+┗━━ ⚙️ mkdocs.yml
+```
 
 
 

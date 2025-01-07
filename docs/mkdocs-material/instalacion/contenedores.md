@@ -288,7 +288,7 @@ services:
 </div>
 
 
-En el ejemmplo el contenedor creado se llama `contenedor_mkdocs`
+En el ejemplo el contenedor creado se llama `contenedor_mkdocs`
 y el número de puerto se configura con la variable de entorno `PUERTO`.
 
 ``` bash title="Compose"

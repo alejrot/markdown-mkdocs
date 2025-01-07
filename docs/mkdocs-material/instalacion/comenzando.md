@@ -11,6 +11,7 @@ tags:
   # - Markdown
 #   - TypeScript
   # - CSV
+  - Plugins
 ---
 
 # Material for Mkdocs
@@ -19,7 +20,7 @@ tags:
 
 ## Instalación
 
-La forma más habitual de instalar este framework es via PIP, el gestor de paquetes de Python:
+La forma más habitual de instalar este *framework* es via PIP, el gestor de paquetes de Python:
 
 ```bash title="Instalación con PIP"
 pip install mkdocs-material
@@ -49,9 +50,12 @@ pip install -e mkdocs-material
 
 
 
-!!! imagenes y contenedores
+!!! info "Imágenes y contenedores"
 
-    La tercera alternativa es ejecutar el framework mediante el uso de contenedores con ayuda de gestores como Docker o Podman, aunque en este caso los comandos necesarios son algo más complejos. [Ver capítulo de imagenes y contenedores.](contenedores.md)
+    La tercera alternativa es ejecutar el *framework* 
+    mediante el uso de contenedores con ayuda de gestores como Docker o Podman, 
+    aunque en este caso los comandos necesarios son algo más complejos. 
+    [Ver capítulo de imagenes y contenedores.](contenedores.md)
 
 
 
@@ -68,18 +72,39 @@ mkdocs new .            # ruta actual
 
 El proyecto creado es un demo muy simple con la siguiente estructura:
 
+<!-- 
 ```bash title="Estructura de proyecto"
 # directorio raiz del proyecto
 ├─ docs/            # carpeta para documentos
 │  └─ index.md      # archivo demo
 └─ mkdocs.yml       # archivo configuración
-```
+``` 
+-->
 
-El directorio `docs/` es la ruta predefinida para colocar todos los documentos MD a publicar.
+```bash title="Estructura de proyecto"
+📂 .                    # directorio raiz del proyecto
+┣━━ 📂 docs             # carpeta para documentos
+┃   ┗━━ 📄 index.md     # archivo demo
+┗━━ ⚙️ mkdocs.yml       # archivo configuración
+``` 
+
+El directorio `docs/` es la ruta predefinida 
+para colocar todos los documentos Markdown 
+a publicar.
 
 ### Archivo de configuracion
 
-El archivo YAML es el que require incorporar todas las configuraciones: plugins, datos del sitio, organización interna de documentos, etc. Éste comienza casi vacío. Al configurarlo toma una estructura como la mostrada a continuación:
+El archivo YAML es el que require incorporar todas las configuraciones: 
+plugins, datos del sitio, organización interna de documentos, etc. 
+Éste comienza casi vacío : 
+
+```yaml title="Archivo de configuración - Estado inicial"
+# archivo "mkdocs.yml" 
+site_name: My Docs
+```
+donde la única configuración prearmada es el nombre de sitio que será `My Docs`.
+
+Al configurarlo toma una estructura como la mostrada a continuación:
 
 
 ```yaml title="Archivo de configuración - Sintaxis básica"
@@ -101,7 +126,12 @@ theme:
 
 ### Tema
 
-El tema elegido se reemplaza con el campo `name`. Las opciones instaladas son `material` (tema por defecto), `mkdocs` (tema original del plugin) y `readthedocs` (tema alternativo del plugin).
+El tema elegido se reemplaza con el campo `name`. 
+Las opciones instaladas son `material` (tema por defecto), 
+`mkdocs` (tema original del *framework* MkDocs) 
+y 
+`readthedocs` (tema alternativo del *framework*).
+
 ```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 6"
 # archivo "mkdocs.yml" 
 
@@ -147,7 +177,7 @@ Por último, en el archivo de configuración se agregan y configuran extensiones
 markdown_extensions: 
   - extension-1
   - extension-2
-  - ....
+  - ...
     
 # hojas de estilo adicionales
 extra_css:
@@ -167,14 +197,16 @@ extra:
   - extra-2
   - ...
 
-# Plugins de Python habilitados
+# plugins de Python habilitados
 plugins:
   - plugin_1
   - plugin_2
   - ...
 ```
 
-
+Los plugins, las extensiones, etc. 
+que están disponibles en este *framework*
+se exploran en las siguientes secciones.
 
 !!! warning "Temas y compatibilidad de plugins"
 
@@ -223,16 +255,41 @@ mkdocs build
 
 Este comando crea la carpeta `site/` con el contenido listo para publicar en cualquier servidor web.
 
-!!! tip ".gitignore"
+```bash hl_lines="7-17"
+📂 .
+┣━━ 📂 .github
+┃   ┗━━ 📂 workflows
+┃       ┗━━ ⚙️ ci.yml
+┣━━ 📂 docs
+┃   ┗━━ 📄 index.md
+┣━━ 📂 site
+┃   ┣━━ 📂 css
+┃   ┣━━ 📂 img
+┃   ┃   ┣━━ 📄 favicon.ico
+┃   ┃   ┗━━ 🖼️ grid.png
+┃   ┣━━ 📂 js
+┃   ┣━━ 📂 webfonts
+┃   ┣━━ 📄 404.html
+┃   ┣━━ 📄 index.html
+┃   ┣━━ 📄 sitemap.xml
+┃   ┗━━ 📄 sitemap.xml.gz
+┣━━ ⚙️ .gitlab-ci.yml
+┗━━ ⚙️ mkdocs.yml
+```
+
+
+
+
+!!! tip "Git"
 
     En caso de usar **git**, crear el archivo `.gitignore` para prevenir el seguimiento de archivos generables por el framework en el repositorio:
 
     ```bash title="Archivo gitignore - ruta" hl_lines="2"
-    # directorio raiz del proyecto
-    ├─ .gitignore       # archivo de exclusión
-    ├─ docs/            # carpeta para documentos
-    │  └─ index.md      # archivo demo
-    └─ mkdocs.yml       # archivo configuración
+    📂 .                    # directorio raiz del proyecto
+    ┣━━ ⚙️ .gitignore       # archivo de exclusión
+    ┣━━ 📂 docs             # carpeta para documentos
+    ┃   ┗━━ 📄 index.md     # archivo demo
+    ┗━━ ⚙️ mkdocs.yml       # archivo configuración
     ```
 
     En el archivo  `.gitignore`  incorporar `site`para prevenir el seguimiento de estos archivos en el repositorio.

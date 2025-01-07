@@ -11,7 +11,8 @@ tags:
   # - Markdown
 #   - TypeScript
   # - CSV
-#   - Bash
+  # - Bash
+  # - Plugins
 ---
 
 

@@ -14,6 +14,7 @@ tags:
 #   - TypeScript
   # - CSV
   - Bash
+  - Plugins
 ---
 
 

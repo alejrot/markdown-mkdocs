@@ -462,6 +462,7 @@ nav:
   - MkDocs-Material: 
     - Instalacion:
       - Primeros pasos: mkdocs-material/instalacion/comenzando.md
+      - mkdocs-material/instalacion/configuracion.md
       - Publicacion: mkdocs-material/instalacion/deploy.md
       - Usando contenedores: mkdocs-material/instalacion/contenedores.md
       - Tarjetas Sociales: mkdocs-material/instalacion/tarjetas.md

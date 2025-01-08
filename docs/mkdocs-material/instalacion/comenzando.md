@@ -68,7 +68,7 @@ Mkdocs implementa su propio ejecutable llamado `mkdocs`. Para crear el proyecto 
 mkdocs new .            # ruta actual
 ```
 
-### Estructura de archivos
+## Estructura de archivos
 
 El proyecto creado es un demo muy simple con la siguiente estructura:
 
@@ -88,10 +88,17 @@ El proyecto creado es un demo muy simple con la siguiente estructura:
 ┗━━ ⚙️ mkdocs.yml       # archivo configuración
 ``` 
 
-El directorio `docs/` es la ruta predefinida 
-para colocar todos los documentos Markdown 
-a publicar.
+Se crean los siguientes elementos:
 
+- el directorio `docs/` es la ruta predefinida 
+para colocar todos los documentos Markdown 
+a publicar;
+- el archivo `mkdocs.yml` es el archivo de cofiguración del *framework*;
+- el archivo `index.md` es el archivo Markdown 
+usado habitualmente como índice 
+y que incluye un breve tutorial de uso.
+
+<!-- 
 ### Archivo de configuracion
 
 El archivo YAML es el que require incorporar todas las configuraciones: 
@@ -127,10 +134,12 @@ theme:
 ### Tema
 
 El tema elegido se reemplaza con el campo `name`. 
-Las opciones instaladas son `material` (tema por defecto), 
-`mkdocs` (tema original del *framework* MkDocs) 
+Las opciones instaladas son 
+`mkdocs` (tema original del *framework* MkDocs, 
+usado de manera predefinida) 
+`readthedocs` (tema alternativo heredado del *framework* MkDocs)
 y 
-`readthedocs` (tema alternativo del *framework*).
+`material` (tema agregado) 
 
 ```yaml title="Archivo de configuración - Elección de tema" hl_lines="4 6"
 # archivo "mkdocs.yml" 
@@ -212,7 +221,7 @@ se exploran en las siguientes secciones.
 
     Algunos plugins y extensiones no son compatibles con todos los temas. 
     Por ello el cambio de tema de MkDocs puede producir errores de publicación sobre proyectos con plugins agregados. 
-
+ -->
 
 ## Live server
 
@@ -280,28 +289,7 @@ Este comando crea la carpeta `site/` con el contenido listo para publicar en cua
 
 
 
-!!! tip "Git"
 
-    En caso de usar **git**, crear el archivo `.gitignore` para prevenir el seguimiento de archivos generables por el framework en el repositorio:
-
-    ```bash title="Archivo gitignore - ruta" hl_lines="2"
-    📂 .                    # directorio raiz del proyecto
-    ┣━━ ⚙️ .gitignore       # archivo de exclusión
-    ┣━━ 📂 docs             # carpeta para documentos
-    ┃   ┗━━ 📄 index.md     # archivo demo
-    ┗━━ ⚙️ mkdocs.yml       # archivo configuración
-    ```
-
-    En el archivo  `.gitignore`  incorporar `site`para prevenir el seguimiento de estos archivos en el repositorio.
-    También guardar en él `.cache` para prevenir el seguimiento de objetos creados por los plugins internos.
-    Por último también conviene guardar la carpeta `venv` del entorno virtual, en caso de utilizarse.
-
-    ```bash title="Archivo gitignore - contenido" 
-    site       
-    .cache     
-    .venv
-    venv
-    ```
 
 
 

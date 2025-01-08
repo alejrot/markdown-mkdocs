@@ -46,7 +46,7 @@ Colores preestablecidos:
 ## Temas
 
 
-### Tema por defecto
+### Modo por defecto
 
 
 ``` yaml title="Tema predefinido" hl_lines="4"
@@ -56,10 +56,10 @@ theme:
     scheme: default
 ``` 
 
-|Opción | Tema|
+|Opción | Modo|
 |:---:|:---:|
-|`default`| tema claro |
-|`slate`|tema oscuro|
+|`default`| modo claro |
+|`slate`|modo oscuro|
 
 
 

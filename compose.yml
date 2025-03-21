@@ -3,15 +3,13 @@ services:
 
   markdown-mkdocs:
     build:  .
+    container_name: markdown-mkdocs
     ports:
       - "${PORT:-8000}:8000"
-
     security_opt: 
       - label=disable
-
     volumes:
       - ./:/docs
-
     stdin_open: true
     tty: true
 

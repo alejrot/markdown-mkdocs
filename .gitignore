@@ -8,3 +8,7 @@ venv
 *.jpg
 *.jpeg
 *.bmp
+
+
+
+.env

@@ -25,3 +25,16 @@ services:
 
     stdin_open: true
     tty: true
+
+
+  override:
+    build:  .
+    ports:
+      - "8002:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./override/:/docs
+
+    stdin_open: true
+    tty: true

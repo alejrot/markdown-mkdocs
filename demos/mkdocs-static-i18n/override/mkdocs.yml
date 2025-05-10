@@ -1,0 +1,85 @@
+# default info
+site_name: lang-plugins - overrides
+site_description: "English description"
+
+theme:
+  name: material
+  language: en
+  # default style
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: light blue
+      scheme: default
+      toggle:
+        icon: material/weather-sunny 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: indigo
+      accent: light blue
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+ homepage: /home
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+
+
+plugins:
+  - i18n:
+      # environment value
+      build_only_locale: !ENV  SOLO_LENGUA_LOCAL
+
+      fallback_to_default: true
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true     # required
+          name: English
+          build: true 
+        - locale: es
+          name: Español
+          build: true
+          # overriden content
+          site_name: lang-plugins - anulación
+          site_description: "Descripción en español"
+          admonition_translations:
+            tip: Consejo
+          nav_translations:
+            Home: Inicio
+            About: Acerca de
+          # overriden style
+          theme:
+            palette:
+              # Palette toggle for light mode
+              - media: "(prefers-color-scheme: light)"
+                primary: green
+                accent: lime
+                scheme: default
+                toggle:
+                  icon: material/lightbulb-on
+                  name: Cambia al modo oscuro
+              # Palette toggle for dark mode
+              - media: "(prefers-color-scheme: dark)"
+                primary: red
+                accent: pink
+                scheme: slate
+                toggle:
+                  icon: material/lightbulb-outline
+                  name: Cambia al modo claro
+
+
+
+nav:
+  - Home:
+    - home.md
+  - About:
+    - about.md
+    - more.md

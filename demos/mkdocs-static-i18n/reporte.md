@@ -20,11 +20,15 @@ podman compose up
 
 ## Links locales
 
-[Modo carpeta](http://localhost:8000/home/)
-[Modo sufijo](http://localhost:8001/home/)
+[Ordenamiento: modo carpeta (`folder`)](http://localhost:8000/home/)
+
+[Ordenamiento: modo sufijo (`suffix`)](http://localhost:8001/home/)
+
+[Sobreescritura de texto y estilos`Override`](http://localhost:8002/home/)
+
 
 ## Resultados
 
 - Modo carpeta (`folder`): **EXITO**
 - Modo sufijo (`suffix`): **EXITO**
-
+- `override`: **EXITO**

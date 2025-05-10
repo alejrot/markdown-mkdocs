@@ -1,0 +1,26 @@
+site_name: lang-plugins
+
+
+
+
+theme:
+  name: material
+  language: es
+
+
+extra:
+
+  homepage: /home
+
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Español 
+      link: /
+      lang: es
+
+
+nav:
+  - home.md
+  - about.md

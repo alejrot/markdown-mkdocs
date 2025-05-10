@@ -1,0 +1,29 @@
+site_name: lang-plugins
+
+
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: default
+
+extra:
+ homepage: /es/home
+
+plugins:
+  - i18n:
+      # docs_structure: suffix
+      docs_structure: folder
+      languages:
+        - locale: es
+          name: Español
+          build: true
+        - locale: en
+          default: true
+          name: English
+          build: true
+
+
+nav:
+  - home.md
+  - about.md

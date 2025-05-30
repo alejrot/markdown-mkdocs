@@ -420,20 +420,6 @@ plugins:
 
 
 
-  # video
-  # - mkdocs-video
-  # - mkdocs-video:
-  #     # is_video: true
-  #     # is_video: false
-  #     video_muted: true
-  #     video_autoplay: true
-  #     video_controls: true
-  #     video_loop: true
-  #     # css_style:
-  #         # width: "100%"
-  #         # height: "44vw"
-  #         # height: "22.172vw"
-
 
 watch:
   - includes
@@ -499,6 +485,7 @@ nav:
       - Listas: mkdocs-material/referencia/listas.md
       - Tooltips: mkdocs-material/referencia/tooltips.md
       - Diagramas: mkdocs-material/referencia/diagramas.md
+      - Árbol de páginas: mkdocs-material/referencia/pagetree.md
   - Indice de tags: tags.md  
   - Blog: 
     - blog/index.md

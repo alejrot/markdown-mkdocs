@@ -1,0 +1,16 @@
+name: mkdocs-pagetree-plugin
+
+services:
+
+  modo-folder:
+    build:  .
+    ports:
+      - "${PORT:-8000}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./:/docs
+
+    stdin_open: true
+    tty: true
+

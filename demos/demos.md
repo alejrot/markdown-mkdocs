@@ -44,13 +44,13 @@ Si hay varios contenedores juntos se parte desde el numero `8000`.
 Esto se puede cambiar creando archivos `.env` al lado del archivo `compose.yml`
 y asignar valores, por ejemplo:
 ```
-PUERTO=9999
+PORT=9999
 ```
 o:
 ```
-PUERTO_1=7777
-PUERTO_2=7778
-PUERTO_3=7779
+PORT0=9000
+PORT1=9001
+PORT2=9002
 ```
 
 

@@ -4,7 +4,7 @@ services:
   modo-folder:
     build:  .
     ports:
-      - "8000:8000"
+      - "${PORT0:-8000}:8000"
     security_opt: 
       - label=disable
     volumes:
@@ -17,7 +17,7 @@ services:
   modo-suffix:
     build:  .
     ports:
-      - "8001:8000"
+      - "${PORT1:-8001}:8000"
     security_opt: 
       - label=disable
     volumes:
@@ -30,7 +30,7 @@ services:
   override:
     build:  .
     ports:
-      - "8002:8000"
+      - "${PORT2:-8002}:8000"
     security_opt: 
       - label=disable
     volumes:
@@ -43,7 +43,7 @@ services:
   search:
     build:  .
     ports:
-      - "8003:8000"
+      - "${PORT3:-8003}:8000"
     security_opt: 
       - label=disable
     volumes:

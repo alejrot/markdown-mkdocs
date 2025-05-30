@@ -26,9 +26,13 @@ podman-compose up
 
 [Sobreescritura de texto y estilos`Override`](http://localhost:8002/home/)
 
+[Búsqueda](http://localhost:8003/home/)
+
 
 ## Resultados
 
 - Modo carpeta (`folder`): **EXITO**
 - Modo sufijo (`suffix`): **EXITO**
 - `override`: **EXITO**
+
+- Búsqueda: **FALLIDO** (aparecen resultados en ambos idiomas)

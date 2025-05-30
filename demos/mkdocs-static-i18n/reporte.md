@@ -13,8 +13,8 @@ llamado `mkdocs-static-i18n`.
 Ejecutar según corresponda:
 
 ```bash
-docker compose up
-podman compose up
+docker-compose up
+podman-compose up
 ```
 
 

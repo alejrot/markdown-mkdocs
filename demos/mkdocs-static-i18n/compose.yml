@@ -38,3 +38,16 @@ services:
 
     stdin_open: true
     tty: true
+
+
+  search:
+    build:  .
+    ports:
+      - "8003:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./search/:/docs
+
+    stdin_open: true
+    tty: true

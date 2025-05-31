@@ -60,6 +60,8 @@ Más sobre el plugin privacy: [Privacidad de datos](privacidad_datos.md#plugin-p
 
 ## Fuentes adicionales (revisar)
 
+Las fuentes adicionales se incorporan desde un archivo CSS,
+el cual tiene que ser agregado al archivo CSS para ser usado:
 
 ``` yaml title="Fuentes adicionales  - Habilitación"
 # "mkdocs.yml"
@@ -67,8 +69,10 @@ extra_css:
   - stylesheets/fuentes.css
 ```
 
+Si se desea sobreescribir la fuente del sistema
+entonces se crea una definición `@font-face`:
 
-```css  title="Fuentes adicionales- Agregado"
+```css  title="Fuentes adicionales - Sobreescritura"
 /* "fuentes.css" */
 @font-face {
   font-family: "<font>";
@@ -76,15 +80,15 @@ extra_css:
 }
 ```
 
+También pueden asignarse fuentes particulares a elementos específicos:
 
 ```css  title="Fuentes adicionales - Uso"
-  /* "fuentes.css" */
+/* "fuentes.css" */
 :root {
     --md-text-font: "<font>"; 
     --md-code-font: "<font>";
 }
 ```
-
 
 
 ## Referencias

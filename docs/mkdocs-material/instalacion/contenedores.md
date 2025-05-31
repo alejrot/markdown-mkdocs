@@ -158,8 +158,6 @@ Especificar distintos números de puerto para cada contenedor permite acceder a 
 
 Si se necesita crear una version de la imagen que incluya paquetes adicionales se crea un archivo `Dockerfile` donde se ordene la instalación de todos los paquetes necesarios:
 
-
-
 <div class="grid" markdown>
 
 ``` dockerfile title="Archivo Dockerfile"
@@ -210,7 +208,7 @@ La imagen creada servirá para crear múltiples contenedores.
 
 
 
-### Uso local
+### Despliegue con comandos
 
 
 Con el comando `run` se crea nuevamente el contenedor para el uso local, pero esta vez se indica el nombre y versión de la nueva imagen creada en reemplazo de la imagen oficial.
@@ -249,7 +247,6 @@ podman run --rm -it --security-opt label=disable -v ${PWD}:/docs  nuevo_mkdocs:v
 ### `docker-compose`
 
 Con ayuda del archivo `docker-compose.yaml` se puede facilitar el despliegue del *live server*.
-Se asume
 El contenido necesario para este documento es el siguiente:
 
 <div class="grid" markdown>
@@ -291,7 +288,7 @@ services:
 En el ejemplo el contenedor creado se llama `contenedor_mkdocs`
 y el número de puerto se configura con la variable de entorno `PUERTO`.
 
-``` bash title="Compose"
+``` bash title="Crear variables"
 export PUERTO=35678
 ```
 
@@ -301,14 +298,14 @@ La creación del contenedor se hace con el comando `compose`:
 
 === "Docker"
 
-    ``` bash title="Compose"
+    ``` bash title="Compose - Despliegue"
     cd ruta_docker_compose
     docker compose up
     ```
 
 === "Podman"
 
-    ``` bash title="Compose"
+    ``` bash title="Compose - Despliegue"
     cd ruta_docker_compose
     podman compose up
     ```

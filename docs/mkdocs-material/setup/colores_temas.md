@@ -35,19 +35,119 @@ theme:
     accent: lime
 ``` 
 
-Colores preestablecidos:
+
+### Color primario (`primary`)
+
+El color primario es el elegido para colorear la barra de tareas,
+la sección actual en la barra lateral, 
+el color de los enlaces y de ciertas gráficas, etc.
 
 
-`red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`, `black`, `white`
+Click en un botón para probar los colores disponibles:
+
+<style>
+  .md-typeset button[data-md-color-primary] > code {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+  }
+</style>
+
+<div class="mdx-switch">
+  <button data-md-color-primary="red"><code>red</code></button>
+  <button data-md-color-primary="pink"><code>pink</code></button>
+  <button data-md-color-primary="purple"><code>purple</code></button>
+  <button data-md-color-primary="deep-purple"><code>deep purple</code></button>
+  <button data-md-color-primary="indigo"><code>indigo</code></button>
+  <button data-md-color-primary="blue"><code>blue</code></button>
+  <button data-md-color-primary="light-blue"><code>light blue</code></button>
+  <button data-md-color-primary="cyan"><code>cyan</code></button>
+  <button data-md-color-primary="teal"><code>teal</code></button>
+  <button data-md-color-primary="green"><code>green</code></button>
+  <button data-md-color-primary="light-green"><code>light green</code></button>
+  <button data-md-color-primary="lime"><code>lime</code></button>
+  <button data-md-color-primary="yellow"><code>yellow</code></button>
+  <button data-md-color-primary="amber"><code>amber</code></button>
+  <button data-md-color-primary="orange"><code>orange</code></button>
+  <button data-md-color-primary="deep-orange"><code>deep orange</code></button>
+  <button data-md-color-primary="brown"><code>brown</code></button>
+  <button data-md-color-primary="grey"><code>grey</code></button>
+  <button data-md-color-primary="blue-grey"><code>blue grey</code></button>
+  <button data-md-color-primary="black"><code>black</code></button>
+  <button data-md-color-primary="white"><code>white</code></button>
+</div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-primary]")
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var attr = this.getAttribute("data-md-color-primary")
+      document.body.setAttribute("data-md-color-primary", attr)
+      var name = document.querySelector("#__code_1 code span.l")
+      name.textContent = attr.replace("-", " ")
+    })
+  })
+</script>
 
 
+Código utilizado: [**demo**](#demo).
+
+
+### Color acento (`accent`)
+
+
+El color de acento afecta a los enlaces apuntados por el cursor del mouse.
+
+Click en un botón para cambiar el color de resaltado:
+
+<style>
+  .md-typeset button[data-md-color-accent] > code {   
+    background-color: var(--md-code-bg-color);
+    color: var(--md-accent-fg-color);
+  }
+</style>
+
+<div class="mdx-switch">
+  <button data-md-color-accent="red"><code>red</code></button>
+  <button data-md-color-accent="pink"><code>pink</code></button>
+  <button data-md-color-accent="purple"><code>purple</code></button>
+  <button data-md-color-accent="deep-purple"><code>deep purple</code></button>
+  <button data-md-color-accent="indigo"><code>indigo</code></button>
+  <button data-md-color-accent="blue"><code>blue</code></button>
+  <button data-md-color-accent="light-blue"><code>light blue</code></button>
+  <button data-md-color-accent="cyan"><code>cyan</code></button>
+  <button data-md-color-accent="teal"><code>teal</code></button>
+  <button data-md-color-accent="green"><code>green</code></button>
+  <button data-md-color-accent="light-green"><code>light green</code></button>
+  <button data-md-color-accent="lime"><code>lime</code></button>
+  <button data-md-color-accent="yellow"><code>yellow</code></button>
+  <button data-md-color-accent="amber"><code>amber</code></button>
+  <button data-md-color-accent="orange"><code>orange</code></button>
+  <button data-md-color-accent="deep-orange"><code>deep orange</code></button>
+</div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-accent]")
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var attr = this.getAttribute("data-md-color-accent")
+      document.body.setAttribute("data-md-color-accent", attr)
+      var name = document.querySelector("#__code_2 code span.l")
+      name.textContent = attr.replace("-", " ")
+    })
+  })
+</script>
+
+
+Código utilizado: [**demo**](#demo).
 
 
 ## Temas
 
+Material for MkDocs implementa dos temas: uno claro (`default`) y otro oscuro (`slate`).
 
-### Modo por defecto
+### Modo fijo
 
+El tema se fija con el parámetro `scheme`:
 
 ``` yaml title="Tema predefinido" hl_lines="4"
 # "mkdocs.yml"
@@ -56,15 +156,33 @@ theme:
     scheme: default
 ``` 
 
-|Opción | Modo|
-|:---:|:---:|
-|`default`| modo claro |
-|`slate`|modo oscuro|
+Click en un botón para cambiar de tema:
 
+<div class="mdx-switch">
+  <button data-md-color-scheme="default"><code>tema 'default'</code></button>
+  <button data-md-color-scheme="slate"><code>tema 'slate'</code></button>
+</div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-scheme]")
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      document.body.setAttribute("data-md-color-switching", "")
+      var attr = this.getAttribute("data-md-color-scheme")
+      document.body.setAttribute("data-md-color-scheme", attr)
+      var name = document.querySelector("#__code_0 code span.l")
+      name.textContent = attr
+      setTimeout(function() {
+        document.body.removeAttribute("data-md-color-switching")
+      })
+    })
+  })
+</script>
+
+Código utilizado: [**demo**](#demo).
 
 
 ### Tema seleccionable
-
 
 
 ``` yaml title="Cambio de tema" hl_lines="5 10"
@@ -186,8 +304,9 @@ extra_css:
   - stylesheets/colores_custom.css
 ```
 
+!!! tip "Atributos CSS"
 
-Lista completa con todos los [atributos de color en el repositorio oficial](https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/_colors.scss)
+    Lista completa con todos los [atributos de color en el repositorio oficial](https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/_colors.scss)
 
 
 
@@ -246,6 +365,7 @@ Los colores de los distintos componentes de código se pueden alterar agregando 
 
 De esta forma el estilo se aplica a todos los bloques de código, de forma independiente del lenguaje que se indique a cada uno.
 
+<!-- 
 Las variables CSS predefinidas son:
 
 |variable CSS| parametro |
@@ -269,6 +389,128 @@ Las variables CSS predefinidas son:
 | `--md-code-bg-color`| *background*|
 | `--md-code-hl-color`| *higlight*|
 
+ -->
+
+## Demo
+
+Este es el código HTML y Javascript insertado en esta página para implementar los demos de color y tema
+(click para desplegar):
+
+??? quote "Primary"
+
+    ``` html
+    <style>
+      .md-typeset button[data-md-color-primary] > code {
+        background-color: var(--md-primary-fg-color);
+        color: var(--md-primary-bg-color);
+      }
+    </style>
+
+    <div class="mdx-switch">
+      <button data-md-color-primary="red"><code>red</code></button>
+      <button data-md-color-primary="pink"><code>pink</code></button>
+      <button data-md-color-primary="purple"><code>purple</code></button>
+      <button data-md-color-primary="deep-purple"><code>deep purple</code></button>
+      <button data-md-color-primary="indigo"><code>indigo</code></button>
+      <button data-md-color-primary="blue"><code>blue</code></button>
+      <button data-md-color-primary="light-blue"><code>light blue</code></button>
+      <button data-md-color-primary="cyan"><code>cyan</code></button>
+      <button data-md-color-primary="teal"><code>teal</code></button>
+      <button data-md-color-primary="green"><code>green</code></button>
+      <button data-md-color-primary="light-green"><code>light green</code></button>
+      <button data-md-color-primary="lime"><code>lime</code></button>
+      <button data-md-color-primary="yellow"><code>yellow</code></button>
+      <button data-md-color-primary="amber"><code>amber</code></button>
+      <button data-md-color-primary="orange"><code>orange</code></button>
+      <button data-md-color-primary="deep-orange"><code>deep orange</code></button>
+      <button data-md-color-primary="brown"><code>brown</code></button>
+      <button data-md-color-primary="grey"><code>grey</code></button>
+      <button data-md-color-primary="blue-grey"><code>blue grey</code></button>
+      <button data-md-color-primary="black"><code>black</code></button>
+      <button data-md-color-primary="white"><code>white</code></button>
+    </div>
+
+    <script>
+      var buttons = document.querySelectorAll("button[data-md-color-primary]")
+      buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var attr = this.getAttribute("data-md-color-primary")
+          document.body.setAttribute("data-md-color-primary", attr)
+          var name = document.querySelector("#__code_1 code span.l")
+          name.textContent = attr.replace("-", " ")
+        })
+      })
+    </script>
+    ``` 
+
+??? quote "Accent"
+
+    
+    ``` html
+    <style>
+      .md-typeset button[data-md-color-accent] > code {   
+        background-color: var(--md-code-bg-color);
+        color: var(--md-accent-fg-color);
+      }
+    </style>
+
+    <div class="mdx-switch">
+      <button data-md-color-accent="red"><code>red</code></button>
+      <button data-md-color-accent="pink"><code>pink</code></button>
+      <button data-md-color-accent="purple"><code>purple</code></button>
+      <button data-md-color-accent="deep-purple"><code>deep purple</code></button>
+      <button data-md-color-accent="indigo"><code>indigo</code></button>
+      <button data-md-color-accent="blue"><code>blue</code></button>
+      <button data-md-color-accent="light-blue"><code>light blue</code></button>
+      <button data-md-color-accent="cyan"><code>cyan</code></button>
+      <button data-md-color-accent="teal"><code>teal</code></button>
+      <button data-md-color-accent="green"><code>green</code></button>
+      <button data-md-color-accent="light-green"><code>light green</code></button>
+      <button data-md-color-accent="lime"><code>lime</code></button>
+      <button data-md-color-accent="yellow"><code>yellow</code></button>
+      <button data-md-color-accent="amber"><code>amber</code></button>
+      <button data-md-color-accent="orange"><code>orange</code></button>
+      <button data-md-color-accent="deep-orange"><code>deep orange</code></button>
+    </div>
+
+    <script>
+      var buttons = document.querySelectorAll("button[data-md-color-accent]")
+      buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var attr = this.getAttribute("data-md-color-accent")
+          document.body.setAttribute("data-md-color-accent", attr)
+          var name = document.querySelector("#__code_2 code span.l")
+          name.textContent = attr.replace("-", " ")
+        })
+      })
+    </script>
+    ```
+
+
+??? quote "Tema"
+
+    ``` html
+    <div class="mdx-switch">
+      <button data-md-color-scheme="default"><code>tema 'default'</code></button>
+      <button data-md-color-scheme="slate"><code>tema 'slate'</code></button>
+    </div>
+
+    <script>
+      var buttons = document.querySelectorAll("button[data-md-color-scheme]")
+      buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          document.body.setAttribute("data-md-color-switching", "")
+          var attr = this.getAttribute("data-md-color-scheme")
+          document.body.setAttribute("data-md-color-scheme", attr)
+          var name = document.querySelector("#__code_0 code span.l")
+          name.textContent = attr
+          setTimeout(function() {
+            document.body.removeAttribute("data-md-color-switching")
+          })
+        })
+      })
+    </script>
+    ```
 
 ## Referencias
 

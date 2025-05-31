@@ -39,9 +39,7 @@ Para probar, haga click en los botones rectangulares.
 
 <style>
   .md-typeset button[data-md-color-primary] > code {
-    /* fondo: color del tema */
     background-color: var(--md-primary-fg-color);
-    /* letras: color custom */
     color: var(--md-code-fg-color);
   }
 </style>

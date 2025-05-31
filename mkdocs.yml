@@ -85,7 +85,7 @@ theme:
 
     # acciones sobre repositorio
     # - content.action.edit
-    - content.action.view
+    # - content.action.view
 
     # tooltips
     - content.tooltips
@@ -190,10 +190,11 @@ markdown_extensions:
   # tooltips
   - abbr
   - attr_list
-  # - pymdownx.snippets
-  - pymdownx.snippets:
-      auto_append:
-          - includes/glosario.md
+  - pymdownx.snippets
+  # # glosario
+  # - pymdownx.snippets:
+  #     auto_append:
+  #         - includes/glosario.md
 
   #  soporte para diagramas Mermaid
   - pymdownx.superfences:
@@ -455,7 +456,6 @@ nav:
       - Exportación a PDF: mkdocs-material/instalacion/guardado_pdf.md
       - Grupos de Plugins: mkdocs-material/instalacion/grupos_plugins.md
     - Configuración: 
-      - Lenguaje: mkdocs-material/setup/lenguaje.md
       - Temas y colores: mkdocs-material/setup/colores_temas.md
       - Fuentes: mkdocs-material/setup/fuentes.md
       - Búsqueda:  mkdocs-material/setup/busqueda.md
@@ -467,6 +467,7 @@ nav:
       - Versionado: mkdocs-material/setup/versionado.md
       - Blog: mkdocs-material/setup/blog.md
       - RSS: mkdocs-material/setup/rss.md
+      - Lenguaje: mkdocs-material/setup/lenguaje.md
     - Referencia: 
       - Encabezamientos y Etiquetas: mkdocs-material/referencia/headers.md
       - Advertencias: mkdocs-material/referencia/admonitions.md

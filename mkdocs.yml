@@ -69,8 +69,8 @@ theme:
     - navigation.tabs
     # - navigation.tabs.sticky
     # - navigation.sections
-    - navigation.expand
-    # - navigation.prune 
+    # - navigation.expand
+    - navigation.prune 
     - navigation.indexes    # Previene el duplicado del indice de blog
     - toc.follow
     # - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)

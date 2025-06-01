@@ -1,0 +1,41 @@
+name: math
+
+services:
+
+  mathjax:
+    build:  .
+    ports:
+      - "${PORT0:-8000}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./mathjax:/docs
+
+    stdin_open: true
+    tty: true
+
+
+  katex:
+    build:  .
+    ports:
+      - "${PORT1:-8001}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./katex:/docs
+
+    stdin_open: true
+    tty: true
+
+
+  markdown-katex:
+    build:  markdown-katex/
+    ports:
+      - "${PORT2:-8002}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./markdown-katex:/docs
+
+    stdin_open: true
+    tty: true

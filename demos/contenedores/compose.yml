@@ -1,0 +1,29 @@
+name: contenedores_mkdocs
+
+services:
+
+  # modo servidor en vivo - recomendado sólo para desarrollo
+  live-server:
+    build:  .
+    ports:
+      - "${PORT0:-8000}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./:/docs
+    stdin_open: true
+    tty: true
+
+
+  # construcción de sitio estático
+  build:
+    build:  .
+    ports:
+      - "${PORT1:-8001}:8000"
+    security_opt: 
+      - label=disable
+    volumes:
+      - ./:/docs
+    command: "build"
+
+

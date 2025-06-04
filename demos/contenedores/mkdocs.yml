@@ -1,8 +1,9 @@
-site_name: katex
+site_name: demo contenedores
 
 theme:
   name: material
   language: es
+
 
   palette:
     - media: "(prefers-color-scheme)"
@@ -25,18 +26,7 @@ theme:
         name: Switch to system preference
 
 
-markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-
-extra_javascript:
-  - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-
-extra_css:
-  - https://unpkg.com/katex@0/dist/katex.min.css
-
 
 nav:
   - index.md
+  - about.md

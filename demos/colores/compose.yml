@@ -2,7 +2,7 @@ name: colores_tema
 
 services:
 
-  modo-folder:
+  colores:
     build:  .
     ports:
       - "${PORT:-8000}:8000"

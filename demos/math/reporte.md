@@ -19,5 +19,5 @@
 ## Resultado: 
 
 - Mathjax : **EXITOSO**
-- Katex:    **FALLIDO**  (no se renderiza)
+- Katex:    **EXITOSO**  
 - markdown-katex :  **FALLIDO**  (error de instalación)

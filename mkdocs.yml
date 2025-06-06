@@ -383,11 +383,11 @@ plugins:
       enabled: !ENV CI
       plugins:
         # soporte para RSS
-        - rss:
-            match_path: "blog/posts/.*"
-            date_from_meta:
-              as_creation: date.created
-              as_update: date.updated
+        # - rss:
+        #     match_path: "blog/posts/.*"
+        #     date_from_meta:
+        #       as_creation: date.created
+        #       as_update: date.updated
         # fechas de repositorio
         - git-revision-date-localized:
             enabled: true

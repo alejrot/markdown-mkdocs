@@ -322,6 +322,9 @@ plugins:
   # Imagenes
   - glightbox
 
+  # indices de pagina
+  - pagetree
+
   # # # privacidad - hace copia local de contenidos remotos
   # - privacy
 

@@ -3,6 +3,7 @@ services:
 
   markdown-mkdocs:
     build:  .
+    image: mkdocs-local:markdown
     container_name: markdown-mkdocs
     ports:
       - "${PORT:-8000}:8000"

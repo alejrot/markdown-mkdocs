@@ -24,3 +24,10 @@ Suele usarse como alternativa simplificada al lenguaje HTML.
 Su variante más popular es [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/), que es la que agrega el tema *'Material'* de Google y es la usada como referencia para esta documentación. 
 
 [Comenzar con MkDocs-Material](mkdocs-material/instalacion/comenzando.md)
+
+
+
+
+## Contenidos
+
+{{ pagetree(all) }}

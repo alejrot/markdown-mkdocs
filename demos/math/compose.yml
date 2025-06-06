@@ -3,7 +3,8 @@ name: math
 services:
 
   mathjax:
-    build:  .
+    # build:  .
+    image: squidfunk/mkdocs-material:latest
     ports:
       - "${PORT0:-8000}:8000"
     security_opt: 
@@ -16,7 +17,8 @@ services:
 
 
   katex:
-    build:  .
+    # build:  .
+    image: squidfunk/mkdocs-material:latest
     ports:
       - "${PORT1:-8001}:8000"
     security_opt: 

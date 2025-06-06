@@ -24,6 +24,9 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
 
+# plugins:
+#   # 'Privacy' DEGRADA el renderizado de Katex
+#   - privacy
 
 markdown_extensions:
   - pymdownx.arithmatex:

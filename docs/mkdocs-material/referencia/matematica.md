@@ -13,10 +13,12 @@ tags:
   # - CSV
 ---
 
-# Soporte para Matematicas
+# Matemáticas
 
 
-MkDocs es compatible con dos blibliotecas para renderizar contenido matemático, llamadas MathJax y KaTex.
+MkDocs es compatible con dos blibliotecas para renderizar contenido matemático
+escrito en lenguaje TEX,
+llamadas MathJax y KaTex.
 
 
 
@@ -138,6 +140,13 @@ Ambas bibliotecas requieren archivos JavaScript adicionales para su uso:
     ```
 
 
+!!! danger "Plugin `privacy`"
+
+    El uso del [plugin privacy](../setup/privacidad_datos.md)
+    degrada el renderizado fórmulas cuando se usa Katex
+    e impide el renderizado cuando se usa Mathjax.
+
+
 ## Comparativa
 
 
@@ -152,3 +161,14 @@ Ambas bibliotecas requieren archivos JavaScript adicionales para su uso:
 ### KaTex:
 
 - Es muy rápido renderizando.
+
+
+
+
+
+## Referencias
+
+
+[Material for MkDocs - Math](https://squidfunk.github.io/mkdocs-material/reference/math/#mathjax-docsjavascriptsmathjaxjs)
+
+[PyMdown Extensions Documentation - Arithmatex](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
